@@ -188,13 +188,12 @@
 		318FC3BB2A820C5C0051CBEE /* PopUp */ = {
 			isa = PBXGroup;
 			children = (
+				318FC3CA2A820C5D0051CBEE /* Info.plist */,
 				318FC3BC2A820C5C0051CBEE /* AppDelegate.swift */,
 				318FC3BE2A820C5C0051CBEE /* SceneDelegate.swift */,
-				318FC3C02A820C5C0051CBEE /* ViewController.swift */,
-				318FC3C22A820C5C0051CBEE /* Main.storyboard */,
-				318FC3C52A820C5D0051CBEE /* Assets.xcassets */,
 				318FC3C72A820C5D0051CBEE /* LaunchScreen.storyboard */,
-				318FC3CA2A820C5D0051CBEE /* Info.plist */,
+				318FC3C52A820C5D0051CBEE /* Assets.xcassets */,
+				318FC6712A8241050051CBEE /* HomeView */,
 			);
 			path = PopUp;
 			sourceTree = "<group>";
@@ -288,6 +287,15 @@
 				318FC6462A82114F0051CBEE /* MTMapCircle.h */,
 			);
 			path = Headers;
+			sourceTree = "<group>";
+		};
+		318FC6712A8241050051CBEE /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				318FC3C02A820C5C0051CBEE /* ViewController.swift */,
+				318FC3C22A820C5C0051CBEE /* Main.storyboard */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
