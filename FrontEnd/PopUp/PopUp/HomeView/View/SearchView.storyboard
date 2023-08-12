@@ -286,7 +286,6 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="5dT-FJ-pLu"/>
                                                                         </constraints>
-                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="홍대">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -298,7 +297,6 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="2oi-bZ-grP"/>
                                                                         </constraints>
-                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="압구정">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -310,7 +308,6 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="sLF-Wb-X7h"/>
                                                                         </constraints>
-                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="가로수길">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -322,10 +319,9 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="YhG-gQ-bkK"/>
                                                                         </constraints>
-                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="성수">
-                                                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
+                                                                            <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                 </subviews>
@@ -350,7 +346,6 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="3yY-Ma-QBH"/>
                                                                         </constraints>
-                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="잠실">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -413,7 +408,6 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="iml-ty-kGz"/>
                                                                         </constraints>
-                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="연예인">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -425,7 +419,6 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="pkF-gn-QXv"/>
                                                                         </constraints>
-                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="패션">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -437,7 +430,6 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="Wgo-kd-QBS"/>
                                                                         </constraints>
-                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="푸드">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -449,7 +441,6 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="LBQ-XF-ifk"/>
                                                                         </constraints>
-                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="캐릭터">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -461,7 +452,6 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="33i-N6-45R"/>
                                                                         </constraints>
-                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="주류">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -491,7 +481,6 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="n0r-k1-5of"/>
                                                                         </constraints>
-                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="기타">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -550,7 +539,6 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="S8k-96-gm1"/>
                                                                 </constraints>
-                                                                <color key="tintColor" name="White"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="오픈 예정">
                                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -562,7 +550,6 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="fdQ-U6-ez8"/>
                                                                 </constraints>
-                                                                <color key="tintColor" name="White"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="마감 임박">
                                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -620,7 +607,6 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="jqq-C9-rs7"/>
                                                                 </constraints>
-                                                                <color key="tintColor" name="White"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="무료">
                                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -632,21 +618,21 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="Pea-x0-Ado"/>
                                                                 </constraints>
-                                                                <color key="tintColor" name="White"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="유료">
                                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2k-1z-R1Y">
-                                                                <rect key="frame" x="128.66666666666666" y="0.0" width="116.66666666666666" height="40"/>
+                                                                <rect key="frame" x="128.66666666666666" y="0.0" width="100.33333333333334" height="40"/>
                                                                 <color key="backgroundColor" name="G4"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="Efm-dX-P49"/>
                                                                 </constraints>
-                                                                <color key="tintColor" name="White"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="주차공간 있음"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="주차공간 있음">
+                                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
+                                                                </buttonConfiguration>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -706,6 +692,9 @@
                                                         <integer key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="resetBtnTapped:" destination="han-5H-Cn1" eventType="touchUpInside" id="6cC-b2-ZYw"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeZ-fb-p40">
                                                 <rect key="frame" x="186.66666666666663" y="0.0" width="174.33333333333337" height="48"/>
@@ -718,6 +707,9 @@
                                                         <integer key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="applyBtnTapped:" destination="han-5H-Cn1" eventType="touchUpInside" id="ii5-5s-sVw"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -749,6 +741,26 @@
                             <constraint firstItem="lvG-M2-YTw" firstAttribute="leading" secondItem="h6I-k1-gZi" secondAttribute="leading" id="pEw-ST-Wc4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="applyBtn" destination="QeZ-fb-p40" id="NxS-Bd-uiM"/>
+                        <outlet property="resetBtn" destination="gi5-eG-6Ls" id="zZw-sU-jjg"/>
+                        <outletCollection property="filterBtn" destination="Kbe-8P-D5p" collectionClass="NSMutableArray" id="0fq-Uf-qVT"/>
+                        <outletCollection property="filterBtn" destination="i3k-UT-dUr" collectionClass="NSMutableArray" id="QvL-jn-2ji"/>
+                        <outletCollection property="filterBtn" destination="7w1-TX-Jng" collectionClass="NSMutableArray" id="yD8-b1-NYu"/>
+                        <outletCollection property="filterBtn" destination="XfH-jf-Bjy" collectionClass="NSMutableArray" id="Uvc-C6-Lxz"/>
+                        <outletCollection property="filterBtn" destination="sXb-ir-XLE" collectionClass="NSMutableArray" id="la4-ON-NXP"/>
+                        <outletCollection property="filterBtn" destination="qCO-0d-NB2" collectionClass="NSMutableArray" id="wSO-OC-xDX"/>
+                        <outletCollection property="filterBtn" destination="hiz-Rr-lhs" collectionClass="NSMutableArray" id="dlC-MM-VDB"/>
+                        <outletCollection property="filterBtn" destination="nfq-5w-g86" collectionClass="NSMutableArray" id="3T2-s3-NHx"/>
+                        <outletCollection property="filterBtn" destination="c9b-IZ-KM2" collectionClass="NSMutableArray" id="2RE-lR-71B"/>
+                        <outletCollection property="filterBtn" destination="ZR6-hH-Cbm" collectionClass="NSMutableArray" id="flx-6g-TQm"/>
+                        <outletCollection property="filterBtn" destination="Yin-vD-XSL" collectionClass="NSMutableArray" id="gJw-8W-2iA"/>
+                        <outletCollection property="filterBtn" destination="80f-ta-Bpm" collectionClass="NSMutableArray" id="Ptd-6T-opd"/>
+                        <outletCollection property="filterBtn" destination="Xqo-wd-Dwt" collectionClass="NSMutableArray" id="3oT-qb-5Dc"/>
+                        <outletCollection property="filterBtn" destination="QjY-5F-Mkw" collectionClass="NSMutableArray" id="P72-2U-yao"/>
+                        <outletCollection property="filterBtn" destination="gC3-HQ-vBi" collectionClass="NSMutableArray" id="BKX-hu-JGa"/>
+                        <outletCollection property="filterBtn" destination="j2k-1z-R1Y" collectionClass="NSMutableArray" id="LFk-de-qRw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAp-LP-sbq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

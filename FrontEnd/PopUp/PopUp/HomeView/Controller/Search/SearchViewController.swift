@@ -29,7 +29,7 @@ class SearchViewController: UIViewController{
         
     }
     
-    
+    //검색 바 tap
     @IBAction func searchBarBtnTapped(_ sender: Any) {
         let searchDetailVC = self.storyboard?.instantiateViewController(identifier: "searchDetailVC") as! SearchDetailViewController
         
@@ -38,6 +38,7 @@ class SearchViewController: UIViewController{
         
     }
     
+    //필터 버튼 tap
     @objc private func filterBtnTapped() {
         let filterVC = self.storyboard?.instantiateViewController(identifier: "filterVC") as! FilterViewController
         
