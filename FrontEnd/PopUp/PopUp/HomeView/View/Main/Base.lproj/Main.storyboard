@@ -349,14 +349,14 @@
                                                                                             </label>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장소" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7s1-rv-FiJ" userLabel="LocationLabel">
                                                                                                 <rect key="frame" x="0.0" y="50" width="232" height="17"/>
-                                                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                                                                                <color key="textColor" name="DarkGray"/>
+                                                                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                                                <color key="textColor" name="Gray"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023년 x월 xx일 ~ 2023년 x월 xx일" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlG-kg-5qb" userLabel="DateLabel">
                                                                                                 <rect key="frame" x="0.0" y="75" width="232" height="17"/>
-                                                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                                                                                <color key="textColor" name="DarkGray"/>
+                                                                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                                                <color key="textColor" name="Gray"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
                                                                                         </subviews>
@@ -530,7 +530,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="aQ4-LH-gNr" kind="relationship" relationship="viewControllers" id="w8r-Rc-5Zb"/>
-                        <segue destination="W5K-0m-wE8" kind="relationship" relationship="viewControllers" id="Ji8-am-NLa"/>
+                        <segue destination="W5K-0m-wE8" kind="relationship" relationship="viewControllers" id="J6h-C0-bfq"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ruf-2j-ZBk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -562,6 +562,7 @@
             <objects>
                 <viewControllerPlaceholder storyboardName="SearchView" referencedIdentifier="SearchView" id="W5K-0m-wE8" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="Search_unselect" selectedImage="Search_select" id="JkD-fZ-EEa"/>
+                    <navigationItem key="navigationItem" id="Luj-TM-Pl3"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upt-aP-8bv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -586,6 +587,9 @@
         </namedColor>
         <namedColor name="DarkGray">
             <color red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray">
+            <color red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="LightGray">
             <color red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

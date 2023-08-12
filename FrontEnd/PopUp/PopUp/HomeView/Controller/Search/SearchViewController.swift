@@ -123,6 +123,10 @@ class SearchViewController: UIViewController, DataSendDelegate{
     
     @IBAction func curLocationBtnTapped(_ sender: Any) {
         print("현위치 버튼 눌림")
+        let tempLocation = CLLocationCoordinate2D(latitude: 37.546912668813, longitude: 127.0411420343)
+        let regionRadius: CLLocationDistance = 100
+        let coordinateRegion = MKCoordinateRegion(center: tempLocation, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+        mapView.setRegion(coordinateRegion, animated: true)
     }
     
 }
@@ -136,14 +140,37 @@ extension SearchViewController: MKMapViewDelegate, CLLocationManagerDelegate{
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         //위치 데이터 승인 요구
         locationManager.requestWhenInUseAuthorization()
+        
+    /* 시뮬레이터에서는 현위치 정보 사용 불가 하므로, 임시 위치를 설정할 것임
         //위치 업데이트 시작
         locationManager.startUpdatingLocation()
         //사용자 위치 보기 설정
         mapView.showsUserLocation = true
+                                                        */
+        
+        //시뮬레이터는 현위치 인식 불가. 임시 위치 설정
+        let tempLocation = CLLocationCoordinate2D(latitude: 37.546912668813, longitude: 127.0411420343)
+        let regionRadius: CLLocationDistance = 100
+        let coordinateRegion = MKCoordinateRegion(center: tempLocation, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+        
+        //지도에 (임시) 내위치를 찍음
+        let myAnnotaion = MKPointAnnotation()
+        myAnnotaion.coordinate = tempLocation
+        mapView.addAnnotation(myAnnotaion)
+        
+        //(더미) 가게들을 지도에 표시함
+        for store in DummyStore.storeLocation{
+            let storeAnnotation = MKPointAnnotation()
+            storeAnnotation.coordinate = store.coordinate
+            storeAnnotation.title = store.name
+            mapView.addAnnotation(storeAnnotation)
+        }
+        
+        //처음 지도 시작 위치를 (임시) 내위치로 설정함
+        mapView.setRegion(coordinateRegion, animated: true)
         //다크 모드 설정
         mapView.overrideUserInterfaceStyle = .dark
-        mapView.showsUserLocation = true
-        mapView.userTrackingMode = .follow
+//        mapView.userTrackingMode = .follow
         
     }
     
@@ -163,6 +190,47 @@ extension SearchViewController: MKMapViewDelegate, CLLocationManagerDelegate{
             
             locationManager.stopUpdatingLocation()
         }
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is MKPointAnnotation {
+            let identifier = "CustomAnnotation"
+            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+            
+            if annotationView == nil{
+                annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                annotationView?.canShowCallout = true
+            }
+            else{
+                annotationView?.annotation = annotation
+            }
+            
+            let store = DummyStore.storeLocation.first{ $0.coordinate.latitude == annotation.coordinate.latitude && $0.coordinate.longitude == annotation.coordinate.longitude }
+            if let store = store {
+                // 가게 종류에 따라 이미지 설정
+                annotationView?.image = UIImage(named: "\(store.sort)Icon.png")
+            }
+            
+            // Annotation 밑에 가게 이름을 표시하기 위해 UILabel 추가
+            let nameLabel = UILabel()
+            nameLabel.text = store?.name
+            nameLabel.font = UIFont.systemFont(ofSize: 12, weight: .medium) // 글자 크기 및 스타일 설정
+            nameLabel.textColor = .white // 글자 색 설정
+            nameLabel.backgroundColor = UIColor(named: "G4") // 배경색 설정
+            nameLabel.layer.borderWidth = 0.8
+            nameLabel.layer.borderColor = UIColor(named: "DarkGray")?.cgColor
+                        
+            // nameLabel을 AnnotationView의 밑에 배치
+            annotationView?.addSubview(nameLabel)
+            nameLabel.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate([
+                nameLabel.centerXAnchor.constraint(equalTo: annotationView!.centerXAnchor),
+                nameLabel.topAnchor.constraint(equalTo: annotationView!.bottomAnchor, constant: 5)
+            ])
+            
+            return annotationView
+        }
+        return nil
     }
     
 }

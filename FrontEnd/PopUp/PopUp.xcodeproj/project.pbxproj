@@ -21,6 +21,7 @@
 		319EDE402A8665F9006AD28C /* SearchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319EDE3F2A8665F9006AD28C /* SearchView.storyboard */; };
 		31DF1A332A87759000CD5A73 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF1A322A87759000CD5A73 /* RankingTableViewCell.swift */; };
 		31DF1A352A8784DA00CD5A73 /* DataSendDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF1A342A8784DA00CD5A73 /* DataSendDelegate.swift */; };
+		31DF1A372A87D98500CD5A73 /* DummyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF1A362A87D98500CD5A73 /* DummyStore.swift */; };
 		31E5C0E52A86681300A9B383 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E5C0E42A86681300A9B383 /* SearchViewController.swift */; };
 		31E5C0E72A866B8100A9B383 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E5C0E62A866B8100A9B383 /* CoreLocation.framework */; };
 		31EEB6B42A83351100ABA9CF /* PopUpStoreCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEB6B32A83351100ABA9CF /* PopUpStoreCVCell.swift */; };
@@ -66,6 +67,7 @@
 		319EDE3F2A8665F9006AD28C /* SearchView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchView.storyboard; sourceTree = "<group>"; };
 		31DF1A322A87759000CD5A73 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
 		31DF1A342A8784DA00CD5A73 /* DataSendDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataSendDelegate.swift; path = PopUp/HomeView/View/Search/DataSendDelegate.swift; sourceTree = SOURCE_ROOT; };
+		31DF1A362A87D98500CD5A73 /* DummyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DummyStore.swift; path = PopUp/HomeView/View/Search/DummyStore.swift; sourceTree = SOURCE_ROOT; };
 		31E5C0E42A86681300A9B383 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		31E5C0E62A866B8100A9B383 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		31EEB6B32A83351100ABA9CF /* PopUpStoreCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpStoreCVCell.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				31DF1A342A8784DA00CD5A73 /* DataSendDelegate.swift */,
+				31DF1A362A87D98500CD5A73 /* DummyStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31DF1A372A87D98500CD5A73 /* DummyStore.swift in Sources */,
 				318FC3C12A820C5C0051CBEE /* ViewController.swift in Sources */,
 				31EEB6B62A83352F00ABA9CF /* VisitedPieceCVCell.swift in Sources */,
 				31DF1A332A87759000CD5A73 /* RankingTableViewCell.swift in Sources */,
