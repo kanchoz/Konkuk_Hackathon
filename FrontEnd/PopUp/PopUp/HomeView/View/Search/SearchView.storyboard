@@ -894,7 +894,7 @@
                                 <rect key="frame" x="24" y="285" width="345" height="533"/>
                                 <color key="backgroundColor" name="BackGround"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="3Ya-AC-wO3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RankingTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RankingTableViewCell" rowHeight="60" id="3Ya-AC-wO3" customClass="RankingTableViewCell" customModule="PopUp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="345" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Ya-AC-wO3" id="bho-53-1ZT">
@@ -943,6 +943,10 @@
                                                 <constraint firstAttribute="bottom" secondItem="msK-PO-pJK" secondAttribute="bottom" constant="20" id="zsU-gK-ggm"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="8Jt-Xp-nkj" id="H6L-H8-FFs"/>
+                                            <outlet property="numLabel" destination="ID3-y0-fnZ" id="vJZ-xu-ijc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -965,6 +969,10 @@
                             <constraint firstItem="WnV-sX-kfb" firstAttribute="trailing" secondItem="UQQ-Cw-1bq" secondAttribute="trailing" constant="24" id="ynB-HB-tj3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchTF" destination="Pdf-5l-OG5" id="j6g-IF-4xR"/>
+                        <outlet property="tableView" destination="UQQ-Cw-1bq" id="d8B-Zy-57S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDk-wn-XNf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
