@@ -21,6 +21,7 @@
 		31EEB6B82A83354100ABA9CF /* StoreListCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEB6B72A83354100ABA9CF /* StoreListCVCell.swift */; };
 		31EEB6BA2A83357300ABA9CF /* StoreListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEB6B92A83357300ABA9CF /* StoreListTVCell.swift */; };
 		31EEB6BC2A83937D00ABA9CF /* CategoryCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEB6BB2A83937D00ABA9CF /* CategoryCVCell.swift */; };
+		5B396C272A877D2000513F0D /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B396C262A877D2000513F0D /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		31EEB6B72A83354100ABA9CF /* StoreListCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListCVCell.swift; sourceTree = "<group>"; };
 		31EEB6B92A83357300ABA9CF /* StoreListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListTVCell.swift; sourceTree = "<group>"; };
 		31EEB6BB2A83937D00ABA9CF /* CategoryCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCVCell.swift; sourceTree = "<group>"; };
+		5B396C262A877D2000513F0D /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				318FC3C72A820C5D0051CBEE /* LaunchScreen.storyboard */,
 				318FC3C52A820C5D0051CBEE /* Assets.xcassets */,
 				318FC6712A8241050051CBEE /* HomeView */,
+				5B396C262A877D2000513F0D /* test.swift */,
 			);
 			path = PopUp;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				31EEB6B62A83352F00ABA9CF /* VisitedPieceCVCell.swift in Sources */,
 				31EEB6BA2A83357300ABA9CF /* StoreListTVCell.swift in Sources */,
 				31EEB6B82A83354100ABA9CF /* StoreListCVCell.swift in Sources */,
+				5B396C272A877D2000513F0D /* test.swift in Sources */,
 				318FC3BD2A820C5C0051CBEE /* AppDelegate.swift in Sources */,
 				318FC3BF2A820C5C0051CBEE /* SceneDelegate.swift in Sources */,
 				31EEB6BC2A83937D00ABA9CF /* CategoryCVCell.swift in Sources */,
