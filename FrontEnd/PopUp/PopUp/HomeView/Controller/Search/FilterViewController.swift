@@ -13,6 +13,7 @@ class FilterViewController: UIViewController {
     @IBOutlet var resetBtn: UIButton!
     @IBOutlet var applyBtn: UIButton!
     var selectedFilters: Set<String> = []
+    weak var dataSendDelegate: DataSendDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,6 +88,7 @@ class FilterViewController: UIViewController {
     
     @IBAction func applyBtnTapped(_ sender: Any) {
         //이전 화면에 data를 전달하는 코드
+        dataSendDelegate?.didReceiveData(data: selectedFilters)
         dismiss(animated: true)
     }
     

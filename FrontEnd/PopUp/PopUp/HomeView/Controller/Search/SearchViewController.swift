@@ -9,12 +9,17 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class SearchViewController: UIViewController{
+class SearchViewController: UIViewController, DataSendDelegate{
     
     @IBOutlet var mapView: MKMapView!
     
     @IBOutlet var searchBarBtn: UIButton!
     @IBOutlet var filterBtn: UIButton!
+    @IBOutlet var filterCntLabel: UILabel!
+    @IBOutlet var locationBtns: [UIButton]!
+    
+    var selectedFilters: Set<String> = []
+    weak var dataSendDelegate: DataSendDelegate?
     
     let locationManager = CLLocationManager()
     
@@ -26,7 +31,46 @@ class SearchViewController: UIViewController{
     
     func setUpUI(){
         filterBtn.addTarget(self, action: #selector(filterBtnTapped), for: .touchUpInside)
-        
+        filterCntLabel.isHidden = true
+        filterBtn.layer.borderWidth = 0.8
+        for btn in locationBtns{
+            btn.addTarget(self, action: #selector(locationBtnTapped(_:)), for: .touchUpInside)
+            btn.layer.borderWidth = 0.8
+        }
+        updateFilterBtnState()
+        updateLocationBtnState()
+    }
+    
+    //필터 선택 화면에서 선택한 data애 따라 UI 갱신
+    func didReceiveData(data: Set<String>) {
+        selectedFilters = data
+        updateFilterBtnState()
+        updateLocationBtnState()
+    }
+    
+    //필터의 선택 갯수에 따라 필터 버튼 테두리를 변경
+    func updateFilterBtnState(){
+        if !selectedFilters.isEmpty{
+            filterBtn.layer.borderColor = UIColor(named: "White")!.cgColor
+            filterCntLabel.text = String(selectedFilters.count)
+            filterCntLabel.isHidden = false
+        }
+        else{
+            filterBtn.layer.borderColor = UIColor(named: "G4")!.cgColor
+            filterCntLabel.isHidden = true
+        }
+    }
+    
+    //버튼의 선택 상태에 따라 지역 버튼 테두리를 변경
+    func updateLocationBtnState(){
+        for btn in locationBtns{
+            if selectedFilters.contains(btn.titleLabel!.text!){
+                btn.layer.borderColor = UIColor(named: "White")?.cgColor
+            }
+            else{
+                btn.layer.borderColor = UIColor(named: "G4")?.cgColor
+            }
+        }
     }
     
     //검색 바 tap
@@ -38,10 +82,11 @@ class SearchViewController: UIViewController{
         
     }
     
-    //필터 버튼 tap
-    @objc private func filterBtnTapped() {
+    //필터 버튼 눌렸을때 동작 (half modal로 페이지 이동)
+    @objc func filterBtnTapped() {
         let filterVC = self.storyboard?.instantiateViewController(identifier: "filterVC") as! FilterViewController
-        
+        filterVC.dataSendDelegate = self
+        filterVC.selectedFilters = self.selectedFilters
         filterVC.modalPresentationStyle = .pageSheet
         
         if #available(iOS 15.0, *) {
@@ -60,7 +105,25 @@ class SearchViewController: UIViewController{
         present(filterVC, animated: true, completion: nil)
     }
     
+    //지역 필터 버튼이 눌렸을때 동작
+    @objc func locationBtnTapped(_ sender: UIButton){
+        //선택 -> 선택 해제
+        if selectedFilters.contains(sender.titleLabel!.text!){
+            selectedFilters.remove(sender.titleLabel!.text!)
+            sender.layer.borderColor = UIColor(named: "G4")!.cgColor
+        }
+        //선택 해제 -> 선택
+        else{
+            selectedFilters.insert(sender.titleLabel!.text!)
+            sender.layer.borderColor = UIColor(named: "White")!.cgColor
+        }
+        updateFilterBtnState()
+    }
     
+    
+    @IBAction func curLocationBtnTapped(_ sender: Any) {
+        print("현위치 버튼 눌림")
+    }
     
 }
 

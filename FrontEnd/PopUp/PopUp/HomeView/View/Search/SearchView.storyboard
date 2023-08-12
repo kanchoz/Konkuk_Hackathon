@@ -62,13 +62,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl6-ku-Y8H" userLabel="FilterScrollView">
-                                <rect key="frame" x="0.0" y="141" width="393" height="33"/>
+                                <rect key="frame" x="0.0" y="141" width="393" height="37"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Rs5-8z-Svq" userLabel="FilterStackView">
-                                        <rect key="frame" x="15" y="0.0" width="544" height="33"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3I-fZ-NfI">
+                                        <rect key="frame" x="0.0" y="0.0" width="500" height="37"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnp-uI-gah" userLabel="내주변">
-                                                <rect key="frame" x="0.0" y="0.0" width="101.33333333333333" height="33"/>
+                                                <rect key="frame" x="0.0" y="4" width="101.33333333333333" height="33"/>
                                                 <color key="backgroundColor" name="G4"/>
                                                 <color key="tintColor" name="White"/>
                                                 <state key="normal" title="Button"/>
@@ -79,20 +79,50 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTM-mg-tWz" userLabel="필터">
-                                                <rect key="frame" x="109.33333333333334" y="0.0" width="82.333333333333343" height="33"/>
-                                                <color key="backgroundColor" name="G4"/>
-                                                <color key="tintColor" name="White"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="FilterIcon" title=" 필터"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="18"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2T-dC-DXM" userLabel="필터View">
+                                                <rect key="frame" x="109.33333333333331" y="0.0" width="83" height="37"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTM-mg-tWz" userLabel="필터">
+                                                        <rect key="frame" x="0.0" y="4" width="82.333333333333329" height="33"/>
+                                                        <color key="backgroundColor" name="G4"/>
+                                                        <color key="tintColor" name="White"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="FilterIcon" title=" 필터"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="18"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHt-cI-6Ud" userLabel="filterCntLabel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                                        <color key="backgroundColor" name="White"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="16" id="F1G-GS-w6Y"/>
+                                                            <constraint firstAttribute="width" constant="16" id="bjq-V8-gGo"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="10"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="hTM-mg-tWz" firstAttribute="leading" secondItem="v2T-dC-DXM" secondAttribute="leading" id="CdO-iH-gGA"/>
+                                                    <constraint firstAttribute="width" constant="83" id="FN4-OX-z18"/>
+                                                    <constraint firstItem="xHt-cI-6Ud" firstAttribute="leading" secondItem="v2T-dC-DXM" secondAttribute="leading" id="JJB-co-iz8"/>
+                                                    <constraint firstItem="xHt-cI-6Ud" firstAttribute="top" secondItem="v2T-dC-DXM" secondAttribute="top" id="OWX-W4-j0Q"/>
+                                                    <constraint firstAttribute="bottom" secondItem="hTM-mg-tWz" secondAttribute="bottom" id="qnp-6S-eum"/>
+                                                    <constraint firstItem="hTM-mg-tWz" firstAttribute="top" secondItem="v2T-dC-DXM" secondAttribute="top" constant="4" id="yCW-gQ-fOZ"/>
+                                                </constraints>
+                                            </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2G8-xT-HC9" userLabel="성수">
-                                                <rect key="frame" x="199.66666666666666" y="0.0" width="53.666666666666657" height="33"/>
+                                                <rect key="frame" x="200.33333333333334" y="4" width="53.666666666666657" height="33"/>
                                                 <color key="backgroundColor" name="G4"/>
                                                 <color key="tintColor" name="White"/>
                                                 <state key="normal" title="Button"/>
@@ -104,7 +134,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v92-5M-24W" userLabel="홍대">
-                                                <rect key="frame" x="261.33333333333331" y="0.0" width="53.666666666666686" height="33"/>
+                                                <rect key="frame" x="262" y="4" width="53.666666666666686" height="33"/>
                                                 <color key="backgroundColor" name="G4"/>
                                                 <color key="tintColor" name="White"/>
                                                 <state key="normal" title="Button"/>
@@ -116,7 +146,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nn-ma-Nc0" userLabel="압구정">
-                                                <rect key="frame" x="323" y="0.0" width="68.333333333333314" height="33"/>
+                                                <rect key="frame" x="323.66666666666669" y="4" width="68.333333333333314" height="33"/>
                                                 <color key="backgroundColor" name="G4"/>
                                                 <color key="tintColor" name="White"/>
                                                 <state key="normal" title="Button"/>
@@ -128,7 +158,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYn-vP-3MV" userLabel="가로수길">
-                                                <rect key="frame" x="399.33333333333331" y="0.0" width="83" height="33"/>
+                                                <rect key="frame" x="400" y="4" width="83" height="33"/>
                                                 <color key="backgroundColor" name="G4"/>
                                                 <color key="tintColor" name="White"/>
                                                 <state key="normal" title="Button"/>
@@ -140,7 +170,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fO-mw-yPQ" userLabel="잠실">
-                                                <rect key="frame" x="490.33333333333331" y="0.0" width="53.666666666666686" height="33"/>
+                                                <rect key="frame" x="491.00000000000006" y="4" width="53.666666666666686" height="33"/>
                                                 <color key="backgroundColor" name="G4"/>
                                                 <color key="tintColor" name="White"/>
                                                 <state key="normal" title="Button"/>
@@ -154,18 +184,39 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" priority="250" constant="544" id="hS7-GI-5na"/>
+                                            <constraint firstItem="0fO-mw-yPQ" firstAttribute="leading" secondItem="QYn-vP-3MV" secondAttribute="trailing" constant="8" id="3Vt-lR-d7T"/>
+                                            <constraint firstItem="v2T-dC-DXM" firstAttribute="top" secondItem="n3I-fZ-NfI" secondAttribute="top" id="4xz-Ny-eMy"/>
+                                            <constraint firstAttribute="bottom" secondItem="7Nn-ma-Nc0" secondAttribute="bottom" id="56E-vw-6iQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="2G8-xT-HC9" secondAttribute="bottom" id="7QV-8u-zoA"/>
+                                            <constraint firstAttribute="bottom" secondItem="QYn-vP-3MV" secondAttribute="bottom" id="9WL-Y3-Bz0"/>
+                                            <constraint firstItem="v2T-dC-DXM" firstAttribute="leading" secondItem="jnp-uI-gah" secondAttribute="trailing" constant="8" id="ANH-xb-3fJ"/>
+                                            <constraint firstItem="v92-5M-24W" firstAttribute="top" secondItem="n3I-fZ-NfI" secondAttribute="top" constant="4" id="AvG-Hb-fQn"/>
+                                            <constraint firstAttribute="width" priority="250" constant="500" id="J35-q4-B9T"/>
+                                            <constraint firstAttribute="bottom" secondItem="0fO-mw-yPQ" secondAttribute="bottom" id="Lcn-qq-MaJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="v2T-dC-DXM" secondAttribute="bottom" id="MMO-EZ-dxW"/>
+                                            <constraint firstAttribute="bottom" secondItem="jnp-uI-gah" secondAttribute="bottom" id="Ode-lh-uFn"/>
+                                            <constraint firstItem="jnp-uI-gah" firstAttribute="top" secondItem="n3I-fZ-NfI" secondAttribute="top" constant="4" id="Tph-56-tLD"/>
+                                            <constraint firstAttribute="bottom" secondItem="v92-5M-24W" secondAttribute="bottom" id="UW7-tU-DGR"/>
+                                            <constraint firstItem="2G8-xT-HC9" firstAttribute="leading" secondItem="v2T-dC-DXM" secondAttribute="trailing" constant="8" id="XXZ-Yl-I5I"/>
+                                            <constraint firstItem="QYn-vP-3MV" firstAttribute="leading" secondItem="7Nn-ma-Nc0" secondAttribute="trailing" constant="8" id="dQt-jf-8J0"/>
+                                            <constraint firstItem="v92-5M-24W" firstAttribute="leading" secondItem="2G8-xT-HC9" secondAttribute="trailing" constant="8" id="iuV-Ev-Lwg"/>
+                                            <constraint firstItem="QYn-vP-3MV" firstAttribute="top" secondItem="n3I-fZ-NfI" secondAttribute="top" constant="4" id="kRj-bw-wBy"/>
+                                            <constraint firstItem="7Nn-ma-Nc0" firstAttribute="top" secondItem="n3I-fZ-NfI" secondAttribute="top" constant="4" id="oIV-4X-sc6"/>
+                                            <constraint firstItem="jnp-uI-gah" firstAttribute="leading" secondItem="n3I-fZ-NfI" secondAttribute="leading" id="tlk-Mw-I02"/>
+                                            <constraint firstItem="0fO-mw-yPQ" firstAttribute="top" secondItem="n3I-fZ-NfI" secondAttribute="top" constant="4" id="tpR-6Q-Wp2"/>
+                                            <constraint firstItem="2G8-xT-HC9" firstAttribute="top" secondItem="n3I-fZ-NfI" secondAttribute="top" constant="4" id="x2Y-K2-4XT"/>
+                                            <constraint firstItem="7Nn-ma-Nc0" firstAttribute="leading" secondItem="v92-5M-24W" secondAttribute="trailing" constant="8" id="yOo-hI-SXi"/>
                                         </constraints>
-                                    </stackView>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="UCS-b5-BGr"/>
-                                    <constraint firstItem="Rs5-8z-Svq" firstAttribute="height" secondItem="Qry-is-aNE" secondAttribute="height" id="Uwu-P4-y7A"/>
-                                    <constraint firstItem="M3a-r9-eKZ" firstAttribute="top" secondItem="Rs5-8z-Svq" secondAttribute="top" id="dRr-jp-Mhe"/>
-                                    <constraint firstItem="Rs5-8z-Svq" firstAttribute="trailing" secondItem="M3a-r9-eKZ" secondAttribute="trailing" constant="15" id="ilr-Dt-uDU"/>
-                                    <constraint firstItem="Rs5-8z-Svq" firstAttribute="leading" secondItem="M3a-r9-eKZ" secondAttribute="leading" constant="15" id="lec-ef-wnX"/>
-                                    <constraint firstItem="Rs5-8z-Svq" firstAttribute="bottom" secondItem="M3a-r9-eKZ" secondAttribute="bottom" id="rnv-6H-Bjt"/>
+                                    <constraint firstItem="n3I-fZ-NfI" firstAttribute="height" secondItem="Qry-is-aNE" secondAttribute="height" id="3RZ-lh-XMS"/>
+                                    <constraint firstItem="M3a-r9-eKZ" firstAttribute="top" secondItem="n3I-fZ-NfI" secondAttribute="top" id="CRs-Gq-I2R"/>
+                                    <constraint firstItem="n3I-fZ-NfI" firstAttribute="trailing" secondItem="M3a-r9-eKZ" secondAttribute="trailing" id="DMi-X7-8by"/>
+                                    <constraint firstItem="n3I-fZ-NfI" firstAttribute="leading" secondItem="M3a-r9-eKZ" secondAttribute="leading" id="Dwl-dt-KGP"/>
+                                    <constraint firstItem="n3I-fZ-NfI" firstAttribute="bottom" secondItem="M3a-r9-eKZ" secondAttribute="bottom" id="Emv-Ae-sd1"/>
+                                    <constraint firstAttribute="height" constant="37" id="UCS-b5-BGr"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="M3a-r9-eKZ"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Qry-is-aNE"/>
@@ -179,6 +230,9 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="MyLocation"/>
                                 <buttonConfiguration key="configuration" style="plain" image="MyLocation"/>
+                                <connections>
+                                    <action selector="curLocationBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Prp-b9-45A"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -201,8 +255,15 @@
                     <tabBarItem key="tabBarItem" title="SEARCH" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="cj6-9F-8Vo"/>
                     <connections>
                         <outlet property="filterBtn" destination="hTM-mg-tWz" id="FeY-WM-hSO"/>
+                        <outlet property="filterCntLabel" destination="xHt-cI-6Ud" id="3Te-Ci-7XM"/>
                         <outlet property="mapView" destination="xyW-Cv-id7" id="web-yU-wko"/>
                         <outlet property="searchBarBtn" destination="ejI-cb-YZr" id="4Vq-Dx-bD2"/>
+                        <outletCollection property="locationBtns" destination="jnp-uI-gah" collectionClass="NSMutableArray" id="7R7-V9-nht"/>
+                        <outletCollection property="locationBtns" destination="2G8-xT-HC9" collectionClass="NSMutableArray" id="qL1-cY-Y74"/>
+                        <outletCollection property="locationBtns" destination="v92-5M-24W" collectionClass="NSMutableArray" id="6OI-29-vlc"/>
+                        <outletCollection property="locationBtns" destination="7Nn-ma-Nc0" collectionClass="NSMutableArray" id="Ryb-5t-dQe"/>
+                        <outletCollection property="locationBtns" destination="QYn-vP-3MV" collectionClass="NSMutableArray" id="Zd4-PL-9Dx"/>
+                        <outletCollection property="locationBtns" destination="0fO-mw-yPQ" collectionClass="NSMutableArray" id="mHB-vk-CM8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
