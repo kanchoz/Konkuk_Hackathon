@@ -10,16 +10,57 @@ import MapKit
 import CoreLocation
 
 class SearchViewController: UIViewController{
-
+    
     @IBOutlet var mapView: MKMapView!
+    
+    @IBOutlet var searchBarBtn: UIButton!
+    @IBOutlet var filterBtn: UIButton!
+    
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        setUpUI()
         setUpMap()
+    }
+    
+    func setUpUI(){
+        filterBtn.addTarget(self, action: #selector(filterBtnTapped), for: .touchUpInside)
         
     }
+    
+    
+    @IBAction func searchBarBtnTapped(_ sender: Any) {
+        let searchDetailVC = self.storyboard?.instantiateViewController(identifier: "searchDetailVC") as! SearchDetailViewController
+        
+        searchDetailVC.modalPresentationStyle = .fullScreen
+        self.present(searchDetailVC, animated: true, completion: nil)
+        
+    }
+    
+    @objc private func filterBtnTapped() {
+        let filterVC = self.storyboard?.instantiateViewController(identifier: "filterVC") as! FilterViewController
+        
+        filterVC.modalPresentationStyle = .pageSheet
+        
+        if #available(iOS 15.0, *) {
+            if let sheet = filterVC.sheetPresentationController {
+                sheet.delegate = self
+                //지원할 크기 지정
+                sheet.detents = [.medium(), .large()]
+                //뒷 배경 흐리게 안함
+                sheet.largestUndimmedDetentIdentifier = .medium
+                //시트 상단에 그래버 표시
+                sheet.prefersGrabberVisible = true
+            }
+        } else {
+            print("ios 15 이상만 지원")
+        }
+        present(filterVC, animated: true, completion: nil)
+    }
+    
+    
+    
 }
 
 // MARK: - mapkit 관련 delegate
@@ -60,4 +101,11 @@ extension SearchViewController: MKMapViewDelegate, CLLocationManagerDelegate{
         }
     }
     
+}
+
+// MARK: - half modal을 위한 extension
+extension SearchViewController: UISheetPresentationControllerDelegate{
+    func sheetPresentationControllerDidChangeSelectedDetentIdentifier(_ sheetPresentationController: UISheetPresentationController) {
+            print(sheetPresentationController.selectedDetentIdentifier == .large ? "large" : "medium")
+        }
 }

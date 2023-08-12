@@ -39,6 +39,9 @@
                                         <color key="tintColor" name="Gray"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="지역, 팝업 스토어 이름 검색"/>
+                                        <connections>
+                                            <action selector="searchBarBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jfS-Hd-JKv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="G4"/>
@@ -197,7 +200,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="SEARCH" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="cj6-9F-8Vo"/>
                     <connections>
+                        <outlet property="filterBtn" destination="hTM-mg-tWz" id="FeY-WM-hSO"/>
                         <outlet property="mapView" destination="xyW-Cv-id7" id="web-yU-wko"/>
+                        <outlet property="searchBarBtn" destination="ejI-cb-YZr" id="4Vq-Dx-bD2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -207,7 +212,7 @@
         <!--Filter View Controller-->
         <scene sceneID="oNR-fY-Zku">
             <objects>
-                <viewController id="han-5H-Cn1" customClass="FilterViewController" customModule="PopUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="filterVC" storyboardIdentifier="filterVC" id="han-5H-Cn1" customClass="FilterViewController" customModule="PopUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eIW-pS-9Hx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,6 +231,9 @@
                                         <color key="tintColor" name="White"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                                        <connections>
+                                            <action selector="backBtnTapped:" destination="han-5H-Cn1" eventType="touchUpInside" id="ohq-gJ-RxX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -258,7 +266,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="XSp-sS-W3i" firstAttribute="leading" secondItem="OH4-fo-fWD" secondAttribute="leading" constant="24" id="6ho-jM-tPd"/>
                                                             <constraint firstAttribute="bottom" secondItem="XSp-sS-W3i" secondAttribute="bottom" id="dKr-JI-U7t"/>
@@ -274,9 +282,11 @@
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3k-UT-dUr">
                                                                         <rect key="frame" x="68.333333333333329" y="4" width="48.333333333333329" height="40"/>
+                                                                        <color key="backgroundColor" name="G4"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="5dT-FJ-pLu"/>
                                                                         </constraints>
+                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="홍대">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -284,9 +294,11 @@
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7w1-TX-Jng">
                                                                         <rect key="frame" x="136.66666666666666" y="4" width="60.333333333333343" height="40"/>
+                                                                        <color key="backgroundColor" name="G4"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="2oi-bZ-grP"/>
                                                                         </constraints>
+                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="압구정">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -294,9 +306,11 @@
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfH-jf-Bjy">
                                                                         <rect key="frame" x="217" y="4" width="72.666666666666686" height="40"/>
+                                                                        <color key="backgroundColor" name="G4"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="sLF-Wb-X7h"/>
                                                                         </constraints>
+                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="가로수길">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -304,16 +318,18 @@
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbe-8P-D5p">
                                                                         <rect key="frame" x="0.0" y="4" width="48.333333333333336" height="40"/>
+                                                                        <color key="backgroundColor" name="G4"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="YhG-gQ-bkK"/>
                                                                         </constraints>
+                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="성수">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstItem="i3k-UT-dUr" firstAttribute="leading" secondItem="Kbe-8P-D5p" secondAttribute="trailing" constant="20" id="1Gl-zC-jFH"/>
                                                                     <constraint firstItem="XfH-jf-Bjy" firstAttribute="centerY" secondItem="Cov-FN-POX" secondAttribute="centerY" id="DZ9-QC-ONH"/>
@@ -330,25 +346,28 @@
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXb-ir-XLE">
                                                                         <rect key="frame" x="0.0" y="4" width="48.333333333333336" height="40"/>
+                                                                        <color key="backgroundColor" name="G4"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="3yY-Ma-QBH"/>
                                                                         </constraints>
+                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="잠실">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstItem="sXb-ir-XLE" firstAttribute="centerY" secondItem="BhF-ai-fHE" secondAttribute="centerY" id="JJZ-rN-65x"/>
                                                                     <constraint firstItem="sXb-ir-XLE" firstAttribute="leading" secondItem="BhF-ai-fHE" secondAttribute="leading" id="goo-eB-BJ9"/>
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="xAs-SS-cYU" firstAttribute="top" secondItem="OH4-fo-fWD" secondAttribute="bottom" constant="20" id="ACZ-0V-tXz"/>
                                                     <constraint firstItem="xAs-SS-cYU" firstAttribute="leading" secondItem="0DP-FY-9AE" secondAttribute="leading" constant="16" id="BY9-8S-X5L"/>
@@ -373,7 +392,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="17" id="10X-fB-DmD"/>
                                                             <constraint firstItem="TMF-Vs-qKQ" firstAttribute="leading" secondItem="qns-rg-1mj" secondAttribute="leading" constant="24" id="EL4-JH-18s"/>
@@ -390,9 +409,11 @@
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiz-Rr-lhs">
                                                                         <rect key="frame" x="80.333333333333329" y="4" width="60.333333333333329" height="40"/>
+                                                                        <color key="backgroundColor" name="G4"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="iml-ty-kGz"/>
                                                                         </constraints>
+                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="연예인">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -400,9 +421,11 @@
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfq-5w-g86">
                                                                         <rect key="frame" x="160.66666666666666" y="4" width="48.333333333333343" height="40"/>
+                                                                        <color key="backgroundColor" name="G4"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="pkF-gn-QXv"/>
                                                                         </constraints>
+                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="패션">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -410,9 +433,11 @@
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9b-IZ-KM2">
                                                                         <rect key="frame" x="229" y="4" width="48.333333333333314" height="40"/>
+                                                                        <color key="backgroundColor" name="G4"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="Wgo-kd-QBS"/>
                                                                         </constraints>
+                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="푸드">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -420,9 +445,11 @@
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCO-0d-NB2">
                                                                         <rect key="frame" x="0.0" y="4" width="60.333333333333336" height="40"/>
+                                                                        <color key="backgroundColor" name="G4"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="LBQ-XF-ifk"/>
                                                                         </constraints>
+                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="캐릭터">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -430,16 +457,18 @@
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZR6-hH-Cbm">
                                                                         <rect key="frame" x="297.33333333333331" y="4" width="48.333333333333314" height="40"/>
+                                                                        <color key="backgroundColor" name="G4"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="33i-N6-45R"/>
                                                                         </constraints>
+                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="주류">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstItem="qCO-0d-NB2" firstAttribute="leading" secondItem="nVU-bL-0Ic" secondAttribute="leading" id="3Sk-O0-1WQ"/>
                                                                     <constraint firstItem="nfq-5w-g86" firstAttribute="centerY" secondItem="nVU-bL-0Ic" secondAttribute="centerY" id="4Jd-61-xv3"/>
@@ -458,25 +487,28 @@
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yin-vD-XSL">
                                                                         <rect key="frame" x="0.0" y="4" width="48.333333333333336" height="40"/>
+                                                                        <color key="backgroundColor" name="G4"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="n0r-k1-5of"/>
                                                                         </constraints>
+                                                                        <color key="tintColor" name="White"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="기타">
                                                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstItem="Yin-vD-XSL" firstAttribute="centerY" secondItem="NlW-d0-XoD" secondAttribute="centerY" id="UwS-4S-Aax"/>
                                                                     <constraint firstItem="Yin-vD-XSL" firstAttribute="leading" secondItem="NlW-d0-XoD" secondAttribute="leading" id="z9l-83-8l1"/>
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="Afx-oz-z5Y" secondAttribute="bottom" id="9ck-mk-wgB"/>
                                                     <constraint firstItem="qns-rg-1mj" firstAttribute="top" secondItem="oWj-Ur-f2c" secondAttribute="top" id="TCH-Gv-pLQ"/>
@@ -501,7 +533,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="dX8-zk-Pbl" firstAttribute="top" secondItem="M3r-Xb-3z4" secondAttribute="top" id="5Wr-mg-opg"/>
                                                             <constraint firstAttribute="bottom" secondItem="dX8-zk-Pbl" secondAttribute="bottom" id="7xd-4h-dkL"/>
@@ -514,9 +546,11 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80f-ta-Bpm">
                                                                 <rect key="frame" x="0.0" y="0.0" width="76.333333333333329" height="40"/>
+                                                                <color key="backgroundColor" name="G4"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="S8k-96-gm1"/>
                                                                 </constraints>
+                                                                <color key="tintColor" name="White"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="오픈 예정">
                                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -524,16 +558,18 @@
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqo-wd-Dwt">
                                                                 <rect key="frame" x="92.333333333333343" y="0.0" width="76.333333333333343" height="40"/>
+                                                                <color key="backgroundColor" name="G4"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="fdQ-U6-ez8"/>
                                                                 </constraints>
+                                                                <color key="tintColor" name="White"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="마감 임박">
                                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
                                                                 </buttonConfiguration>
                                                             </button>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="Xqo-wd-Dwt" firstAttribute="leading" secondItem="80f-ta-Bpm" secondAttribute="trailing" constant="16" id="5D5-Xt-iTx"/>
                                                             <constraint firstItem="80f-ta-Bpm" firstAttribute="leading" secondItem="gFp-a9-YGU" secondAttribute="leading" id="90u-b6-dky"/>
@@ -542,7 +578,7 @@
                                                         </constraints>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="M3r-Xb-3z4" firstAttribute="leading" secondItem="ZWi-Ka-mvN" secondAttribute="leading" id="JhE-xg-RA7"/>
                                                     <constraint firstAttribute="trailing" secondItem="gFp-a9-YGU" secondAttribute="trailing" constant="16" id="L6l-nY-hAg"/>
@@ -567,7 +603,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="d26-1f-tKw" firstAttribute="leading" secondItem="e6o-DA-1P0" secondAttribute="leading" constant="24" id="3nA-Fa-ZJ2"/>
                                                             <constraint firstAttribute="height" constant="17" id="6g5-sj-BCR"/>
@@ -580,9 +616,11 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjY-5F-Mkw">
                                                                 <rect key="frame" x="0.0" y="0.0" width="48.333333333333336" height="40"/>
+                                                                <color key="backgroundColor" name="G4"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="jqq-C9-rs7"/>
                                                                 </constraints>
+                                                                <color key="tintColor" name="White"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="무료">
                                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -590,9 +628,11 @@
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gC3-HQ-vBi">
                                                                 <rect key="frame" x="64.333333333333329" y="0.0" width="48.333333333333329" height="40"/>
+                                                                <color key="backgroundColor" name="G4"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="Pea-x0-Ado"/>
                                                                 </constraints>
+                                                                <color key="tintColor" name="White"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="유료">
                                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
@@ -600,14 +640,16 @@
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2k-1z-R1Y">
                                                                 <rect key="frame" x="128.66666666666666" y="0.0" width="116.66666666666666" height="40"/>
+                                                                <color key="backgroundColor" name="G4"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="Efm-dX-P49"/>
                                                                 </constraints>
+                                                                <color key="tintColor" name="White"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="주차공간 있음"/>
                                                             </button>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="j2k-1z-R1Y" firstAttribute="leading" secondItem="gC3-HQ-vBi" secondAttribute="trailing" constant="16" id="7ND-io-yge"/>
                                                             <constraint firstItem="gC3-HQ-vBi" firstAttribute="centerY" secondItem="Lhg-3a-2s8" secondAttribute="centerY" id="MZh-r2-g1c"/>
@@ -618,7 +660,7 @@
                                                         </constraints>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="Lhg-3a-2s8" secondAttribute="bottom" id="59s-Od-KRp"/>
                                                     <constraint firstAttribute="trailing" secondItem="Lhg-3a-2s8" secondAttribute="trailing" constant="16" id="7lB-Gc-5fW"/>
@@ -631,11 +673,13 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="250" constant="800" id="7KB-eg-xFV"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="5qa-Sa-GrG" firstAttribute="top" secondItem="crc-Yj-Dph" secondAttribute="top" id="0Sx-yW-hvz"/>
                                     <constraint firstItem="5qa-Sa-GrG" firstAttribute="width" secondItem="zKM-eQ-KrR" secondAttribute="width" id="5hr-9p-15H"/>
@@ -654,7 +698,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gi5-eG-6Ls">
                                                 <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="48"/>
-                                                <color key="tintColor" name="BackGround"/>
+                                                <color key="tintColor" name="White"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="초기화"/>
                                                 <userDefinedRuntimeAttributes>
@@ -665,8 +709,8 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeZ-fb-p40">
                                                 <rect key="frame" x="186.66666666666663" y="0.0" width="174.33333333333337" height="48"/>
-                                                <color key="backgroundColor" name="BackGround"/>
-                                                <color key="tintColor" name="White"/>
+                                                <color key="backgroundColor" name="White"/>
+                                                <color key="tintColor" name="BackGround"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="적용"/>
                                                 <userDefinedRuntimeAttributes>
@@ -681,7 +725,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="hcb-bV-QBw" secondAttribute="trailing" constant="16" id="Ll9-rd-hvk"/>
                                     <constraint firstItem="hcb-bV-QBw" firstAttribute="leading" secondItem="Xtn-Uf-qMX" secondAttribute="leading" constant="16" id="OCZ-gU-xSt"/>
@@ -713,7 +757,7 @@
         <!--Search Detail View Controller-->
         <scene sceneID="8ES-Lg-VxO">
             <objects>
-                <viewController id="2Eb-ka-N9K" customClass="SearchDetailViewController" customModule="PopUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="searchDetailVC" storyboardIdentifier="searchDetailVC" id="2Eb-ka-N9K" customClass="SearchDetailViewController" customModule="PopUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1SW-Nu-rJB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -732,23 +776,25 @@
                                                     <constraint firstAttribute="width" constant="24" id="qSd-r9-uzW"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVu-St-NbY">
-                                                <rect key="frame" x="52" y="16" width="261" height="24"/>
-                                                <color key="tintColor" name="Gray"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="지역, 팝업 스토어 이름 검색"/>
-                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="지역, 팝업 스토어 이름 검색" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pdf-5l-OG5">
+                                                <rect key="frame" x="56" y="16" width="261" height="24"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" name="White"/>
+                                                <color key="textColor" name="White"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" name="G4"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="wVu-St-NbY" secondAttribute="bottom" constant="16" id="82E-Go-5ob"/>
                                             <constraint firstItem="mNE-CJ-wkO" firstAttribute="top" secondItem="CLb-4L-wBu" secondAttribute="top" constant="16" id="Eg5-zo-8Oe"/>
-                                            <constraint firstItem="wVu-St-NbY" firstAttribute="leading" secondItem="mNE-CJ-wkO" secondAttribute="trailing" constant="12" id="H5h-DE-Ni3"/>
                                             <constraint firstItem="mNE-CJ-wkO" firstAttribute="leading" secondItem="CLb-4L-wBu" secondAttribute="leading" constant="16" id="Jn1-aL-YOM"/>
+                                            <constraint firstAttribute="trailing" secondItem="Pdf-5l-OG5" secondAttribute="trailing" constant="12" id="MYg-mj-b1q"/>
                                             <constraint firstAttribute="height" constant="56" id="T70-3u-khM"/>
                                             <constraint firstAttribute="bottom" secondItem="mNE-CJ-wkO" secondAttribute="bottom" constant="16" id="YQF-hV-XIU"/>
-                                            <constraint firstAttribute="trailing" secondItem="wVu-St-NbY" secondAttribute="trailing" constant="16" id="Ywx-8W-mz7"/>
-                                            <constraint firstItem="wVu-St-NbY" firstAttribute="top" secondItem="CLb-4L-wBu" secondAttribute="top" constant="16" id="a4j-sH-AwZ"/>
+                                            <constraint firstItem="Pdf-5l-OG5" firstAttribute="top" secondItem="CLb-4L-wBu" secondAttribute="top" constant="16" id="qSi-XG-6x1"/>
+                                            <constraint firstAttribute="bottom" secondItem="Pdf-5l-OG5" secondAttribute="bottom" constant="16" id="sIh-R0-VwG"/>
+                                            <constraint firstItem="Pdf-5l-OG5" firstAttribute="leading" secondItem="mNE-CJ-wkO" secondAttribute="trailing" constant="16" id="xWd-r7-ch4"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -765,6 +811,9 @@
                                         <color key="tintColor" name="White"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system" title=" "/>
+                                        <connections>
+                                            <action selector="backBtnTapped:" destination="2Eb-ka-N9K" eventType="touchUpInside" id="sKY-u8-vt1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="BackGround"/>
