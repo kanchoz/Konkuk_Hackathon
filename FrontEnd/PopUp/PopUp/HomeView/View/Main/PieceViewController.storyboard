@@ -438,7 +438,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="PieceTab" width="79" height="88"/>
+        <image name="PieceTab" width="39.333332061767578" height="44"/>
         <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <image name="pieceBtnCollection" width="112" height="112"/>
         <image name="verticalDotsBtn" width="48" height="48"/>

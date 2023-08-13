@@ -314,9 +314,10 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="360" height="515"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XsU-0U-FQn" userLabel="StoreListTableView">
+                                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XsU-0U-FQn" userLabel="StoreListTableView">
                                                                     <rect key="frame" x="0.0" y="0.0" width="360" height="515"/>
                                                                     <color key="backgroundColor" name="BackGround"/>
+                                                                    <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="12"/>
                                                                     <prototypes>
                                                                         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="StoreListTVCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoreListTVCell" rowHeight="120" id="UJ2-u5-M4c" userLabel="StoreListTableViewCell" customClass="StoreListTVCell" customModule="PopUp" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="50" width="360" height="120"/>
@@ -468,6 +469,15 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="8ei-1N-F8C"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ML0-O5-Pyk"/>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aih-Sb-QGa" userLabel="CameraBtn">
+                                <rect key="frame" x="322" y="1746" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="qD8-v2-jaB"/>
+                                    <constraint firstAttribute="height" constant="56" id="w72-n4-ieF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="CameraBtn"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="BackGround"/>
@@ -476,6 +486,8 @@
                             <constraint firstItem="4MF-ps-bnV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="NOt-79-qjS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4MF-ps-bnV" secondAttribute="bottom" id="abn-ed-baM"/>
                             <constraint firstItem="4MF-ps-bnV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="e8e-yu-HNG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Aih-Sb-QGa" secondAttribute="bottom" constant="15" id="pGM-EV-Fgr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Aih-Sb-QGa" secondAttribute="trailing" constant="15" id="qgY-Of-hWS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zC7-5A-XJ6">
@@ -488,6 +500,9 @@
                             </barButtonItem>
                             <barButtonItem image="magnifyingglass" catalog="system" id="JmF-83-CYr">
                                 <color key="tintColor" name="White"/>
+                                <connections>
+                                    <action selector="searchBtnTapped:" destination="BYZ-38-t0r" id="vl0-UG-zzm"/>
+                                </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
@@ -520,18 +535,17 @@
                         <segue destination="aQ4-LH-gNr" kind="relationship" relationship="viewControllers" id="w8r-Rc-5Zb"/>
                         <segue destination="W5K-0m-wE8" kind="relationship" relationship="viewControllers" id="Ji8-am-NLa"/>
                         <segue destination="qzz-4H-AEZ" kind="relationship" relationship="viewControllers" id="eGb-R6-hlV"/>
-
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ruf-2j-ZBk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
-        <!--Home-->
+        <!--Navigation Controller-->
         <scene sceneID="K5N-8j-vrg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aQ4-LH-gNr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="6Jj-qm-chv"/>
+                    <tabBarItem key="tabBarItem" title="" image="Home_unselect" id="6Jj-qm-chv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jXb-KG-TKJ">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -551,7 +565,7 @@
         <scene sceneID="Z5D-jE-UFF">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="PieceViewController" storyboardName="PieceViewController" referencedIdentifier="PieceViewController" id="qzz-4H-AEZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="FQb-z8-525"/>
+                    <tabBarItem key="tabBarItem" title="" image="PieceTab" id="FQb-z8-525"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhG-GN-i0R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -570,15 +584,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CameraBtn" width="56" height="56"/>
+        <image name="Home_unselect" width="33.333332061767578" height="44"/>
         <image name="Logo" width="89" height="24"/>
-        <image name="Piece1" width="90" height="120"/>
+        <image name="Piece1" width="545" height="726.33331298828125"/>
+        <image name="PieceTab" width="39.333332061767578" height="44"/>
         <image name="Search_select" width="44.333332061767578" height="44"/>
         <image name="Search_unselect" width="44.333332061767578" height="44"/>
         <image name="SimilarStore" width="389" height="80"/>
         <image name="Store1" width="184" height="265.33334350585938"/>
         <image name="StoreImg1" width="100.33333587646484" height="120"/>
         <image name="bell" catalog="system" width="125" height="128"/>
-        <image name="house" catalog="system" width="128" height="104"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <namedColor name="BackGround">
             <color red="0.071000002324581146" green="0.071000002324581146" blue="0.071000002324581146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
