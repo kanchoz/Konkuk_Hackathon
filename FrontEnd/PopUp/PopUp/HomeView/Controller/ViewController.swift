@@ -85,7 +85,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCVCell", for: indexPath) as! CategoryCVCell
             cell.categoryLabel.text = category[indexPath.item]
             if indexPath.item == categoryIndex{
-                cell.categoryLabel.textColor = UIColor(named: "LightGray")
+                cell.categoryLabel.textColor = UIColor(named: "White")
             }else{
                 cell.categoryLabel.textColor = UIColor(named: "DarkGray")
             }
@@ -98,7 +98,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
             // 선택한 셀의 텍스트 색상 변경
             let selectedCell = collectionView.cellForItem(at: indexPath) as! CategoryCVCell
             categoryIndex = indexPath.item
-            selectedCell.categoryLabel.textColor = UIColor(named: "LightGray")
+            selectedCell.categoryLabel.textColor = UIColor(named: "White")
             
             storeListCV.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
         }
@@ -159,7 +159,7 @@ extension ViewController: UIScrollViewDelegate{
                 categoryCV.selectItem(at: curIndexPath, animated: true, scrollPosition: .centeredHorizontally)
                 categoryIndex = curIndexPath.item
                 if let cell = categoryCV.cellForItem(at: IndexPath(item: categoryIndex, section: 0)) as? CategoryCVCell {
-                    cell.categoryLabel.textColor = UIColor(named: "LightGray")
+                    cell.categoryLabel.textColor = UIColor(named: "White")
                 }
                 storeListCV.reloadData()
                 categoryCV.reloadData()
