@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Piece1.png",
+      "filename" : "image 800.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Rectangle 16.png",
+      "filename" : "image 800 (1).png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Rectangle 17.png",
+      "filename" : "image 800 (2).png",
       "idiom" : "universal",
       "scale" : "3x"
     }

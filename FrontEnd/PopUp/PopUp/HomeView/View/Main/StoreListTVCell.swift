@@ -25,5 +25,11 @@ class StoreListTVCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    // 테이블 뷰 셀 사이의 간격
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 12, right: 0))
+    }
 
 }
