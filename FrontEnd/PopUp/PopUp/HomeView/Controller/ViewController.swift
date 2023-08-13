@@ -45,8 +45,17 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = navigationController?.navigationBar.standardAppearance
     }
+    
+    @IBAction func searchBtnTapped(_ sender: Any) {
+        let searchDetailVC = self.storyboard?.instantiateViewController(identifier: "searchDetailVC") as! SearchDetailViewController
+        
+        searchDetailVC.modalPresentationStyle = .fullScreen
+        self.present(searchDetailVC, animated: true, completion: nil)
+    }
+    
 }
 
+// MARK: - collectionView delegate, dataSource
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == popUpStoreCV{
@@ -119,8 +128,9 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     }
 }
 
+
+// MARK: - scrollView delegate
 extension ViewController: UIScrollViewDelegate{
-    
     //storeListCV에 paging을 적용하는 함수
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
             guard let layout = self.storeListCV.collectionViewLayout as? UICollectionViewFlowLayout else { return }
