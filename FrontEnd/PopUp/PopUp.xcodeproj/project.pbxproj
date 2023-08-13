@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31113F8E2A8939D700A82CCD /* StoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31113F8D2A8939D700A82CCD /* StoreInfoViewController.swift */; };
 		311325E52A8728DB006F3140 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311325E42A8728DB006F3140 /* FilterViewController.swift */; };
 		311325E72A8728EC006F3140 /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311325E62A8728EC006F3140 /* SearchDetailViewController.swift */; };
 		318FC3BD2A820C5C0051CBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FC3BC2A820C5C0051CBEE /* AppDelegate.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31113F8D2A8939D700A82CCD /* StoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInfoViewController.swift; sourceTree = "<group>"; };
 		311325E42A8728DB006F3140 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		311325E62A8728EC006F3140 /* SearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
 		318FC3B92A820C5C0051CBEE /* PopUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 				31E5C0E42A86681300A9B383 /* SearchViewController.swift */,
 				311325E42A8728DB006F3140 /* FilterViewController.swift */,
 				311325E62A8728EC006F3140 /* SearchDetailViewController.swift */,
+				31113F8D2A8939D700A82CCD /* StoreInfoViewController.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				31EEB6BC2A83937D00ABA9CF /* CategoryCVCell.swift in Sources */,
 				5B0D947E2A89178E00F361C8 /* PieceNavigationController.swift in Sources */,
 				31EEB6B42A83351100ABA9CF /* PopUpStoreCVCell.swift in Sources */,
+				31113F8E2A8939D700A82CCD /* StoreInfoViewController.swift in Sources */,
 				5B0D947F2A89178E00F361C8 /* PieceDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

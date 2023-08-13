@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--SEARCH-->
+        <!--Search View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="SearchView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SearchViewController" customModule="PopUp" customModuleProvider="target" sceneMemberID="viewController">
@@ -222,7 +222,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="Qry-is-aNE"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bO7-eP-pge" userLabel="MyLocationBtn">
-                                <rect key="frame" x="324" y="749" width="54" height="54"/>
+                                <rect key="frame" x="324" y="700" width="54" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="Kci-6J-tiE"/>
                                     <constraint firstAttribute="width" constant="54" id="vdy-tE-UwX"/>
@@ -252,7 +252,8 @@
                             <constraint firstItem="asO-5w-a5R" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="vUg-cs-wdS"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="SEARCH" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="cj6-9F-8Vo"/>
+                    <tabBarItem key="tabBarItem" title="" image="Search_unselect" id="Hy2-Ub-uis"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="filterBtn" destination="hTM-mg-tWz" id="FeY-WM-hSO"/>
                         <outlet property="filterCntLabel" destination="xHt-cI-6Ud" id="3Te-Ci-7XM"/>
@@ -269,6 +270,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1049.6183206106871" y="4.9295774647887329"/>
+        </scene>
+        <!--Store Info View Controller-->
+        <scene sceneID="5dh-Ya-qdY">
+            <objects>
+                <viewController restorationIdentifier="StoreInfoVC" storyboardIdentifier="StoreInfoVC" id="l15-KF-WP6" customClass="StoreInfoViewController" customModule="PopUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HCx-Cy-mbI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가게 정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="In6-hU-XdD">
+                                <rect key="frame" x="104.66666666666669" y="396" width="184" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" name="White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ROU-hN-PZx"/>
+                        <color key="backgroundColor" name="BackGround"/>
+                        <constraints>
+                            <constraint firstItem="In6-hU-XdD" firstAttribute="centerY" secondItem="HCx-Cy-mbI" secondAttribute="centerY" id="UxZ-HN-DjG"/>
+                            <constraint firstItem="In6-hU-XdD" firstAttribute="centerX" secondItem="HCx-Cy-mbI" secondAttribute="centerX" id="doT-JS-71G"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nNn-7N-BjM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071" y="712"/>
         </scene>
         <!--Filter View Controller-->
         <scene sceneID="oNR-fY-Zku">
@@ -1044,6 +1072,7 @@
         <image name="FilterIcon" width="24.333333969116211" height="24.333333969116211"/>
         <image name="MyLocation" width="54.333332061767578" height="54"/>
         <image name="NavigaitionIcon" width="24.333333969116211" height="24.333333969116211"/>
+        <image name="Search_unselect" width="44.333332061767578" height="44"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="BackGround">
