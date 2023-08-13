@@ -141,12 +141,12 @@ extension SearchViewController: MKMapViewDelegate, CLLocationManagerDelegate{
         //위치 데이터 승인 요구
         locationManager.requestWhenInUseAuthorization()
         
-    /* 시뮬레이터에서는 현위치 정보 사용 불가 하므로, 임시 위치를 설정할 것임
-        //위치 업데이트 시작
-        locationManager.startUpdatingLocation()
-        //사용자 위치 보기 설정
-        mapView.showsUserLocation = true
-                                                        */
+        /* 시뮬레이터에서는 현위치 정보 사용 불가 하므로, 임시 위치를 설정할 것임
+         //위치 업데이트 시작
+         locationManager.startUpdatingLocation()
+         //사용자 위치 보기 설정
+         mapView.showsUserLocation = true
+         */
         
         //시뮬레이터는 현위치 인식 불가. 임시 위치 설정
         let tempLocation = CLLocationCoordinate2D(latitude: 37.546912668813, longitude: 127.0411420343)
@@ -170,7 +170,7 @@ extension SearchViewController: MKMapViewDelegate, CLLocationManagerDelegate{
         mapView.setRegion(coordinateRegion, animated: true)
         //다크 모드 설정
         mapView.overrideUserInterfaceStyle = .dark
-//        mapView.userTrackingMode = .follow
+        //        mapView.userTrackingMode = .follow
         
     }
     
@@ -192,6 +192,7 @@ extension SearchViewController: MKMapViewDelegate, CLLocationManagerDelegate{
         }
     }
     
+    // MARK: - 지도에 가게 annotation 추가
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKPointAnnotation {
             let identifier = "CustomAnnotation"
@@ -199,7 +200,8 @@ extension SearchViewController: MKMapViewDelegate, CLLocationManagerDelegate{
             
             if annotationView == nil{
                 annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-                annotationView?.canShowCallout = true
+                //annotation tap 시 detail 표시 안함(바로 화면 전환)
+                annotationView?.canShowCallout = false
             }
             else{
                 annotationView?.annotation = annotation
@@ -219,7 +221,7 @@ extension SearchViewController: MKMapViewDelegate, CLLocationManagerDelegate{
             nameLabel.backgroundColor = UIColor(named: "G4") // 배경색 설정
             nameLabel.layer.borderWidth = 0.8
             nameLabel.layer.borderColor = UIColor(named: "DarkGray")?.cgColor
-                        
+            
             // nameLabel을 AnnotationView의 밑에 배치
             annotationView?.addSubview(nameLabel)
             nameLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -233,6 +235,36 @@ extension SearchViewController: MKMapViewDelegate, CLLocationManagerDelegate{
         return nil
     }
     
+    // MARK: - annotation을 tap 했을 경우
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if let annotation = view.annotation as? MKPointAnnotation {
+            // 어노테이션을 탭한 경우, 해당 어노테이션의 정보를 이용하여 화면 전환
+            if annotation.title == "My Location" {
+                
+            }
+            else {
+                let storeVC = self.storyboard?.instantiateViewController(identifier: "StoreInfoVC") as! StoreInfoViewController
+                
+                storeVC.modalPresentationStyle = .pageSheet
+                
+                if #available(iOS 15.0, *) {
+                    if let sheet = storeVC.sheetPresentationController {
+                        sheet.delegate = self
+                        //지원할 크기 지정
+                        sheet.detents = [.medium(), .large()]
+                        //뒷 배경 흐리게 안함
+                        sheet.largestUndimmedDetentIdentifier = .medium
+                        //시트 상단에 그래버 표시
+                        sheet.prefersGrabberVisible = true
+                    }
+                } else {
+                    print("ios 15 이상만 지원")
+                }
+                present(storeVC, animated: true, completion: nil)
+                
+            }
+        }
+    }
 }
 
 // MARK: - half modal을 위한 extension
