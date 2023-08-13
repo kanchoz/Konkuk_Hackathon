@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		311325E52A8728DB006F3140 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311325E42A8728DB006F3140 /* FilterViewController.swift */; };
+		311325E72A8728EC006F3140 /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311325E62A8728EC006F3140 /* SearchDetailViewController.swift */; };
 		318FC3BD2A820C5C0051CBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FC3BC2A820C5C0051CBEE /* AppDelegate.swift */; };
 		318FC3BF2A820C5C0051CBEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FC3BE2A820C5C0051CBEE /* SceneDelegate.swift */; };
 		318FC3C12A820C5C0051CBEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FC3C02A820C5C0051CBEE /* ViewController.swift */; };
@@ -16,6 +18,11 @@
 		318FC3D42A820C5E0051CBEE /* PopUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FC3D32A820C5E0051CBEE /* PopUpTests.swift */; };
 		318FC3DE2A820C5E0051CBEE /* PopUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FC3DD2A820C5E0051CBEE /* PopUpUITests.swift */; };
 		318FC3E02A820C5E0051CBEE /* PopUpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FC3DF2A820C5E0051CBEE /* PopUpUITestsLaunchTests.swift */; };
+		319EDE402A8665F9006AD28C /* SearchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319EDE3F2A8665F9006AD28C /* SearchView.storyboard */; };
+		31DF1A332A87759000CD5A73 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF1A322A87759000CD5A73 /* RankingTableViewCell.swift */; };
+		31DF1A352A8784DA00CD5A73 /* DataSendDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF1A342A8784DA00CD5A73 /* DataSendDelegate.swift */; };
+		31E5C0E52A86681300A9B383 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E5C0E42A86681300A9B383 /* SearchViewController.swift */; };
+		31E5C0E72A866B8100A9B383 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E5C0E62A866B8100A9B383 /* CoreLocation.framework */; };
 		31EEB6B42A83351100ABA9CF /* PopUpStoreCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEB6B32A83351100ABA9CF /* PopUpStoreCVCell.swift */; };
 		31EEB6B62A83352F00ABA9CF /* VisitedPieceCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEB6B52A83352F00ABA9CF /* VisitedPieceCVCell.swift */; };
 		31EEB6B82A83354100ABA9CF /* StoreListCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEB6B72A83354100ABA9CF /* StoreListCVCell.swift */; };
@@ -50,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		311325E42A8728DB006F3140 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		311325E62A8728EC006F3140 /* SearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
 		318FC3B92A820C5C0051CBEE /* PopUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		318FC3BC2A820C5C0051CBEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		318FC3BE2A820C5C0051CBEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +72,11 @@
 		318FC3D92A820C5E0051CBEE /* PopUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		318FC3DD2A820C5E0051CBEE /* PopUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpUITests.swift; sourceTree = "<group>"; };
 		318FC3DF2A820C5E0051CBEE /* PopUpUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		319EDE3F2A8665F9006AD28C /* SearchView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchView.storyboard; sourceTree = "<group>"; };
+		31DF1A322A87759000CD5A73 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
+		31DF1A342A8784DA00CD5A73 /* DataSendDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataSendDelegate.swift; path = PopUp/HomeView/View/Search/DataSendDelegate.swift; sourceTree = SOURCE_ROOT; };
+		31E5C0E42A86681300A9B383 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		31E5C0E62A866B8100A9B383 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		31EEB6B32A83351100ABA9CF /* PopUpStoreCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpStoreCVCell.swift; sourceTree = "<group>"; };
 		31EEB6B52A83352F00ABA9CF /* VisitedPieceCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedPieceCVCell.swift; sourceTree = "<group>"; };
 		31EEB6B72A83354100ABA9CF /* StoreListCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListCVCell.swift; sourceTree = "<group>"; };
@@ -84,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31E5C0E72A866B8100A9B383 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +119,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		311325E32A87257F006F3140 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				31E5C0E42A86681300A9B383 /* SearchViewController.swift */,
+				311325E42A8728DB006F3140 /* FilterViewController.swift */,
+				311325E62A8728EC006F3140 /* SearchDetailViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		318FC3B02A820C5C0051CBEE = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +184,7 @@
 		318FC3EC2A8210CF0051CBEE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				31E5C0E62A866B8100A9B383 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,7 +199,7 @@
 			path = HomeView;
 			sourceTree = "<group>";
 		};
-		31EEB6B02A8334B100ABA9CF /* View */ = {
+		31DF1A302A87756200CD5A73 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				318FC3C22A820C5C0051CBEE /* Main.storyboard */,
@@ -187,12 +213,31 @@
 				5B396C382A87A84300513F0D /* PieceCollectionViewCell.swift */,
 				5B0D94762A88B6C600F361C8 /* PieceDetailTableViewCell.swift */,
 			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		31DF1A312A87756D00CD5A73 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				319EDE3F2A8665F9006AD28C /* SearchView.storyboard */,
+				31DF1A322A87759000CD5A73 /* RankingTableViewCell.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		31EEB6B02A8334B100ABA9CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				31DF1A312A87756D00CD5A73 /* Search */,
+				31DF1A302A87756200CD5A73 /* Main */,
+			);
 			path = View;
 			sourceTree = "<group>";
 		};
 		31EEB6B12A8334BB00ABA9CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				31DF1A342A8784DA00CD5A73 /* DataSendDelegate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +250,8 @@
 				5B396C362A87A63900513F0D /* PieceViewController2.swift */,
 				5B0D94722A87C12A00F361C8 /* PieceNavigationController.swift */,
 				5B0D94742A87CA4900F361C8 /* PieceDetailViewController.swift */,
+				311325E32A87257F006F3140 /* Search */,
+
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -315,6 +362,7 @@
 			files = (
 				318FC3C92A820C5D0051CBEE /* LaunchScreen.storyboard in Resources */,
 				5B396C2D2A87807E00513F0D /* PieceViewController.storyboard in Resources */,
+				319EDE402A8665F9006AD28C /* SearchView.storyboard in Resources */,
 				318FC3C62A820C5D0051CBEE /* Assets.xcassets in Resources */,
 				318FC3C42A820C5C0051CBEE /* Main.storyboard in Resources */,
 			);
@@ -344,7 +392,12 @@
 				5B396C352A87925800513F0D /* PieceTableViewCell.swift in Sources */,
 				318FC3C12A820C5C0051CBEE /* ViewController.swift in Sources */,
 				31EEB6B62A83352F00ABA9CF /* VisitedPieceCVCell.swift in Sources */,
+				31DF1A332A87759000CD5A73 /* RankingTableViewCell.swift in Sources */,
 				31EEB6BA2A83357300ABA9CF /* StoreListTVCell.swift in Sources */,
+				311325E72A8728EC006F3140 /* SearchDetailViewController.swift in Sources */,
+				31E5C0E52A86681300A9B383 /* SearchViewController.swift in Sources */,
+				31DF1A352A8784DA00CD5A73 /* DataSendDelegate.swift in Sources */,
+				311325E52A8728DB006F3140 /* FilterViewController.swift in Sources */,
 				31EEB6B82A83354100ABA9CF /* StoreListCVCell.swift in Sources */,
 				5B0D94772A88B6C600F361C8 /* PieceDetailTableViewCell.swift in Sources */,
 				5B396C332A87872B00513F0D /* PieceViewController.swift in Sources */,
@@ -547,7 +600,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -586,7 +639,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
