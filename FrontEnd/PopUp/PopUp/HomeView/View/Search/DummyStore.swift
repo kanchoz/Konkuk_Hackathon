@@ -21,6 +21,17 @@ class DummyStore{
     ]
 }
 
+class DummyReview{
+    static let review = [
+             ["kind", "parking"],
+             ["event", "goods", "food"],
+             ["event", "goods", "food", "kind"],
+             [],
+             ["enter"],
+             ["waiting", "kind"],
+     ]
+}
+
 
 struct Store{
     let name:String
