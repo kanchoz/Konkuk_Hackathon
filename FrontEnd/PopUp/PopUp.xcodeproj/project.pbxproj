@@ -43,6 +43,7 @@
 		5B0D94882A8917E300F361C8 /* PieceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D94842A8917E300F361C8 /* PieceTableViewCell.swift */; };
 		5B0D94892A8917E300F361C8 /* PieceDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D94852A8917E300F361C8 /* PieceDetailTableViewCell.swift */; };
 		5B0D948A2A8917E300F361C8 /* PieceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D94862A8917E300F361C8 /* PieceViewController.storyboard */; };
+		5B447A4C2A8A4341009488F1 /* PopupFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B447A4B2A8A4341009488F1 /* PopupFilterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		5B0D94842A8917E300F361C8 /* PieceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PieceTableViewCell.swift; path = PopUp/HomeView/View/Main/PieceTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		5B0D94852A8917E300F361C8 /* PieceDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PieceDetailTableViewCell.swift; path = PopUp/HomeView/View/Main/PieceDetailTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		5B0D94862A8917E300F361C8 /* PieceViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = PieceViewController.storyboard; path = PopUp/HomeView/View/Main/PieceViewController.storyboard; sourceTree = SOURCE_ROOT; };
+		5B447A4B2A8A4341009488F1 /* PopupFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupFilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,9 +277,9 @@
 		31EEB6B22A8334C200ABA9CF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5B447A4A2A8A4308009488F1 /* Main */,
 				318C440C2A8A28860036582D /* MyPage */,
 				5B0D94792A89177300F361C8 /* Piece */,
-				318FC3C02A820C5C0051CBEE /* ViewController.swift */,
 				311325E32A87257F006F3140 /* Search */,
 			);
 			path = Controller;
@@ -303,6 +305,15 @@
 				5B0D94862A8917E300F361C8 /* PieceViewController.storyboard */,
 			);
 			path = PieceView;
+			sourceTree = "<group>";
+		};
+		5B447A4A2A8A4308009488F1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				318FC3C02A820C5C0051CBEE /* ViewController.swift */,
+				5B447A4B2A8A4341009488F1 /* PopupFilterViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,6 +463,7 @@
 				31E5C0E52A86681300A9B383 /* SearchViewController.swift in Sources */,
 				31DF1A352A8784DA00CD5A73 /* DataSendDelegate.swift in Sources */,
 				311325E52A8728DB006F3140 /* FilterViewController.swift in Sources */,
+				5B447A4C2A8A4341009488F1 /* PopupFilterViewController.swift in Sources */,
 				31EEB6B82A83354100ABA9CF /* StoreListCVCell.swift in Sources */,
 				5B0D94802A89178E00F361C8 /* PieceViewController.swift in Sources */,
 				318C44112A8A29460036582D /* MyPageViewController.swift in Sources */,

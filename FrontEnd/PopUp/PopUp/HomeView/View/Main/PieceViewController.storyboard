@@ -97,9 +97,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="H7J-LS-NFx" secondAttribute="bottom" constant="15" id="zmr-sz-Q97"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="PieceTab" id="78J-tF-14J">
-                        <inset key="imageInsets" minX="0.0" minY="20" maxX="0.0" maxY="20"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="" image="PieceTab" id="78J-tF-14J"/>
                     <navigationItem key="navigationItem" id="NKC-dV-0I0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
