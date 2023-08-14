@@ -10,6 +10,11 @@
 		31113F8E2A8939D700A82CCD /* StoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31113F8D2A8939D700A82CCD /* StoreInfoViewController.swift */; };
 		311325E52A8728DB006F3140 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311325E42A8728DB006F3140 /* FilterViewController.swift */; };
 		311325E72A8728EC006F3140 /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311325E62A8728EC006F3140 /* SearchDetailViewController.swift */; };
+		318C440F2A8A28A60036582D /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318C440E2A8A28A60036582D /* MyPage.storyboard */; };
+		318C44112A8A29460036582D /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C44102A8A29460036582D /* MyPageViewController.swift */; };
+		318C44132A8A29B20036582D /* PieceContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C44122A8A29B20036582D /* PieceContentViewController.swift */; };
+		318C44152A8A29CB0036582D /* VisitedRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C44142A8A29CB0036582D /* VisitedRecordViewController.swift */; };
+		318C44172A8A29D90036582D /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C44162A8A29D90036582D /* ReviewViewController.swift */; };
 		318FC3BD2A820C5C0051CBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FC3BC2A820C5C0051CBEE /* AppDelegate.swift */; };
 		318FC3BF2A820C5C0051CBEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FC3BE2A820C5C0051CBEE /* SceneDelegate.swift */; };
 		318FC3C12A820C5C0051CBEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FC3C02A820C5C0051CBEE /* ViewController.swift */; };
@@ -61,6 +66,11 @@
 		31113F8D2A8939D700A82CCD /* StoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInfoViewController.swift; sourceTree = "<group>"; };
 		311325E42A8728DB006F3140 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		311325E62A8728EC006F3140 /* SearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
+		318C440E2A8A28A60036582D /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
+		318C44102A8A29460036582D /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		318C44122A8A29B20036582D /* PieceContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceContentViewController.swift; sourceTree = "<group>"; };
+		318C44142A8A29CB0036582D /* VisitedRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedRecordViewController.swift; sourceTree = "<group>"; };
+		318C44162A8A29D90036582D /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		318FC3B92A820C5C0051CBEE /* PopUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		318FC3BC2A820C5C0051CBEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		318FC3BE2A820C5C0051CBEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +140,25 @@
 				31113F8D2A8939D700A82CCD /* StoreInfoViewController.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		318C440C2A8A28860036582D /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				318C44102A8A29460036582D /* MyPageViewController.swift */,
+				318C44122A8A29B20036582D /* PieceContentViewController.swift */,
+				318C44142A8A29CB0036582D /* VisitedRecordViewController.swift */,
+				318C44162A8A29D90036582D /* ReviewViewController.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		318C440D2A8A28930036582D /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				318C440E2A8A28A60036582D /* MyPage.storyboard */,
+			);
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 		318FC3B02A820C5C0051CBEE = {
@@ -226,6 +255,7 @@
 		31EEB6B02A8334B100ABA9CF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				318C440D2A8A28930036582D /* MyPage */,
 				5B0D94822A8917CD00F361C8 /* PieceView */,
 				31DF1A312A87756D00CD5A73 /* Search */,
 				31DF1A302A87756200CD5A73 /* Main */,
@@ -245,6 +275,7 @@
 		31EEB6B22A8334C200ABA9CF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				318C440C2A8A28860036582D /* MyPage */,
 				5B0D94792A89177300F361C8 /* Piece */,
 				318FC3C02A820C5C0051CBEE /* ViewController.swift */,
 				311325E32A87257F006F3140 /* Search */,
@@ -379,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				318FC3C92A820C5D0051CBEE /* LaunchScreen.storyboard in Resources */,
+				318C440F2A8A28A60036582D /* MyPage.storyboard in Resources */,
 				319EDE402A8665F9006AD28C /* SearchView.storyboard in Resources */,
 				5B0D948A2A8917E300F361C8 /* PieceViewController.storyboard in Resources */,
 				318FC3C62A820C5D0051CBEE /* Assets.xcassets in Resources */,
@@ -409,10 +441,12 @@
 			files = (
 				31DF1A372A87D98500CD5A73 /* DummyStore.swift in Sources */,
 				318FC3C12A820C5C0051CBEE /* ViewController.swift in Sources */,
+				318C44172A8A29D90036582D /* ReviewViewController.swift in Sources */,
 				31EEB6B62A83352F00ABA9CF /* VisitedPieceCVCell.swift in Sources */,
 				31DF1A332A87759000CD5A73 /* RankingTableViewCell.swift in Sources */,
 				5B0D94812A89178E00F361C8 /* PieceViewController2.swift in Sources */,
 				31EEB6BA2A83357300ABA9CF /* StoreListTVCell.swift in Sources */,
+				318C44132A8A29B20036582D /* PieceContentViewController.swift in Sources */,
 				5B0D94892A8917E300F361C8 /* PieceDetailTableViewCell.swift in Sources */,
 				311325E72A8728EC006F3140 /* SearchDetailViewController.swift in Sources */,
 				31E5C0E52A86681300A9B383 /* SearchViewController.swift in Sources */,
@@ -420,11 +454,13 @@
 				311325E52A8728DB006F3140 /* FilterViewController.swift in Sources */,
 				31EEB6B82A83354100ABA9CF /* StoreListCVCell.swift in Sources */,
 				5B0D94802A89178E00F361C8 /* PieceViewController.swift in Sources */,
+				318C44112A8A29460036582D /* MyPageViewController.swift in Sources */,
 				5B0D94872A8917E300F361C8 /* PieceCollectionViewCell.swift in Sources */,
 				318FC3BD2A820C5C0051CBEE /* AppDelegate.swift in Sources */,
 				5B0D94882A8917E300F361C8 /* PieceTableViewCell.swift in Sources */,
 				318FC3BF2A820C5C0051CBEE /* SceneDelegate.swift in Sources */,
 				31EEB6BC2A83937D00ABA9CF /* CategoryCVCell.swift in Sources */,
+				318C44152A8A29CB0036582D /* VisitedRecordViewController.swift in Sources */,
 				5B0D947E2A89178E00F361C8 /* PieceNavigationController.swift in Sources */,
 				31EEB6B42A83351100ABA9CF /* PopUpStoreCVCell.swift in Sources */,
 				31113F8E2A8939D700A82CCD /* StoreInfoViewController.swift in Sources */,
