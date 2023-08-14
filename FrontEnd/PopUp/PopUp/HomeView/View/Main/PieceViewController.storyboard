@@ -20,10 +20,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7J-LS-NFx">
-                                <rect key="frame" x="308" y="684" width="70" height="70"/>
+                                <rect key="frame" x="322" y="698" width="56" height="56"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="OEz-nJ-np7"/>
-                                    <constraint firstAttribute="height" constant="70" id="dAr-VG-FsL"/>
+                                    <constraint firstAttribute="width" constant="56" id="OEz-nJ-np7"/>
+                                    <constraint firstAttribute="height" constant="56" id="dAr-VG-FsL"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
@@ -35,7 +35,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="130"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="방문 조각" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snf-nC-3zg">
-                                        <rect key="frame" x="15" y="80" width="88.333333333333329" height="28.666666666666671"/>
+                                        <rect key="frame" x="16" y="85.333333333333329" width="88.333333333333329" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                         <color key="textColor" name="MainOrange"/>
                                         <nil key="highlightedColor"/>
@@ -43,9 +43,9 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="snf-nC-3zg" firstAttribute="leading" secondItem="c48-dN-k6C" secondAttribute="leading" constant="15" id="8RU-oA-Tr7"/>
                                     <constraint firstAttribute="height" constant="130" id="GvQ-AE-E7j"/>
-                                    <constraint firstItem="snf-nC-3zg" firstAttribute="top" secondItem="c48-dN-k6C" secondAttribute="top" constant="80" id="cII-Hj-MoS"/>
+                                    <constraint firstItem="snf-nC-3zg" firstAttribute="leading" secondItem="c48-dN-k6C" secondAttribute="leading" constant="16" id="unB-fn-tpq"/>
+                                    <constraint firstAttribute="bottom" secondItem="snf-nC-3zg" secondAttribute="bottom" constant="16" id="v2B-Jy-VVJ"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DfM-iw-Fdz">
@@ -97,9 +97,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="H7J-LS-NFx" secondAttribute="bottom" constant="15" id="zmr-sz-Q97"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="PieceTab" id="78J-tF-14J">
-                        <inset key="imageInsets" minX="0.0" minY="20" maxX="0.0" maxY="20"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="" image="PieceTab" id="78J-tF-14J"/>
                     <navigationItem key="navigationItem" id="NKC-dV-0I0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -123,7 +121,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="130"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="방문 조각" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVp-iH-cZL">
-                                        <rect key="frame" x="15" y="80" width="88.333333333333329" height="28.666666666666671"/>
+                                        <rect key="frame" x="15" y="85.333333333333329" width="88.333333333333329" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                         <color key="textColor" name="MainOrange"/>
                                         <nil key="highlightedColor"/>
@@ -132,7 +130,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="EHn-vY-9EE"/>
-                                    <constraint firstItem="fVp-iH-cZL" firstAttribute="top" secondItem="ql2-kW-wMS" secondAttribute="top" constant="80" id="KWw-gq-Do7"/>
+                                    <constraint firstAttribute="bottom" secondItem="fVp-iH-cZL" secondAttribute="bottom" constant="16" id="bDI-RK-5fm"/>
                                     <constraint firstItem="fVp-iH-cZL" firstAttribute="leading" secondItem="ql2-kW-wMS" secondAttribute="leading" constant="15" id="uzo-Rk-bmr"/>
                                 </constraints>
                             </view>
@@ -174,10 +172,10 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osv-LN-WMC">
-                                <rect key="frame" x="308" y="684" width="70" height="70"/>
+                                <rect key="frame" x="322" y="698" width="56" height="56"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="fUe-eQ-FdG"/>
-                                    <constraint firstAttribute="height" constant="70" id="wg6-P7-yMc"/>
+                                    <constraint firstAttribute="width" constant="56" id="fUe-eQ-FdG"/>
+                                    <constraint firstAttribute="height" constant="56" id="wg6-P7-yMc"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="pieceBtnCollection"/>
