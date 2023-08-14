@@ -12,9 +12,13 @@
 		311325E72A8728EC006F3140 /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311325E62A8728EC006F3140 /* SearchDetailViewController.swift */; };
 		318C440F2A8A28A60036582D /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318C440E2A8A28A60036582D /* MyPage.storyboard */; };
 		318C44112A8A29460036582D /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C44102A8A29460036582D /* MyPageViewController.swift */; };
-		318C44132A8A29B20036582D /* PieceContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C44122A8A29B20036582D /* PieceContentViewController.swift */; };
 		318C44152A8A29CB0036582D /* VisitedRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C44142A8A29CB0036582D /* VisitedRecordViewController.swift */; };
 		318C44172A8A29D90036582D /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C44162A8A29D90036582D /* ReviewViewController.swift */; };
+		318C44192A8A38FA0036582D /* StoredTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C44182A8A38FA0036582D /* StoredTableViewCell.swift */; };
+		318C441B2A8A738B0036582D /* StoredPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C441A2A8A738B0036582D /* StoredPopUpViewController.swift */; };
+		318C44202A8A795F0036582D /* DeleteBtnDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C441F2A8A795F0036582D /* DeleteBtnDelegate.swift */; };
+		318C44222A8A79D80036582D /* ReviewBtnDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C44212A8A79D80036582D /* ReviewBtnDelegate.swift */; };
+		318C44242A8A7DF60036582D /* VisitedPopUpRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C44232A8A7DF60036582D /* VisitedPopUpRecordTableViewCell.swift */; };
 		318FC3BD2A820C5C0051CBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FC3BC2A820C5C0051CBEE /* AppDelegate.swift */; };
 		318FC3BF2A820C5C0051CBEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FC3BE2A820C5C0051CBEE /* SceneDelegate.swift */; };
 		318FC3C12A820C5C0051CBEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FC3C02A820C5C0051CBEE /* ViewController.swift */; };
@@ -69,9 +73,13 @@
 		311325E62A8728EC006F3140 /* SearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
 		318C440E2A8A28A60036582D /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		318C44102A8A29460036582D /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
-		318C44122A8A29B20036582D /* PieceContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceContentViewController.swift; sourceTree = "<group>"; };
 		318C44142A8A29CB0036582D /* VisitedRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedRecordViewController.swift; sourceTree = "<group>"; };
 		318C44162A8A29D90036582D /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		318C44182A8A38FA0036582D /* StoredTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredTableViewCell.swift; sourceTree = "<group>"; };
+		318C441A2A8A738B0036582D /* StoredPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredPopUpViewController.swift; sourceTree = "<group>"; };
+		318C441F2A8A795F0036582D /* DeleteBtnDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteBtnDelegate.swift; sourceTree = "<group>"; };
+		318C44212A8A79D80036582D /* ReviewBtnDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewBtnDelegate.swift; sourceTree = "<group>"; };
+		318C44232A8A7DF60036582D /* VisitedPopUpRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedPopUpRecordTableViewCell.swift; sourceTree = "<group>"; };
 		318FC3B92A820C5C0051CBEE /* PopUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		318FC3BC2A820C5C0051CBEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		318FC3BE2A820C5C0051CBEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				318C44102A8A29460036582D /* MyPageViewController.swift */,
-				318C44122A8A29B20036582D /* PieceContentViewController.swift */,
+				318C441A2A8A738B0036582D /* StoredPopUpViewController.swift */,
 				318C44142A8A29CB0036582D /* VisitedRecordViewController.swift */,
 				318C44162A8A29D90036582D /* ReviewViewController.swift */,
 			);
@@ -159,6 +167,17 @@
 			isa = PBXGroup;
 			children = (
 				318C440E2A8A28A60036582D /* MyPage.storyboard */,
+				318C44182A8A38FA0036582D /* StoredTableViewCell.swift */,
+				318C44232A8A7DF60036582D /* VisitedPopUpRecordTableViewCell.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		318C441C2A8A79360036582D /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				318C441F2A8A795F0036582D /* DeleteBtnDelegate.swift */,
+				318C44212A8A79D80036582D /* ReviewBtnDelegate.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -268,6 +287,7 @@
 		31EEB6B12A8334BB00ABA9CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				318C441C2A8A79360036582D /* MyPage */,
 				31DF1A342A8784DA00CD5A73 /* DataSendDelegate.swift */,
 				31DF1A362A87D98500CD5A73 /* DummyStore.swift */,
 			);
@@ -450,6 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				318C44222A8A79D80036582D /* ReviewBtnDelegate.swift in Sources */,
 				31DF1A372A87D98500CD5A73 /* DummyStore.swift in Sources */,
 				318FC3C12A820C5C0051CBEE /* ViewController.swift in Sources */,
 				318C44172A8A29D90036582D /* ReviewViewController.swift in Sources */,
@@ -457,24 +478,27 @@
 				31DF1A332A87759000CD5A73 /* RankingTableViewCell.swift in Sources */,
 				5B0D94812A89178E00F361C8 /* PieceViewController2.swift in Sources */,
 				31EEB6BA2A83357300ABA9CF /* StoreListTVCell.swift in Sources */,
-				318C44132A8A29B20036582D /* PieceContentViewController.swift in Sources */,
 				5B0D94892A8917E300F361C8 /* PieceDetailTableViewCell.swift in Sources */,
 				311325E72A8728EC006F3140 /* SearchDetailViewController.swift in Sources */,
 				31E5C0E52A86681300A9B383 /* SearchViewController.swift in Sources */,
 				31DF1A352A8784DA00CD5A73 /* DataSendDelegate.swift in Sources */,
 				311325E52A8728DB006F3140 /* FilterViewController.swift in Sources */,
+				318C44202A8A795F0036582D /* DeleteBtnDelegate.swift in Sources */,
 				5B447A4C2A8A4341009488F1 /* PopupFilterViewController.swift in Sources */,
 				31EEB6B82A83354100ABA9CF /* StoreListCVCell.swift in Sources */,
 				5B0D94802A89178E00F361C8 /* PieceViewController.swift in Sources */,
 				318C44112A8A29460036582D /* MyPageViewController.swift in Sources */,
 				5B0D94872A8917E300F361C8 /* PieceCollectionViewCell.swift in Sources */,
+				318C44242A8A7DF60036582D /* VisitedPopUpRecordTableViewCell.swift in Sources */,
 				318FC3BD2A820C5C0051CBEE /* AppDelegate.swift in Sources */,
 				5B0D94882A8917E300F361C8 /* PieceTableViewCell.swift in Sources */,
 				318FC3BF2A820C5C0051CBEE /* SceneDelegate.swift in Sources */,
 				31EEB6BC2A83937D00ABA9CF /* CategoryCVCell.swift in Sources */,
 				318C44152A8A29CB0036582D /* VisitedRecordViewController.swift in Sources */,
+				318C44192A8A38FA0036582D /* StoredTableViewCell.swift in Sources */,
 				5B0D947E2A89178E00F361C8 /* PieceNavigationController.swift in Sources */,
 				31EEB6B42A83351100ABA9CF /* PopUpStoreCVCell.swift in Sources */,
+				318C441B2A8A738B0036582D /* StoredPopUpViewController.swift in Sources */,
 				31113F8E2A8939D700A82CCD /* StoreInfoViewController.swift in Sources */,
 				5B0D947F2A89178E00F361C8 /* PieceDetailViewController.swift in Sources */,
 			);

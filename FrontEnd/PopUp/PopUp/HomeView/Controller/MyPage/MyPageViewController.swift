@@ -9,6 +9,8 @@ import UIKit
 
 class MyPageViewController: UIViewController {
 
+    @IBOutlet var nameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,14 +18,19 @@ class MyPageViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func storedPopUpBtnTapped(_ sender: Any) {
+        let storedPopUpVC = self.storyboard?.instantiateViewController(identifier: "storedPopUp") as! StoredPopUpViewController
+        
+        storedPopUpVC.modalPresentationStyle = .fullScreen
+        self.present(storedPopUpVC, animated: true, completion: nil)
     }
-    */
+    
+    @IBAction func visitedPopUpBtnTapped(_ sender: Any) {
+        let visitedRecordVC = self.storyboard?.instantiateViewController(identifier: "visitedRecord") as! VisitedRecordViewController
+        
+        visitedRecordVC.modalPresentationStyle = .fullScreen
+        self.present(visitedRecordVC, animated: true, completion: nil)
+    }
+
 
 }
