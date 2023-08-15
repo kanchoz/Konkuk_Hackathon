@@ -9,7 +9,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class SearchViewController: UIViewController, DataSendDelegate{
+class SearchViewController: UIViewController, DataSendDelegate, UIViewControllerTransitioningDelegate{
     
     @IBOutlet var mapView: MKMapView!
     
@@ -243,15 +243,16 @@ extension SearchViewController: MKMapViewDelegate, CLLocationManagerDelegate{
                 
             }
             else {
-                let storeVC = self.storyboard?.instantiateViewController(identifier: "StoreInfoVC") as! StoreInfoViewController
+                //                let storeVC = self.storyboard?.instantiateViewController(identifier: "StoreInfoVC") as! StoreInfoViewController
                 
+                let storeVC = self.storyboard?.instantiateViewController(identifier: "StoreInfoVC") as! StoreInfoViewController
                 storeVC.modalPresentationStyle = .pageSheet
                 
                 if #available(iOS 15.0, *) {
                     if let sheet = storeVC.sheetPresentationController {
                         sheet.delegate = self
                         //지원할 크기 지정
-                        sheet.detents = [.medium(), .large()]
+                        sheet.detents = [.medium()]
                         //뒷 배경 흐리게 안함
                         sheet.largestUndimmedDetentIdentifier = .medium
                         //시트 상단에 그래버 표시
@@ -270,6 +271,6 @@ extension SearchViewController: MKMapViewDelegate, CLLocationManagerDelegate{
 // MARK: - half modal을 위한 extension
 extension SearchViewController: UISheetPresentationControllerDelegate{
     func sheetPresentationControllerDidChangeSelectedDetentIdentifier(_ sheetPresentationController: UISheetPresentationController) {
-            print(sheetPresentationController.selectedDetentIdentifier == .large ? "large" : "medium")
-        }
+        print(sheetPresentationController.selectedDetentIdentifier == .large ? "large" : "medium")
+    }
 }
