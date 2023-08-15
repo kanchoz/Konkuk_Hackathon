@@ -58,6 +58,8 @@
 		5B9BF4DB2A8BA58500F564CC /* PieceSaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BF4DA2A8BA58500F564CC /* PieceSaveViewController.swift */; };
 		5B9BF4DD2A8BC64D00F564CC /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BF4DC2A8BC64D00F564CC /* QRViewController.swift */; };
 		5B9BF4DF2A8BC7AD00F564CC /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BF4DE2A8BC7AD00F564CC /* CustomPresentationController.swift */; };
+		5B9BF4E12A8BD0CC00F564CC /* RecommandPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BF4E02A8BD0CC00F564CC /* RecommandPopupViewController.swift */; };
+		5B9BF4E32A8BD2DE00F564CC /* RecommandCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BF4E22A8BD2DE00F564CC /* RecommandCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +135,8 @@
 		5B9BF4DA2A8BA58500F564CC /* PieceSaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceSaveViewController.swift; sourceTree = "<group>"; };
 		5B9BF4DC2A8BC64D00F564CC /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		5B9BF4DE2A8BC7AD00F564CC /* CustomPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
+		5B9BF4E02A8BD0CC00F564CC /* RecommandPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandPopupViewController.swift; sourceTree = "<group>"; };
+		5B9BF4E22A8BD2DE00F564CC /* RecommandCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -360,6 +364,8 @@
 				5B447A4B2A8A4341009488F1 /* PopupFilterViewController.swift */,
 				5B9BF4DC2A8BC64D00F564CC /* QRViewController.swift */,
 				5B9BF4DE2A8BC7AD00F564CC /* CustomPresentationController.swift */,
+				5B9BF4E02A8BD0CC00F564CC /* RecommandPopupViewController.swift */,
+				5B9BF4E22A8BD2DE00F564CC /* RecommandCollectionViewCell.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -536,6 +542,7 @@
 				311325E72A8728EC006F3140 /* SearchDetailViewController.swift in Sources */,
 				31E5C0E52A86681300A9B383 /* SearchViewController.swift in Sources */,
 				31DF1A352A8784DA00CD5A73 /* DataSendDelegate.swift in Sources */,
+				5B9BF4E32A8BD2DE00F564CC /* RecommandCollectionViewCell.swift in Sources */,
 				311325E52A8728DB006F3140 /* FilterViewController.swift in Sources */,
 				318C44202A8A795F0036582D /* DeleteBtnDelegate.swift in Sources */,
 				5B447A4C2A8A4341009488F1 /* PopupFilterViewController.swift in Sources */,
@@ -544,6 +551,7 @@
 				5B9BF4DD2A8BC64D00F564CC /* QRViewController.swift in Sources */,
 				5B0D94802A89178E00F361C8 /* PieceViewController.swift in Sources */,
 				318C44112A8A29460036582D /* MyPageViewController.swift in Sources */,
+				5B9BF4E12A8BD0CC00F564CC /* RecommandPopupViewController.swift in Sources */,
 				5B0D94872A8917E300F361C8 /* PieceCollectionViewCell.swift in Sources */,
 				318C44242A8A7DF60036582D /* VisitedPopUpRecordTableViewCell.swift in Sources */,
 				318FC3BD2A820C5C0051CBEE /* AppDelegate.swift in Sources */,

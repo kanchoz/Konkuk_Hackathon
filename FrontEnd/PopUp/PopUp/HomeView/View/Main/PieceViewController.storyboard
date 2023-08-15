@@ -605,7 +605,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vUV-dD-GGl">
-                                <rect key="frame" x="0.0" y="130" width="393" height="579"/>
+                                <rect key="frame" x="10" y="130" width="373" height="579"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rh9-S0-8eU">
                                     <size key="itemSize" width="170" height="230"/>
@@ -658,9 +658,9 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ql2-kW-wMS" firstAttribute="top" secondItem="4d9-hZ-DGW" secondAttribute="top" id="4b9-R8-Onc"/>
-                            <constraint firstItem="vUV-dD-GGl" firstAttribute="leading" secondItem="RBh-mL-bzN" secondAttribute="leading" id="JPR-pr-8p1"/>
+                            <constraint firstItem="vUV-dD-GGl" firstAttribute="leading" secondItem="RBh-mL-bzN" secondAttribute="leading" constant="10" id="JPR-pr-8p1"/>
                             <constraint firstItem="ql2-kW-wMS" firstAttribute="leading" secondItem="RBh-mL-bzN" secondAttribute="leading" id="Ya6-O2-Ufn"/>
-                            <constraint firstItem="RBh-mL-bzN" firstAttribute="trailing" secondItem="vUV-dD-GGl" secondAttribute="trailing" id="ceq-X6-NZh"/>
+                            <constraint firstItem="RBh-mL-bzN" firstAttribute="trailing" secondItem="vUV-dD-GGl" secondAttribute="trailing" constant="10" id="ceq-X6-NZh"/>
                             <constraint firstItem="vUV-dD-GGl" firstAttribute="top" secondItem="ql2-kW-wMS" secondAttribute="bottom" id="g83-LL-vx3"/>
                             <constraint firstItem="RBh-mL-bzN" firstAttribute="trailing" secondItem="ql2-kW-wMS" secondAttribute="trailing" id="i18-PH-76b"/>
                             <constraint firstItem="RBh-mL-bzN" firstAttribute="trailing" secondItem="osv-LN-WMC" secondAttribute="trailing" constant="15" id="itL-B1-Qwq"/>

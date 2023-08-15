@@ -66,9 +66,9 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
     @objc func viewTapped(_ sender: UITapGestureRecognizer) {
         // 뷰를 탭했을 때 실행될 코드
         print("tapped")
-        if let nextVC = storyboard?.instantiateViewController(withIdentifier: "PieceInfoViewController") as? PieceInfoViewController {
+        if let nextVC = storyboard?.instantiateViewController(withIdentifier: "RecommandPopupViewController") as? RecommandPopupViewController {
             nextVC.modalPresentationStyle = .overFullScreen
-            present(nextVC, animated: false, completion: nil)
+            present(nextVC, animated: true, completion: nil)
         }
     }
 
