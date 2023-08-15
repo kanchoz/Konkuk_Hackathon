@@ -25,6 +25,8 @@ class PieceSaveViewController: UIViewController {
    
     var myImageName: String = ""
     var cardImageName: String = ""
+    
+    var mgdImage: UIImage?
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +59,7 @@ class PieceSaveViewController: UIViewController {
                 PHAssetChangeRequest.creationRequestForAsset(from: mergedImage)
             }, completionHandler: { success, error in
                 if success {
+                    self.mgdImage = mergedImage
                     print("이미지가 사진 앨범에 저장되었습니다.")
                     self.showToast(message: "사진이 저장되었습니다")
                 } else {
@@ -97,6 +100,17 @@ class PieceSaveViewController: UIViewController {
     
     @IBAction func shareBtnTapped(_ sender: Any) {
         
+        let shareText: String = "방문조각"
+        let shareImage = mgdImage // 이미지 객체를 따로 저장
+
+        let activityViewController = UIActivityViewController(activityItems: [shareText, shareImage].compactMap { $0 }, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        activityViewController.excludedActivityTypes = [.postToTwitter, .postToWeibo, .postToVimeo, .postToFlickr, .postToFacebook, .postToTencentWeibo]
+
+        self.present(activityViewController, animated: true, completion: nil)
+
     }
+    
+    
     
 }
