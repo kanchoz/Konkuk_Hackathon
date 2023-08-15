@@ -20,8 +20,7 @@ class StoredPopUpViewController: UIViewController {
     
     @IBAction func backBtnTapped(_ sender: Any) {
         dismiss(animated: true)
-    }
-    
+    }    
 }
 
 extension StoredPopUpViewController: UITableViewDelegate, UITableViewDataSource{

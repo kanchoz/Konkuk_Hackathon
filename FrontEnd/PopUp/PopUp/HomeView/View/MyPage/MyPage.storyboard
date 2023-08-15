@@ -515,6 +515,7 @@
                                                 <constraint firstItem="5Rk-zD-tE7" firstAttribute="top" secondItem="ql3-Ed-lW8" secondAttribute="top" id="whT-GF-9Uw"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="BackGround"/>
                                         <connections>
                                             <outlet property="category" destination="iWB-YW-sfw" id="X91-Wi-qQm"/>
                                             <outlet property="date" destination="1yO-v6-SNl" id="7dl-uX-Yyu"/>
