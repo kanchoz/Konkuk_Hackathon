@@ -511,6 +511,7 @@
                         <outlet property="categoryCV" destination="3Ga-Um-tAG" id="gQo-4g-uUm"/>
                         <outlet property="filterSV" destination="X4g-KC-B3n" id="b2b-Rb-KuP"/>
                         <outlet property="popUpStoreCV" destination="J83-ZJ-veg" id="IAG-bf-o0B"/>
+                        <outlet property="similarView" destination="4Ms-57-K5t" id="kj7-tu-Tlz"/>
                         <outlet property="storeListCV" destination="R7S-8X-ywR" id="TAD-Dc-lby"/>
                         <outlet property="visitedPieceCV" destination="qtV-v8-6Il" id="zdN-Gz-DxX"/>
                     </connections>
@@ -1149,7 +1150,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JKT-Z6-vcX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2888" y="137"/>
+            <point key="canvasLocation" x="3156" y="146"/>
+        </scene>
+        <!--PieceInfoViewController-->
+        <scene sceneID="gEl-fP-sD1">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="PieceInfoViewController" storyboardName="PieceInfoViewController" referencedIdentifier="PieceInfoViewController" id="egD-6u-lKn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ga-vh-s8D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2452" y="-105"/>
         </scene>
     </scenes>
     <resources>
