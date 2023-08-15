@@ -13,6 +13,7 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
     
     
 
+    @IBOutlet var similarView: UIImageView!
     @IBOutlet var filterSV: UIScrollView!
     @IBOutlet var popUpStoreCV: UICollectionView! //이번 주 핫한 팝업 CV
     @IBOutlet var visitedPieceCV: UICollectionView! //내가 모은 방문 조각 CV
@@ -51,9 +52,25 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
         
         filterSV.delegate = self
         
+        similarView.isUserInteractionEnabled = true
+
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewTapped(_:)))
+        similarView.addGestureRecognizer(tapGestureRecognizer)
+
+        
         
         setupSVBtn()
     }
+    
+    @objc func viewTapped(_ sender: UITapGestureRecognizer) {
+        // 뷰를 탭했을 때 실행될 코드
+        print("tapped")
+        if let nextVC = storyboard?.instantiateViewController(withIdentifier: "PieceInfoViewController") as? PieceInfoViewController {
+            nextVC.modalPresentationStyle = .overFullScreen
+            present(nextVC, animated: false, completion: nil)
+        }
+    }
+
     
     func setupSVBtn(){
         filterSV.subviews.forEach { $0.removeFromSuperview() }

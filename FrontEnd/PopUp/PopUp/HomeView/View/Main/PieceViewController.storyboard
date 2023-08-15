@@ -166,7 +166,7 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="180" height="240"/>
                                         <connections>
-                                            <outlet property="pieceImg" destination="5lz-5e-uCM" id="eHA-Ar-afV"/>
+                                            <outlet property="pieceImg" destination="5lz-5e-uCM" id="8VN-lc-78y"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

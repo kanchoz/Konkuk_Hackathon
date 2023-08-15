@@ -8,6 +8,7 @@
 import UIKit
 
 class PieceCollectionViewCell: UICollectionViewCell {
+ 
     @IBOutlet var pieceImg: UIImageView!
     
 }
