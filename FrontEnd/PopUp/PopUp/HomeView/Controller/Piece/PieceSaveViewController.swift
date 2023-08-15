@@ -45,6 +45,7 @@ class PieceSaveViewController: UIViewController {
     }
     
 
+
     @IBAction func saveBtnTapped(_ sender: UIButton) {
         // 이미지 뷰를 합칠 이미지 크기로 합성
         UIGraphicsBeginImageContext(myImageView.frame.size)

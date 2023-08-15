@@ -68,5 +68,10 @@ class PieceViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return 500
     }
 
-
+    @IBAction func PieceBtn(_ sender: UIButton) {
+        let nextVC = storyboard!.instantiateViewController(withIdentifier: "MakePieceViewController") as! MakePieceViewController
+        nextVC.modalPresentationStyle = .overFullScreen
+        present(nextVC, animated: false)
+    }
+    
 }

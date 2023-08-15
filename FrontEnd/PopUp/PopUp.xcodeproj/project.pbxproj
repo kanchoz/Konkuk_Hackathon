@@ -56,6 +56,8 @@
 		5B9BF4D72A8B83E400F564CC /* MakePieceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BF4D62A8B83E400F564CC /* MakePieceTableViewCell.swift */; };
 		5B9BF4D92A8B873400F564CC /* MakePiecePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BF4D82A8B873400F564CC /* MakePiecePictureViewController.swift */; };
 		5B9BF4DB2A8BA58500F564CC /* PieceSaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BF4DA2A8BA58500F564CC /* PieceSaveViewController.swift */; };
+		5B9BF4DD2A8BC64D00F564CC /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BF4DC2A8BC64D00F564CC /* QRViewController.swift */; };
+		5B9BF4DF2A8BC7AD00F564CC /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BF4DE2A8BC7AD00F564CC /* CustomPresentationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +131,8 @@
 		5B9BF4D62A8B83E400F564CC /* MakePieceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePieceTableViewCell.swift; sourceTree = "<group>"; };
 		5B9BF4D82A8B873400F564CC /* MakePiecePictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePiecePictureViewController.swift; sourceTree = "<group>"; };
 		5B9BF4DA2A8BA58500F564CC /* PieceSaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceSaveViewController.swift; sourceTree = "<group>"; };
+		5B9BF4DC2A8BC64D00F564CC /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		5B9BF4DE2A8BC7AD00F564CC /* CustomPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -354,6 +358,8 @@
 			children = (
 				318FC3C02A820C5C0051CBEE /* ViewController.swift */,
 				5B447A4B2A8A4341009488F1 /* PopupFilterViewController.swift */,
+				5B9BF4DC2A8BC64D00F564CC /* QRViewController.swift */,
+				5B9BF4DE2A8BC7AD00F564CC /* CustomPresentationController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -512,15 +518,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				318C44222A8A79D80036582D /* ReviewBtnDelegate.swift in Sources */,
-
 				5B9BF4D72A8B83E400F564CC /* MakePieceTableViewCell.swift in Sources */,
-
 				31DF1A372A87D98500CD5A73 /* DummyStore.swift in Sources */,
 				318FC3C12A820C5C0051CBEE /* ViewController.swift in Sources */,
 				5B9BF4DB2A8BA58500F564CC /* PieceSaveViewController.swift in Sources */,
 				318C44172A8A29D90036582D /* ReviewViewController.swift in Sources */,
 				31EEB6B62A83352F00ABA9CF /* VisitedPieceCVCell.swift in Sources */,
 				31DF1A332A87759000CD5A73 /* RankingTableViewCell.swift in Sources */,
+				5B9BF4DF2A8BC7AD00F564CC /* CustomPresentationController.swift in Sources */,
 				5B3156B72A8B7C3200B69093 /* MakePieceViewController.swift in Sources */,
 				5B0D94812A89178E00F361C8 /* PieceViewController2.swift in Sources */,
 				31EEB6BA2A83357300ABA9CF /* StoreListTVCell.swift in Sources */,
@@ -536,6 +541,7 @@
 				5B447A4C2A8A4341009488F1 /* PopupFilterViewController.swift in Sources */,
 				31EEB6B82A83354100ABA9CF /* StoreListCVCell.swift in Sources */,
 				5B9BF4D92A8B873400F564CC /* MakePiecePictureViewController.swift in Sources */,
+				5B9BF4DD2A8BC64D00F564CC /* QRViewController.swift in Sources */,
 				5B0D94802A89178E00F361C8 /* PieceViewController.swift in Sources */,
 				318C44112A8A29460036582D /* MyPageViewController.swift in Sources */,
 				5B0D94872A8917E300F361C8 /* PieceCollectionViewCell.swift in Sources */,

@@ -41,12 +41,12 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQL-hM-7h3">
-                                        <rect key="frame" x="272" y="79" width="75" height="35"/>
+                                        <rect key="frame" x="276" y="79" width="75" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                         <connections>
-                                            <segue destination="yb7-0n-i1u" kind="show" id="1UQ-Xu-jzF"/>
+                                            <action selector="PieceBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pkQ-lx-K1j"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -123,7 +123,7 @@
             <objects>
                 <viewController storyboardIdentifier="MakePieceViewController" id="yb7-0n-i1u" customClass="MakePieceViewController" customModule="PopUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="89V-bb-bon">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVg-tY-LuO">
@@ -133,6 +133,9 @@
                                         <rect key="frame" x="0.0" y="67" width="75" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="backBtnTapped:" destination="yb7-0n-i1u" eventType="touchUpInside" id="bIx-Kp-nPm"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="방문조각 만들기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xU9-0c-a36">
                                         <rect key="frame" x="96.666666666666686" y="71" width="200" height="24"/>
@@ -176,18 +179,20 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Y8Y-wU-f6r">
-                                <rect key="frame" x="0.0" y="220" width="393" height="622"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="220" width="393" height="598"/>
+                                <color key="backgroundColor" name="BackGround"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MakePieceTableViewCell" rowHeight="280" id="Cmk-f5-6nM" customClass="MakePieceTableViewCell" customModule="PopUp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="280"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MakePieceTableViewCell" rowHeight="330" id="Cmk-f5-6nM" customClass="MakePieceTableViewCell" customModule="PopUp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="330"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cmk-f5-6nM" id="xFI-Yy-2E2">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="280"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="330"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Njz-RV-T3a">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="280"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="330"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023.08.01" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toq-6Q-555">
                                                             <rect key="frame" x="10" y="20" width="383" height="20"/>
@@ -253,17 +258,26 @@
                                                                 <action selector="makeBtnTapped:" destination="yb7-0n-i1u" eventType="touchUpInside" id="lM3-xA-WTI"/>
                                                             </connections>
                                                         </button>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWF-Ig-JKC">
+                                                            <rect key="frame" x="10" y="319" width="373" height="1"/>
+                                                            <color key="backgroundColor" name="G2"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="VMV-BT-MH3"/>
+                                                            </constraints>
+                                                        </view>
                                                     </subviews>
                                                     <color key="backgroundColor" name="BackGround"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="s5C-Bi-0qd" secondAttribute="trailing" constant="10" id="4pT-eZ-pvE"/>
                                                         <constraint firstItem="yvB-aG-TmI" firstAttribute="top" secondItem="toq-6Q-555" secondAttribute="bottom" id="Ax2-VK-bu5"/>
                                                         <constraint firstItem="toq-6Q-555" firstAttribute="leading" secondItem="Njz-RV-T3a" secondAttribute="leading" constant="10" id="DTP-gk-kdy"/>
+                                                        <constraint firstAttribute="bottom" secondItem="hWF-Ig-JKC" secondAttribute="bottom" constant="10" id="KUJ-VF-0F0"/>
                                                         <constraint firstAttribute="trailing" secondItem="ZG5-wY-UJo" secondAttribute="trailing" constant="10" id="LAy-V1-MDx"/>
                                                         <constraint firstItem="8WF-Cf-scE" firstAttribute="leading" secondItem="yvB-aG-TmI" secondAttribute="trailing" constant="10" id="UwU-hg-JNV"/>
                                                         <constraint firstItem="E2C-qc-THX" firstAttribute="leading" secondItem="yvB-aG-TmI" secondAttribute="trailing" constant="10" id="W5H-RL-wEd"/>
                                                         <constraint firstItem="yvB-aG-TmI" firstAttribute="leading" secondItem="Njz-RV-T3a" secondAttribute="leading" constant="10" id="XIX-tV-Wfa"/>
                                                         <constraint firstItem="pFo-ts-rcP" firstAttribute="leading" secondItem="yvB-aG-TmI" secondAttribute="trailing" constant="10" id="dYa-4a-03Z"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hWF-Ig-JKC" secondAttribute="trailing" constant="10" id="eV2-t0-ghY"/>
                                                         <constraint firstItem="s5C-Bi-0qd" firstAttribute="top" secondItem="E2C-qc-THX" secondAttribute="bottom" constant="10" id="fB0-xT-7tH"/>
                                                         <constraint firstItem="pFo-ts-rcP" firstAttribute="top" secondItem="toq-6Q-555" secondAttribute="bottom" constant="15" id="hel-ex-iad"/>
                                                         <constraint firstItem="8WF-Cf-scE" firstAttribute="top" secondItem="pFo-ts-rcP" secondAttribute="bottom" constant="10" id="i6J-RH-3Cg"/>
@@ -271,6 +285,7 @@
                                                         <constraint firstItem="toq-6Q-555" firstAttribute="top" secondItem="Njz-RV-T3a" secondAttribute="top" constant="20" id="n7B-hM-J64"/>
                                                         <constraint firstItem="s5C-Bi-0qd" firstAttribute="leading" secondItem="yvB-aG-TmI" secondAttribute="trailing" constant="10" id="orv-dB-hf8"/>
                                                         <constraint firstItem="ZG5-wY-UJo" firstAttribute="top" secondItem="yvB-aG-TmI" secondAttribute="bottom" constant="15" id="qzI-1E-52o"/>
+                                                        <constraint firstItem="hWF-Ig-JKC" firstAttribute="leading" secondItem="Njz-RV-T3a" secondAttribute="leading" constant="10" id="r5L-Ay-CNR"/>
                                                         <constraint firstItem="E2C-qc-THX" firstAttribute="top" secondItem="8WF-Cf-scE" secondAttribute="bottom" constant="10" id="rc8-ny-2Sb"/>
                                                         <constraint firstAttribute="trailing" secondItem="8WF-Cf-scE" secondAttribute="trailing" constant="10" id="tME-l1-b4g"/>
                                                         <constraint firstAttribute="trailing" secondItem="E2C-qc-THX" secondAttribute="trailing" constant="10" id="v0r-jF-Blj"/>
@@ -289,6 +304,7 @@
                                             <outlet property="cateLabel" destination="pFo-ts-rcP" id="w3F-Sz-dF9"/>
                                             <outlet property="dateLabel" destination="toq-6Q-555" id="4t8-fS-SI1"/>
                                             <outlet property="durationLabel" destination="s5C-Bi-0qd" id="zKq-ay-BE4"/>
+                                            <outlet property="lineView" destination="hWF-Ig-JKC" id="TNC-If-0NF"/>
                                             <outlet property="locationLabel" destination="E2C-qc-THX" id="79M-pq-vef"/>
                                             <outlet property="nameLabel" destination="8WF-Cf-scE" id="CxV-bn-Mta"/>
                                             <outlet property="pieceImg" destination="yvB-aG-TmI" id="uWy-gh-AiA"/>
@@ -320,7 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0zO-om-aQZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5497" y="746"/>
+            <point key="canvasLocation" x="5496.9465648854957" y="745.77464788732402"/>
         </scene>
         <!--Make Piece Picture View Controller-->
         <scene sceneID="jQ5-kp-5Q3">

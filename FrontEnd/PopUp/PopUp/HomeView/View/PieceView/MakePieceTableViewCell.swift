@@ -9,6 +9,7 @@ import UIKit
 
 class MakePieceTableViewCell: UITableViewCell  {
 
+    @IBOutlet var lineView: UIView!
     @IBOutlet var pieceImg: UIImageView!
     @IBOutlet var durationLabel: UILabel!
     @IBOutlet var locationLabel: UILabel!
