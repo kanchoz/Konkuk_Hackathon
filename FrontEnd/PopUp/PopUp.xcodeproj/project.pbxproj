@@ -11,6 +11,8 @@
 		311189692A8BCCF700C27E3E /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311189682A8BCCF700C27E3E /* LoginView.storyboard */; };
 		3111896B2A8BD1A700C27E3E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111896A2A8BD1A700C27E3E /* NotificationViewController.swift */; };
 		3111896D2A8BD24F00C27E3E /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111896C2A8BD24F00C27E3E /* NotificationTableViewCell.swift */; };
+		311189742A8BDAAB00C27E3E /* AfterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311189732A8BDAAB00C27E3E /* AfterLoginViewController.swift */; };
+		311189762A8BDAC700C27E3E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311189752A8BDAC700C27E3E /* LoginViewController.swift */; };
 		311325E52A8728DB006F3140 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311325E42A8728DB006F3140 /* FilterViewController.swift */; };
 		311325E72A8728EC006F3140 /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311325E62A8728EC006F3140 /* SearchDetailViewController.swift */; };
 		318C440F2A8A28A60036582D /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318C440E2A8A28A60036582D /* MyPage.storyboard */; };
@@ -42,8 +44,6 @@
 		31EEB6B82A83354100ABA9CF /* StoreListCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEB6B72A83354100ABA9CF /* StoreListCVCell.swift */; };
 		31EEB6BA2A83357300ABA9CF /* StoreListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEB6B92A83357300ABA9CF /* StoreListTVCell.swift */; };
 		31EEB6BC2A83937D00ABA9CF /* CategoryCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEB6BB2A83937D00ABA9CF /* CategoryCVCell.swift */; };
-		31F3A8DF2A8BB87400166270 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3A8DE2A8BB87400166270 /* LoginViewController.swift */; };
-		31F3A8E12A8BB88500166270 /* AfterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3A8E02A8BB88500166270 /* AfterLoginViewController.swift */; };
 		5B0D947E2A89178E00F361C8 /* PieceNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D947A2A89178E00F361C8 /* PieceNavigationController.swift */; };
 		5B0D947F2A89178E00F361C8 /* PieceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D947B2A89178E00F361C8 /* PieceDetailViewController.swift */; };
 		5B0D94802A89178E00F361C8 /* PieceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D947C2A89178E00F361C8 /* PieceViewController.swift */; };
@@ -89,6 +89,8 @@
 		311189682A8BCCF700C27E3E /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
 		3111896A2A8BD1A700C27E3E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		3111896C2A8BD24F00C27E3E /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		311189732A8BDAAB00C27E3E /* AfterLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterLoginViewController.swift; sourceTree = "<group>"; };
+		311189752A8BDAC700C27E3E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		311325E42A8728DB006F3140 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		311325E62A8728EC006F3140 /* SearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
 		318C440E2A8A28A60036582D /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
@@ -124,8 +126,6 @@
 		31EEB6B72A83354100ABA9CF /* StoreListCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListCVCell.swift; sourceTree = "<group>"; };
 		31EEB6B92A83357300ABA9CF /* StoreListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListTVCell.swift; sourceTree = "<group>"; };
 		31EEB6BB2A83937D00ABA9CF /* CategoryCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCVCell.swift; sourceTree = "<group>"; };
-		31F3A8DE2A8BB87400166270 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../../../../../../../../../LoginViewController.swift; sourceTree = "<group>"; };
-		31F3A8E02A8BB88500166270 /* AfterLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AfterLoginViewController.swift; path = ../../../../../../../../../AfterLoginViewController.swift; sourceTree = "<group>"; };
 		5B0D947A2A89178E00F361C8 /* PieceNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieceNavigationController.swift; sourceTree = "<group>"; };
 		5B0D947B2A89178E00F361C8 /* PieceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieceDetailViewController.swift; sourceTree = "<group>"; };
 		5B0D947C2A89178E00F361C8 /* PieceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieceViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +175,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		311189722A8BDA6700C27E3E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				311189732A8BDAAB00C27E3E /* AfterLoginViewController.swift */,
+				311189752A8BDAC700C27E3E /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		311325E32A87257F006F3140 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,7 +343,7 @@
 		31EEB6B22A8334C200ABA9CF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				31F3A8DD2A8BB85C00166270 /* Login */,
+				311189722A8BDA6700C27E3E /* Login */,
 				5B447A522A8A78B0009488F1 /* PieceInfo */,
 				5B447A4A2A8A4308009488F1 /* Main */,
 				318C440C2A8A28860036582D /* MyPage */,
@@ -350,15 +359,6 @@
 				311189682A8BCCF700C27E3E /* LoginView.storyboard */,
 			);
 			path = LoginView;
-			sourceTree = "<group>";
-		};
-		31F3A8DD2A8BB85C00166270 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				31F3A8DE2A8BB87400166270 /* LoginViewController.swift */,
-				31F3A8E02A8BB88500166270 /* AfterLoginViewController.swift */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		5B0D94792A89177300F361C8 /* Piece */ = {
@@ -563,30 +563,25 @@
 				318C44172A8A29D90036582D /* ReviewViewController.swift in Sources */,
 				31EEB6B62A83352F00ABA9CF /* VisitedPieceCVCell.swift in Sources */,
 				31DF1A332A87759000CD5A73 /* RankingTableViewCell.swift in Sources */,
-
 				3111896D2A8BD24F00C27E3E /* NotificationTableViewCell.swift in Sources */,
-
 				5B9BF4DF2A8BC7AD00F564CC /* CustomPresentationController.swift in Sources */,
 				5B3156B72A8B7C3200B69093 /* MakePieceViewController.swift in Sources */,
-
 				5B0D94812A89178E00F361C8 /* PieceViewController2.swift in Sources */,
 				31EEB6BA2A83357300ABA9CF /* StoreListTVCell.swift in Sources */,
 				5B0D94892A8917E300F361C8 /* PieceDetailTableViewCell.swift in Sources */,
 				5B447A512A8A789F009488F1 /* PieceInfoViewController.swift in Sources */,
+				311189742A8BDAAB00C27E3E /* AfterLoginViewController.swift in Sources */,
 				5B447A542A8A89DC009488F1 /* PieceInfoTableViewCell.swift in Sources */,
 				5B447A562A8A9A5C009488F1 /* PieceInfoCollectionViewCell.swift in Sources */,
 				311325E72A8728EC006F3140 /* SearchDetailViewController.swift in Sources */,
 				31E5C0E52A86681300A9B383 /* SearchViewController.swift in Sources */,
 				31DF1A352A8784DA00CD5A73 /* DataSendDelegate.swift in Sources */,
-
 				5B9BF4E32A8BD2DE00F564CC /* RecommandCollectionViewCell.swift in Sources */,
-
-				31F3A8E12A8BB88500166270 /* AfterLoginViewController.swift in Sources */,
-
 				311325E52A8728DB006F3140 /* FilterViewController.swift in Sources */,
 				318C44202A8A795F0036582D /* DeleteBtnDelegate.swift in Sources */,
 				5B447A4C2A8A4341009488F1 /* PopupFilterViewController.swift in Sources */,
 				31EEB6B82A83354100ABA9CF /* StoreListCVCell.swift in Sources */,
+				311189762A8BDAC700C27E3E /* LoginViewController.swift in Sources */,
 				5B9BF4D92A8B873400F564CC /* MakePiecePictureViewController.swift in Sources */,
 				5B9BF4DD2A8BC64D00F564CC /* QRViewController.swift in Sources */,
 				5B0D94802A89178E00F361C8 /* PieceViewController.swift in Sources */,
@@ -600,7 +595,6 @@
 				318FC3BF2A820C5C0051CBEE /* SceneDelegate.swift in Sources */,
 				31EEB6BC2A83937D00ABA9CF /* CategoryCVCell.swift in Sources */,
 				318C44152A8A29CB0036582D /* VisitedRecordViewController.swift in Sources */,
-				31F3A8DF2A8BB87400166270 /* LoginViewController.swift in Sources */,
 				318C44192A8A38FA0036582D /* StoredTableViewCell.swift in Sources */,
 				5B0D947E2A89178E00F361C8 /* PieceNavigationController.swift in Sources */,
 				31EEB6B42A83351100ABA9CF /* PopUpStoreCVCell.swift in Sources */,

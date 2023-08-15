@@ -1162,7 +1162,6 @@
             </objects>
             <point key="canvasLocation" x="3031" y="127"/>
         </scene>
-
         <!--Recommand Popup View Controller-->
         <scene sceneID="j4l-Na-CTa">
             <objects>
@@ -1307,8 +1306,6 @@
             </objects>
             <point key="canvasLocation" x="3858.7786259541981" y="126.7605633802817"/>
         </scene>
-
-
         <!--Notification View Controller-->
         <scene sceneID="75z-Ga-8hK">
             <objects>
@@ -1470,9 +1467,8 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uwd-yd-cGU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3942.7480916030531" y="138.73239436619718"/>
+            <point key="canvasLocation" x="4627" y="127"/>
         </scene>
-
         <!--View Controller-->
         <scene sceneID="3mz-QS-6Bv">
             <objects>
@@ -1563,7 +1559,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IpI-U8-qjA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3030" y="794"/>
-
         </scene>
         <!--PieceInfoViewController-->
         <scene sceneID="gEl-fP-sD1">
