@@ -240,10 +240,19 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
     
     
     @IBAction func searchBtnTapped(_ sender: Any) {
-        let searchDetailVC = self.storyboard?.instantiateViewController(identifier: "searchDetailVC") as! SearchDetailViewController
+        let searchSB = UIStoryboard(name: "SearchView", bundle: nil)
+        let searchDetailVC = searchSB.instantiateViewController(identifier: "searchDetailVC") as! SearchDetailViewController
         
         searchDetailVC.modalPresentationStyle = .fullScreen
-        self.present(searchDetailVC, animated: true, completion: nil)
+        present(searchDetailVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func notificationBtnTapped(_ sender: Any) {
+        
+        let notificationVC = self.storyboard?.instantiateViewController(withIdentifier: "notificationVC") as! NotificationViewController
+        
+        notificationVC.modalPresentationStyle = .fullScreen
+        self.present(notificationVC, animated: true, completion: nil)
     }
     
 }
