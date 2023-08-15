@@ -10,7 +10,6 @@
 		31113F8E2A8939D700A82CCD /* StoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31113F8D2A8939D700A82CCD /* StoreInfoViewController.swift */; };
 		311325E52A8728DB006F3140 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311325E42A8728DB006F3140 /* FilterViewController.swift */; };
 		311325E72A8728EC006F3140 /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311325E62A8728EC006F3140 /* SearchDetailViewController.swift */; };
-		3162537A2A8B550B000E6E63 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316253792A8B550B000E6E63 /* TabBarController.swift */; };
 		318C440F2A8A28A60036582D /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318C440E2A8A28A60036582D /* MyPage.storyboard */; };
 		318C44112A8A29460036582D /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C44102A8A29460036582D /* MyPageViewController.swift */; };
 		318C44152A8A29CB0036582D /* VisitedRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C44142A8A29CB0036582D /* VisitedRecordViewController.swift */; };
@@ -76,7 +75,6 @@
 		31113F8D2A8939D700A82CCD /* StoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInfoViewController.swift; sourceTree = "<group>"; };
 		311325E42A8728DB006F3140 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		311325E62A8728EC006F3140 /* SearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
-		316253792A8B550B000E6E63 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = "../../../../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Konkuk_Hackathon 오후 1.36.46/FrontEnd/PopUp/PopUp/HomeView/Controller/TabBarController.swift"; sourceTree = "<group>"; };
 		318C440E2A8A28A60036582D /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		318C44102A8A29460036582D /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		318C44142A8A29CB0036582D /* VisitedRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedRecordViewController.swift; sourceTree = "<group>"; };
@@ -313,7 +311,6 @@
 				318C440C2A8A28860036582D /* MyPage */,
 				5B0D94792A89177300F361C8 /* Piece */,
 				311325E32A87257F006F3140 /* Search */,
-				316253792A8B550B000E6E63 /* TabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -503,7 +500,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				318C44222A8A79D80036582D /* ReviewBtnDelegate.swift in Sources */,
-				3162537A2A8B550B000E6E63 /* TabBarController.swift in Sources */,
 				31DF1A372A87D98500CD5A73 /* DummyStore.swift in Sources */,
 				318FC3C12A820C5C0051CBEE /* ViewController.swift in Sources */,
 				318C44172A8A29D90036582D /* ReviewViewController.swift in Sources */,

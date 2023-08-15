@@ -523,7 +523,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="wdQ-0W-gh0">
             <objects>
-                <tabBarController restorationIdentifier="tabBar" storyboardIdentifier="tabBar" automaticallyAdjustsScrollViewInsets="NO" id="7xp-VD-esK" customClass="TabBarController" customModule="PopUp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController restorationIdentifier="tabBar" storyboardIdentifier="tabBar" automaticallyAdjustsScrollViewInsets="NO" id="7xp-VD-esK" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZIT-gH-iks">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
