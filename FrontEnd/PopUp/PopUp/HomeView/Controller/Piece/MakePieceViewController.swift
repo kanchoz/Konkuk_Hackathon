@@ -53,10 +53,13 @@ class MakePieceViewController: UIViewController, UITableViewDataSource, UITableV
         
         return cell
     }
-  
+    @IBAction func backBtnTapped(_ sender: UIButton) {
+        dismiss(animated: false)
+    }
+    
     // 테이블뷰 셀의 높이 설정
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 260 // 원하는 높이로 설정
     }
-
+    
 }

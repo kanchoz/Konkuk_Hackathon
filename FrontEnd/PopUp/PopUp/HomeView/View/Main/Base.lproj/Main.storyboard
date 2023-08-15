@@ -481,6 +481,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="CameraBtn"/>
+                                <connections>
+                                    <action selector="cameraBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tQq-Hf-hQb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -1155,6 +1158,97 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JKT-Z6-vcX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3031" y="127"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3mz-QS-6Bv">
+            <objects>
+                <viewController storyboardIdentifier="QRViewController" id="ovg-AW-dYI" customClass="QRViewController" customModule="PopUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ctb-ug-oRp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="erg-3R-LtK">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="186"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="방문 인증이 완료되었습니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Th-tA-snc">
+                                        <rect key="frame" x="20" y="32" width="263" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="263" id="4ig-WL-lBV"/>
+                                            <constraint firstAttribute="height" constant="25" id="AOZ-SH-gJ2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                        <color key="textColor" name="White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="뉴진스 버니랜드 조각을 만들어보세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXg-dV-Q27">
+                                        <rect key="frame" x="20" y="57" width="263" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="MTl-E3-qgT"/>
+                                            <constraint firstAttribute="width" constant="263" id="SZd-cz-WKU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="textColor" name="White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="BackGround"/>
+                                <constraints>
+                                    <constraint firstItem="eXg-dV-Q27" firstAttribute="top" secondItem="8Th-tA-snc" secondAttribute="bottom" id="2Ez-cp-4Cu"/>
+                                    <constraint firstItem="eXg-dV-Q27" firstAttribute="leading" secondItem="erg-3R-LtK" secondAttribute="leading" constant="20" id="8Dm-9c-ZlD"/>
+                                    <constraint firstAttribute="height" constant="186" id="Efb-qa-AB1"/>
+                                    <constraint firstItem="8Th-tA-snc" firstAttribute="top" secondItem="erg-3R-LtK" secondAttribute="top" constant="32" id="r6K-Zz-3G9"/>
+                                    <constraint firstItem="8Th-tA-snc" firstAttribute="leading" secondItem="erg-3R-LtK" secondAttribute="leading" constant="20" id="sDh-wI-N3t"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QX-rP-jlV">
+                                <rect key="frame" x="0.0" y="186" width="98" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="KBp-dc-VvB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="다음에 하기">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                    <color key="baseBackgroundColor" name="G4"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextBtnTapped:" destination="ovg-AW-dYI" eventType="touchUpInside" id="chn-vS-f1h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwJ-P2-cyO">
+                                <rect key="frame" x="295" y="186" width="98" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="jJS-Ea-twB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="조각 만들기">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                    <color key="baseBackgroundColor" name="MainOrange"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="makeBtnTapped:" destination="ovg-AW-dYI" eventType="touchUpInside" id="3i3-vo-dJO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ahj-rr-uyL"/>
+                        <color key="backgroundColor" name="BackGround"/>
+                        <constraints>
+                            <constraint firstItem="erg-3R-LtK" firstAttribute="top" secondItem="ctb-ug-oRp" secondAttribute="top" id="3fK-Cg-D65"/>
+                            <constraint firstItem="erg-3R-LtK" firstAttribute="leading" secondItem="ahj-rr-uyL" secondAttribute="leading" id="GUR-61-f2b"/>
+                            <constraint firstAttribute="trailing" secondItem="SwJ-P2-cyO" secondAttribute="trailing" id="JIx-jR-HGo"/>
+                            <constraint firstItem="7QX-rP-jlV" firstAttribute="leading" secondItem="ctb-ug-oRp" secondAttribute="leading" id="Pco-F7-z7L"/>
+                            <constraint firstItem="7QX-rP-jlV" firstAttribute="top" secondItem="erg-3R-LtK" secondAttribute="bottom" id="fCo-nc-B7c"/>
+                            <constraint firstItem="SwJ-P2-cyO" firstAttribute="top" secondItem="erg-3R-LtK" secondAttribute="bottom" id="qdP-6Z-Ihu"/>
+                            <constraint firstItem="ahj-rr-uyL" firstAttribute="trailing" secondItem="erg-3R-LtK" secondAttribute="trailing" id="sNu-2c-AB8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="makeBtn" destination="SwJ-P2-cyO" id="zl3-Z6-UzR"/>
+                        <outlet property="nextBtn" destination="7QX-rP-jlV" id="fi6-vP-ENv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IpI-U8-qjA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3030" y="794"/>
         </scene>
         <!--PieceInfoViewController-->
         <scene sceneID="gEl-fP-sD1">
