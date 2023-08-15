@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 // MARK: - CV := CollectionView, TV := TableView
 
-class ViewController: UIViewController, UISheetPresentationControllerDelegate, DataSendDelegate {
+class ViewController: UIViewController, UISheetPresentationControllerDelegate, DataSendDelegate, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
     
 
@@ -255,6 +256,24 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
         self.present(notificationVC, animated: true, completion: nil)
     }
     
+    
+    @IBAction func cameraBtnTapped(_ sender: UIButton) {
+//        let modalVC = storyboard!.instantiateViewController(withIdentifier: "QRViewController") as! QRViewController
+//        modalVC.modalPresentationStyle = .custom
+//        modalVC.transitioningDelegate = self
+//        present(modalVC, animated: true, completion: nil)
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .camera
+            self.present(imagePicker, animated: true, completion: nil)
+        } else {
+            // 카메라 사용 불가능한 경우 처리
+            print("카메라 사용이 불가능합니다.")
+        }
+    }
+    
 }
 
 // MARK: - collectionView delegate, dataSource
@@ -379,6 +398,8 @@ extension ViewController: UIScrollViewDelegate{
         }
     }
     
+    
+    
 }
 
 extension String {
@@ -386,5 +407,11 @@ extension String {
         let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
         let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
         return ceil(boundingBox.width)
+    }
+}
+
+extension ViewController: UIViewControllerTransitioningDelegate {
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        return CustomPresentationController(presentedViewController: presented, presenting: presenting)
     }
 }
