@@ -1603,8 +1603,8 @@
                                                     <action selector="backBtnTapped:" destination="Q0m-Pg-1NP" eventType="touchUpInside" id="vAn-SV-wSy"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알림" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUl-K6-JaZ">
-                                                <rect key="frame" x="166.66666666666666" y="2" width="28" height="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="방문 인증" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUl-K6-JaZ">
+                                                <rect key="frame" x="150.66666666666666" y="2" width="60" height="20"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                 <color key="textColor" name="White"/>
                                                 <nil key="highlightedColor"/>
