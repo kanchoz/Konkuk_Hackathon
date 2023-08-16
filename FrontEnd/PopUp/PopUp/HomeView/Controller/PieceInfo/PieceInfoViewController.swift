@@ -139,15 +139,15 @@ class PieceInfoViewController: UIViewController, UICollectionViewDelegateFlowLay
 extension PieceInfoViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return smrImg.count
+        return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PieceInfoCollectionViewCell", for: indexPath) as! PieceInfoCollectionViewCell
-        cell.pieceImg.image = UIImage(named: smrImg[indexPath.row])
-        cell.nameLabel.text = smrName[indexPath.row]
-        cell.locationLabel.text = smrLoc[indexPath.row]
-        cell.ceteLabel.text = smrCate[indexPath.row]
+        cell.pieceImg.image = UIImage(named: "\(StoreArr.arr1[indexPath.row].id)Thumbnail")
+        cell.nameLabel.text = StoreArr.arr1[indexPath.row].name
+        cell.locationLabel.text = StoreArr.arr1[indexPath.row].location
+        cell.ceteLabel.text = StoreArr.arr1[indexPath.row].category
         
         return cell
     }
