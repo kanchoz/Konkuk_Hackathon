@@ -10,7 +10,6 @@ import UIKit
 class PieceInfoViewController: UIViewController, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet var collectionView: UICollectionView!
-    @IBOutlet var reviewPlate: UIView!
     @IBOutlet var reviewLabel: UILabel!
     @IBOutlet var popupDetailInfoLabel: UILabel!
     @IBOutlet var popupInfoLabel: UILabel!
