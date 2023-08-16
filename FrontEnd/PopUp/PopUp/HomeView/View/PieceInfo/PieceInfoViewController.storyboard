@@ -35,7 +35,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="1700"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yt3-V7-Hds">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1700"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1696.3333333333333"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XN6-ur-p7h">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="466"/>
@@ -54,7 +54,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOj-Tb-iXx">
-                                                <rect key="frame" x="0.0" y="466" width="393" height="1234"/>
+                                                <rect key="frame" x="0.0" y="465.99999999999989" width="393" height="1230.333333333333"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연예인" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idJ-bp-Ppy">
                                                         <rect key="frame" x="15.000000000000004" y="28" width="36.333333333333343" height="17"/>
@@ -857,6 +857,7 @@
                                                 </subviews>
                                                 <color key="backgroundColor" name="BackGround"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="RLs-Du-zx5" secondAttribute="bottom" constant="20" id="49g-Vd-fUo"/>
                                                     <constraint firstItem="SQk-4T-4xR" firstAttribute="top" secondItem="9lX-aI-L47" secondAttribute="bottom" constant="72" id="4JQ-iF-Yav"/>
                                                     <constraint firstItem="Rtd-IJ-PK5" firstAttribute="top" secondItem="27j-wn-acJ" secondAttribute="bottom" constant="10" id="4Ti-kV-a8d"/>
                                                     <constraint firstItem="DkQ-dy-U6K" firstAttribute="top" secondItem="QAs-5N-Ook" secondAttribute="bottom" constant="10" id="4ff-dO-cVh"/>
@@ -903,7 +904,7 @@
                                             <constraint firstItem="XN6-ur-p7h" firstAttribute="leading" secondItem="Yt3-V7-Hds" secondAttribute="leading" id="2ei-TM-HZT"/>
                                             <constraint firstAttribute="bottom" secondItem="iOj-Tb-iXx" secondAttribute="bottom" id="FZ8-LS-LeM"/>
                                             <constraint firstAttribute="trailing" secondItem="XN6-ur-p7h" secondAttribute="trailing" id="H0t-bF-48n"/>
-                                            <constraint firstAttribute="height" priority="250" constant="1700" id="L0X-MU-qU8"/>
+                                            <constraint firstAttribute="height" priority="250" constant="500" id="L0X-MU-qU8"/>
                                             <constraint firstItem="iOj-Tb-iXx" firstAttribute="top" secondItem="XN6-ur-p7h" secondAttribute="bottom" id="aCh-NE-D4z"/>
                                             <constraint firstItem="iOj-Tb-iXx" firstAttribute="leading" secondItem="Yt3-V7-Hds" secondAttribute="leading" id="aUT-o9-yJ2"/>
                                             <constraint firstAttribute="trailing" secondItem="iOj-Tb-iXx" secondAttribute="trailing" id="r8q-06-9Qa"/>
