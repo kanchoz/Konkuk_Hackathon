@@ -36,24 +36,24 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
     let buttonSpacing: CGFloat = 10
     var selectedButton: UIButton?
     
-    override func loadView() {
-        super.loadView()
-        let defaults = UserDefaults.standard
-        if !(defaults.value(forKey: "isLoggedIn")! as! Bool){ // 로그인 되지 않은 회원의 경우 로그인 화면으로 이동시킴
-            print("login status: false")
-            print("move to login page")
-            
-            let sb = UIStoryboard(name: "LoginView", bundle: nil)
-            let loginVC = sb.instantiateViewController(withIdentifier: "afterLoginVC") as! AfterLoginViewController
-            loginVC.modalTransitionStyle = .coverVertical
-            loginVC.modalPresentationStyle = .fullScreen
-            
-            self.present(loginVC, animated: false, completion: nil)
-        }
-        else{
-//            print(defaults.value(forKey: "UserId"))
-        }
-    }
+//    override func loadView() {
+//        super.loadView()
+//        let defaults = UserDefaults.standard
+//        if !(defaults.value(forKey: "isLoggedIn")! as! Bool){ // 로그인 되지 않은 회원의 경우 로그인 화면으로 이동시킴
+//            print("login status: false")
+//            print("move to login page")
+//            
+//            let sb = UIStoryboard(name: "LoginView", bundle: nil)
+//            let loginVC = sb.instantiateViewController(withIdentifier: "afterLoginVC") as! AfterLoginViewController
+//            loginVC.modalTransitionStyle = .coverVertical
+//            loginVC.modalPresentationStyle = .fullScreen
+//            
+//            self.present(loginVC, animated: false, completion: nil)
+//        }
+//        else{
+////            print(defaults.value(forKey: "UserId"))
+//        }
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

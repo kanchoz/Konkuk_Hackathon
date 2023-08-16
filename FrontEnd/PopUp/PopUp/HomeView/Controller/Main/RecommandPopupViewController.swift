@@ -35,10 +35,15 @@ class RecommandPopupViewController: UIViewController, UICollectionViewDelegate, 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommandCollectionViewCell", for: indexPath) as! RecommandCollectionViewCell
-        cell.rImage.image = UIImage(named: imas[indexPath.row])
-        cell.cageLabel.text = cats[indexPath.row]
-        cell.nameLabel.text = names[indexPath.row]
-        cell.locaLabel.text = locas[indexPath.row]
+        
+        let imgId = StoreArr.arr2[indexPath.row].id
+        let imgName = "\(imgId)RecommendCVImg"
+        
+        cell.cageLabel.text = StoreArr.arr2[indexPath.row].category
+        cell.locaLabel.text = StoreArr.arr2[indexPath.row].location
+        cell.nameLabel.text = StoreArr.arr2[indexPath.row].name
+        cell.rImage.image = UIImage(named: imgName)
+        
         return cell
     }
 
