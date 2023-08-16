@@ -110,7 +110,7 @@
 		60D19AFBBBB00EEE64CE63E5D70649F6 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
 		60E64176E2C5AFD9BE91D750DFF8EA13 /* Pods-PopUp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PopUp-umbrella.h"; sourceTree = "<group>"; };
 		67B27F0DC0BF19F460FD9E129E69629E /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
-		6D9B9A7072193D3903B1A931DCABD591 /* Pods-PopUp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PopUp"; path = Pods_PopUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D9B9A7072193D3903B1A931DCABD591 /* Pods_PopUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED8831F6FF4301FD74775E203143BC4 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		7089C5925DB4B025710424781BE1FF30 /* Pods-PopUp-PopUpUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PopUp-PopUpUITests-umbrella.h"; sourceTree = "<group>"; };
 		70F7ABA7FF2C82ADB074843C9005B9C3 /* Pods-PopUp-PopUpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PopUp-PopUpUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 		961D6DDBAF44C253034430E542788939 /* Pods-PopUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PopUp.release.xcconfig"; sourceTree = "<group>"; };
 		967CC38AF65698D9B147ECD7678F79D2 /* Pods-PopUpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PopUpTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B206CABA3E5C254320AB3AD7135A3CE /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A090D9B0E153267DC3A32F0147B31CF0 /* Pods-PopUp-PopUpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PopUp-PopUpUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A111AFB64D051CF555043D512CAB14E3 /* Pods-PopUpTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PopUpTests-Info.plist"; sourceTree = "<group>"; };
 		A27B1D7EBCE2886246214FED76F60BDB /* Pods-PopUpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PopUpTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -229,7 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
-				6D9B9A7072193D3903B1A931DCABD591 /* Pods-PopUp */,
+				6D9B9A7072193D3903B1A931DCABD591 /* Pods_PopUp.framework */,
 				5B7FE4C9F412441008AE8F3550963E3B /* Pods-PopUp-PopUpUITests */,
 				40E825D1D1A2D9E6DD57DAD019C8A2F0 /* Pods-PopUpTests */,
 			);
@@ -331,7 +331,6 @@
 				40CA3C62864BF74A58495C935CB6F35D /* Validation.swift */,
 				5F92C9B9F679FE7DF64E95279E5DB79F /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -460,7 +459,7 @@
 			);
 			name = "Pods-PopUp";
 			productName = Pods_PopUp;
-			productReference = 6D9B9A7072193D3903B1A931DCABD591 /* Pods-PopUp */;
+			productReference = 6D9B9A7072193D3903B1A931DCABD591 /* Pods_PopUp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
