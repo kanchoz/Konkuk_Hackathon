@@ -7,7 +7,6 @@
 
 import UIKit
 import AVFoundation
-import Ala
 
 // MARK: - CV := CollectionView, TV := TableView
 
@@ -15,8 +14,6 @@ import Ala
 
 class ViewController: UIViewController, UISheetPresentationControllerDelegate, DataSendDelegate, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
-    
-
     @IBOutlet var similarView: UIImageView!
     @IBOutlet var filterSV: UIScrollView!
     @IBOutlet var popUpStoreCV: UICollectionView! //이번 주 핫한 팝업 CV
@@ -38,6 +35,25 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
     let buttonHeight: CGFloat = 33
     let buttonSpacing: CGFloat = 10
     var selectedButton: UIButton?
+    
+    override func loadView() {
+        super.loadView()
+        let defaults = UserDefaults.standard
+        if !(defaults.value(forKey: "isLoggedIn")! as! Bool){ // 로그인 되지 않은 회원의 경우 로그인 화면으로 이동시킴
+            print("login status: false")
+            print("move to login page")
+            
+            let sb = UIStoryboard(name: "LoginView", bundle: nil)
+            let loginVC = sb.instantiateViewController(withIdentifier: "afterLoginVC") as! AfterLoginViewController
+            loginVC.modalTransitionStyle = .coverVertical
+            loginVC.modalPresentationStyle = .fullScreen
+            
+            self.present(loginVC, animated: false, completion: nil)
+        }
+        else{
+//            print(defaults.value(forKey: "UserId"))
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

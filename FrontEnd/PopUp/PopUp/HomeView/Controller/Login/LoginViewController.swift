@@ -16,8 +16,21 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        print("로그인 확인")
+        let defaults = UserDefaults.standard
+        let check = defaults.value(forKey: "isLoggedIn")
+        if check as! Bool{
+            print("로그인 되어 있으 ")
+            self.dismiss(animated: false, completion: nil)
+        }
+    }
+    
+    
     @IBAction func loginBtnTapped(_ sender: Any) {
-        print("login tapped")
+        let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "webVC") as! KakaoWebViewViewController
+        
+        loginVC.modalPresentationStyle = .fullScreen
+        self.present(loginVC, animated: true)
     }
 }

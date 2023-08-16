@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DT1-gx-CqG">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="1Uh-zi-Knk">
             <objects>
-                <viewController id="DT1-gx-CqG" customClass="LoginViewController" customModule="PopUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DT1-gx-CqG" customClass="LoginViewController" customModule="PopUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gPD-4a-Wzu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,6 +96,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bbc-gD-3um" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="184" y="898"/>
+        </scene>
+        <!--Kakao Web View View Controller-->
+        <scene sceneID="cMV-Pq-XlU">
+            <objects>
+                <viewController restorationIdentifier="webVC" storyboardIdentifier="webVC" id="3E4-Nc-FMF" customClass="KakaoWebViewViewController" customModule="PopUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jLl-FH-SmE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XeO-gZ-ee0">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cUV-WI-wEK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cUV-WI-wEK" firstAttribute="trailing" secondItem="XeO-gZ-ee0" secondAttribute="trailing" id="d6K-YZ-z9w"/>
+                            <constraint firstItem="XeO-gZ-ee0" firstAttribute="top" secondItem="cUV-WI-wEK" secondAttribute="top" id="dpw-hr-LYL"/>
+                            <constraint firstItem="cUV-WI-wEK" firstAttribute="bottom" secondItem="XeO-gZ-ee0" secondAttribute="bottom" id="fzl-KA-fNn"/>
+                            <constraint firstItem="XeO-gZ-ee0" firstAttribute="leading" secondItem="cUV-WI-wEK" secondAttribute="leading" id="v7K-k7-vtu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="XeO-gZ-ee0" id="iuJ-FE-XVf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xf0-Fx-3WN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891" y="887"/>
         </scene>
         <!--After Login View Controller-->
         <scene sceneID="oSv-Cy-hP9">
@@ -250,7 +284,12 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="시작하기">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startBtnTapped:" destination="4c0-XS-SAq" eventType="touchUpInside" id="ONK-Gk-Uek"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wF7-Qv-zJd"/>
@@ -284,7 +323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RaK-EX-Btv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="914" y="898"/>
+            <point key="canvasLocation" x="1775" y="887"/>
         </scene>
     </scenes>
     <resources>
