@@ -283,22 +283,11 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
     
     
     @IBAction func cameraBtnTapped(_ sender: UIButton) {
-//        let modalVC = storyboard!.instantiateViewController(withIdentifier: "QRViewController") as! QRViewController
-//        modalVC.modalPresentationStyle = .custom
-//        modalVC.transitioningDelegate = self
-//        present(modalVC, animated: true, completion: nil)
+        let verifyVC = self.storyboard?.instantiateViewController(withIdentifier: "verifyVC") as! VerifyViewController
         
-        if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            let imagePicker = UIImagePickerController()
-            imagePicker.delegate = self
-            imagePicker.sourceType = .camera
-            self.present(imagePicker, animated: true, completion: nil)
-        } else {
-            // 카메라 사용 불가능한 경우 처리
-            print("카메라 사용이 불가능합니다.")
-        }
+        verifyVC.modalPresentationStyle = .fullScreen
+        self.present(verifyVC, animated: true)
     }
-    
 }
 
 // MARK: - collectionView delegate, dataSource

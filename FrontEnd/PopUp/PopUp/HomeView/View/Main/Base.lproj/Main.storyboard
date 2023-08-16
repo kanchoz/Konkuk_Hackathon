@@ -1579,7 +1579,7 @@
         <!--Verify View Controller-->
         <scene sceneID="kSd-ig-QiS">
             <objects>
-                <viewController id="Q0m-Pg-1NP" customClass="VerifyViewController" customModule="PopUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="verifyVC" storyboardIdentifier="verifyVC" id="Q0m-Pg-1NP" customClass="VerifyViewController" customModule="PopUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vG9-3F-pPm">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1600,11 +1600,11 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
                                                 <connections>
-                                                    <action selector="backBtnTapped:" destination="7ac-Us-ria" eventType="touchUpInside" id="Zvy-yV-KiJ"/>
+                                                    <action selector="backBtnTapped:" destination="Q0m-Pg-1NP" eventType="touchUpInside" id="vAn-SV-wSy"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알림" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUl-K6-JaZ">
-                                                <rect key="frame" x="166.66666666666666" y="2" width="28" height="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="방문 인증" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUl-K6-JaZ">
+                                                <rect key="frame" x="150.66666666666666" y="2" width="60" height="20"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                 <color key="textColor" name="White"/>
                                                 <nil key="highlightedColor"/>
@@ -1711,6 +1711,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="다음">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextBtnTapped:" destination="Q0m-Pg-1NP" eventType="touchUpInside" id="8Cx-lH-flc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="24d-c5-KAz"/>
@@ -1727,6 +1730,10 @@
                             <constraint firstAttribute="trailing" secondItem="Vhy-LX-eFK" secondAttribute="trailing" id="wPU-fa-iVE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="4eK-kb-Xyh" id="WwL-BN-QHU"/>
+                        <outlet property="tf" destination="hWp-nP-9zb" id="v8S-vj-Muj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gBq-Bq-f6l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
