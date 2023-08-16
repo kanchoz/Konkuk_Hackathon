@@ -21,6 +21,18 @@ class StoreListCVCell: UICollectionViewCell, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = storeListTV.dequeueReusableCell(withIdentifier: "StoreListTVCell") as! StoreListTVCell
+        cell.selectionStyle = .none
+
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let sb = UIStoryboard(name: "PieceInfoViewController", bundle: nil)
+        let storeInfoView = sb.instantiateViewController(withIdentifier: "PieceInfoViewController") as! PieceInfoViewController
+        storeInfoView.modalPresentationStyle = .fullScreen
+
+        self.window?.rootViewController?.present(storeInfoView, animated: true, completion: nil)
+        
     }
 }

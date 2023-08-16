@@ -130,7 +130,7 @@ class PieceInfoViewController: UIViewController, UICollectionViewDelegateFlowLay
     }
     
     @IBAction func backBtnTapped(_ sender: Any) {
-        dismiss(animated: false)
+        dismiss(animated: true)
     }
         
 }
