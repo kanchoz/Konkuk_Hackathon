@@ -2,6 +2,7 @@ package com.example.popup.controller;
 
 import com.example.popup.domain.Popup;
 import com.example.popup.dto.ReqDto.PopupReqDto;
+import com.example.popup.dto.ResDto.GlobalResDto;
 import com.example.popup.service.PopupService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -19,5 +20,11 @@ public class PopupController {
 
 
         return popupService.getSave(popupReqDto);
+    }
+
+    @GetMapping("/popup/{popupId}")
+    public GlobalResDto<?> getOnePopup(@PathVariable Long popupId){
+
+        return popupService.getOnePopup(popupId);
     }
 }
