@@ -15,16 +15,16 @@ class VerifyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tf.delegate = self
-        
+        setDisable()
 //        self.showToast(message: "방문코드가 일치하지 않습니다.")
         // Do any additional setup after loading the view.
     }
     
     func setDisable(){
-        let color = UIColor(hex: 999999)
         button.isEnabled = false
-        button.backgroundColor = color
-        button.tintColor = UIColor(named: "G2")
+        button.backgroundColor = UIColor(named: "G3")
+        button.setTitleColor(UIColor(named: "G2"), for: .normal)
+        button.tintColor = UIColor(named: "White")
     }
     
     func setAble(){
@@ -69,7 +69,7 @@ class VerifyViewController: UIViewController {
 extension VerifyViewController: UITextFieldDelegate{
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let newText = (textField.text as NSString?)?.replacingCharacters(in: range, with: string) ?? ""
-        
+        print("textfied edit")
         if newText.isEmpty{
             setDisable()
         }
@@ -81,13 +81,3 @@ extension VerifyViewController: UITextFieldDelegate{
     }
 }
 
-
-extension UIColor {
-    convenience init(hex: UInt32, alpha: CGFloat = 1.0) {
-        let red = CGFloat((hex & 0xFF0000) >> 16) / 255.0
-        let green = CGFloat((hex & 0x00FF00) >> 8) / 255.0
-        let blue = CGFloat(hex & 0x0000FF) / 255.0
-        
-        self.init(red: red, green: green, blue: blue, alpha: alpha)
-    }
-}
