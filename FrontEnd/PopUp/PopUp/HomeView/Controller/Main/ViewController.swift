@@ -42,12 +42,12 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
 //        if !(defaults.value(forKey: "isLoggedIn")! as! Bool){ // 로그인 되지 않은 회원의 경우 로그인 화면으로 이동시킴
 //            print("login status: false")
 //            print("move to login page")
-//            
+//
 //            let sb = UIStoryboard(name: "LoginView", bundle: nil)
 //            let loginVC = sb.instantiateViewController(withIdentifier: "afterLoginVC") as! AfterLoginViewController
 //            loginVC.modalTransitionStyle = .coverVertical
 //            loginVC.modalPresentationStyle = .fullScreen
-//            
+//
 //            self.present(loginVC, animated: false, completion: nil)
 //        }
 //        else{
@@ -269,10 +269,15 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
     
     @IBAction func notificationBtnTapped(_ sender: Any) {
         
-        let notificationVC = self.storyboard?.instantiateViewController(withIdentifier: "notificationVC") as! NotificationViewController
+//        let notificationVC = self.storyboard?.instantiateViewController(withIdentifier: "notificationVC") as! NotificationViewController
+//
+//        notificationVC.modalPresentationStyle = .fullScreen
+//        self.present(notificationVC, animated: true, completion: nil)
         
-        notificationVC.modalPresentationStyle = .fullScreen
-        self.present(notificationVC, animated: true, completion: nil)
+        let logSB = UIStoryboard(name: "LoginView", bundle: nil)
+        let logVC = logSB.instantiateViewController(withIdentifier: "Login2ViewController") as! Login2ViewController
+        logVC.modalPresentationStyle = .overFullScreen
+        self.present(logVC, animated: false)
     }
     
     //내가 모은 방문조각 버튼 눌림
