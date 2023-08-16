@@ -50,6 +50,7 @@ class PieceViewController2: UIViewController, UICollectionViewDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("cell")
         let detailVC = storyboard!.instantiateViewController(withIdentifier: "PieceDetailViewController") as! PieceDetailViewController
+        detailVC.flag = indexPath.row + 1
         // 새로운 UINavigationController에 넣어서 모달로 표시
         //let navController = UINavigationController(rootViewController: collectionVC)
         //navController.modalPresentationStyle = .overFullScreen // 모달 표시 스타일 설정

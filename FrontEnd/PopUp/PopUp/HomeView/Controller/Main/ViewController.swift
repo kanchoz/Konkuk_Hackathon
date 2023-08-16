@@ -21,6 +21,9 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
     @IBOutlet var storeListCV: UICollectionView! //팝업 스토어 목록 CV (전체, 캐릭터, 연예인, 패션, 푸드)
     @IBOutlet var categoryCV: UICollectionView!
     
+    
+    var imgs = ["Piece1", "Piece2", "Piece3"]
+    
     var category = ["전체", "캐릭터", "연예인", "패션", "푸드", "주류", "기타"] //카테고리 7종류
     var categoryIndex = 0 //현재 선택되어있는 카테고리의 index
     var popUpStoreIndex = 0 // 현재 선택되어 있는 storeList index. 항상 categoryIndex와 같아야함
@@ -377,7 +380,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
             
         }
         else if collectionView == visitedPieceCV{
-            return 10
+            return 3
         }
         else if collectionView == categoryCV{
             return 7
@@ -399,6 +402,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
         }
         else if collectionView == visitedPieceCV{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VisitedPieceCVCell", for: indexPath) as! VisitedPieceCVCell
+            cell.visitedImg.image = UIImage(named: imgs[indexPath.row])
             print("방문 셀 출력")
             return cell
         }
@@ -430,6 +434,12 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
             selectedCell.categoryLabel.textColor = UIColor(named: "White")
             
             storeListCV.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
+        }else if(collectionView == visitedPieceCV){
+            let nextSB = UIStoryboard(name: "PieceViewController", bundle: nil)
+            let nextVC = nextSB.instantiateViewController(identifier: "PieceDetailViewController") as! PieceDetailViewController
+            nextVC.flag = indexPath.row + 1
+            nextVC.modalPresentationStyle = .fullScreen
+            present(nextVC, animated: true)
         }
         storeListCV.reloadData()
         categoryCV.reloadData()

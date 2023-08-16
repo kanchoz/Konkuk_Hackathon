@@ -19,6 +19,8 @@ class PieceDetailViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet var backBtn: UIButton!
     @IBOutlet var detailBtn: UIButton!
 
+    var flag: Int?
+    
     var imageName: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,13 +79,33 @@ class PieceDetailViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PieceDetailTableViewCell", for: indexPath) as! PieceDetailTableViewCell
-        cell.pieceImg.image = UIImage(named: "Piece1")
-        cell.selectionStyle = .none
-        cell.visitLabel.text = "2023.07.18"
-        cell.popupLabel.text = "TOILET PAPER X LONGCHAMP"
-        cell.aboutLabel.text = "프랑스"//"프랑스 럭셔리 브랜드 룽샴과 아트매거진 토이렛페이퍼의 콜라보레이션 팝업 스토어"
-        cell.locationLabel.text = "잠실 롯데월드목 1층 아트리움 광장\n서울 올림픽로 300 롯데월드몰"
-        cell.SNSLabel.text = "@longchamp / @tpbeauty"
+        
+        if(flag == 1){
+            cell.pieceImg.image = UIImage(named: "Piece1")
+            cell.selectionStyle = .none
+            cell.visitLabel.text = "2023.07.18"
+            cell.popupLabel.text = "TOILET PAPER X LONGCHAMP"
+            cell.aboutLabel.text = "프랑스"//"프랑스 럭셔리 브랜드 룽샴과 아트매거진 토이렛페이퍼의 콜라보레이션 팝업 스토어"
+            cell.locationLabel.text = "잠실 롯데월드목 1층 아트리움 광장\n서울 올림픽로 300 롯데월드몰"
+            cell.SNSLabel.text = "@longchamp / @tpbeauty"
+        }else if(flag == 2){
+            cell.pieceImg.image = UIImage(named: "Piece2")
+            cell.selectionStyle = .none
+            cell.visitLabel.text = "2023.07.18"
+            cell.popupLabel.text = "TOILET PAPER X LONGCHAMP"
+            cell.aboutLabel.text = "프랑스"//"프랑스 럭셔리 브랜드 룽샴과 아트매거진 토이렛페이퍼의 콜라보레이션 팝업 스토어"
+            cell.locationLabel.text = "잠실 롯데월드목 1층 아트리움 광장\n서울 올림픽로 300 롯데월드몰"
+            cell.SNSLabel.text = "@longchamp / @tpbeauty"
+        }else{
+            cell.pieceImg.image = UIImage(named: "Piece3")
+            cell.selectionStyle = .none
+            cell.visitLabel.text = "2023.07.18"
+            cell.popupLabel.text = "TOILET PAPER X LONGCHAMP"
+            cell.aboutLabel.text = "프랑스"//"프랑스 럭셔리 브랜드 룽샴과 아트매거진 토이렛페이퍼의 콜라보레이션 팝업 스토어"
+            cell.locationLabel.text = "잠실 롯데월드목 1층 아트리움 광장\n서울 올림픽로 300 롯데월드몰"
+            cell.SNSLabel.text = "@longchamp / @tpbeauty"
+        }
+        
         return cell
     }
     
