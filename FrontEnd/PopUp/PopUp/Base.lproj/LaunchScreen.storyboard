@@ -17,19 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoFull" translatesAutoresizingMaskIntoConstraints="NO" id="1LB-PM-KAE">
-                                <rect key="frame" x="136" y="334" width="121" height="162"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoFull" translatesAutoresizingMaskIntoConstraints="NO" id="waJ-jB-Tm8">
+                                <rect key="frame" x="114.66666666666669" y="336" width="164" height="156"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="121" id="2bt-DQ-ZOA"/>
-                                    <constraint firstAttribute="height" constant="162" id="4Cd-0C-o2O"/>
+                                    <constraint firstAttribute="width" constant="164" id="kaA-CG-Q7M"/>
+                                    <constraint firstAttribute="height" constant="156" id="v2a-lW-QkX"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="BackGround"/>
                         <constraints>
-                            <constraint firstItem="1LB-PM-KAE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8Q2-88-CO3"/>
-                            <constraint firstItem="1LB-PM-KAE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="275" id="CBY-YK-rau"/>
+                            <constraint firstItem="waJ-jB-Tm8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="277" id="ihy-OV-tS8"/>
+                            <constraint firstItem="waJ-jB-Tm8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="liS-5P-rh5"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -39,7 +39,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LogoFull" width="40.333332061767578" height="54.333332061767578"/>
+        <image name="LogoFull" width="164" height="156"/>
         <namedColor name="BackGround">
             <color red="0.071000002324581146" green="0.071000002324581146" blue="0.071000002324581146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
