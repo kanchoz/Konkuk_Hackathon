@@ -58,7 +58,9 @@ struct PopupDetailManager {
         AF.request(endPoint, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: APIConstants.headers)
             .validate()
             .responseDecodable(of: PopupDetailStruct.self) { response in
+                print(response)
                 switch response.result {
+                
                 case .success(let res):
                     let data = res.data
                     completion(.success(data))

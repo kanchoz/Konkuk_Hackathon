@@ -1135,7 +1135,7 @@
                                 <rect key="frame" x="0.0" y="268" width="393" height="17"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인기 검색" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WA-Lz-Sq3">
-                                        <rect key="frame" x="24" y="0.0" width="53" height="17"/>
+                                        <rect key="frame" x="24.000000000000004" y="0.0" width="52.333333333333343" height="17"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                         <color key="textColor" name="Gray"/>
                                         <nil key="highlightedColor"/>
@@ -1173,7 +1173,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="뉴진스 바니랜드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jt-Xp-nkj">
-                                                            <rect key="frame" x="28" y="0.0" width="108" height="20"/>
+                                                            <rect key="frame" x="27.999999999999993" y="0.0" width="107.33333333333331" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="QO9-8M-i2M"/>
                                                             </constraints>
@@ -1209,6 +1209,80 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fGh-vs-Ia6">
+                                <rect key="frame" x="24" y="153" width="345" height="641"/>
+                                <color key="backgroundColor" name="BackGround"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="searchTVCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchTVCell" rowHeight="120" id="G09-qy-Olh" customClass="SearchTableViewCell" customModule="PopUp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="345" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G09-qy-Olh" id="xtW-F5-S1Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="345" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StoreImg1" translatesAutoresizingMaskIntoConstraints="NO" id="qG3-Ls-fNK" userLabel="StoreImg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+                                                    <color key="backgroundColor" name="BackGround"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="9SK-T4-4kp"/>
+                                                        <constraint firstAttribute="height" constant="120" id="llE-cH-Y4c"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="rlU-eD-Kqe"/>
+                                                        <constraint firstAttribute="width" constant="100" id="tuw-oW-3h8"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wEh-sV-ivY">
+                                                    <rect key="frame" x="112" y="12" width="201" height="96"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카테고리" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6X4-9f-B8B" userLabel="CategoryLabel">
+                                                            <rect key="frame" x="0.0" y="0.0" width="201" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                                            <color key="textColor" name="MainOrange"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="팝업 스토어 이름" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4D-k5-1ah" userLabel="NameLabel">
+                                                            <rect key="frame" x="0.0" y="26" width="201" height="18"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                            <color key="textColor" name="White"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장소" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hH3-Yx-T9H" userLabel="LocationLabel">
+                                                            <rect key="frame" x="0.0" y="52" width="201" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" name="Gray"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023년 x월 xx일 ~ 2023년 x월 xx일" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usd-Nm-qyi" userLabel="DateLabel">
+                                                            <rect key="frame" x="0.0" y="78" width="201" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" name="Gray"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="BackGround"/>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="BackGround"/>
+                                            <constraints>
+                                                <constraint firstItem="wEh-sV-ivY" firstAttribute="leading" secondItem="qG3-Ls-fNK" secondAttribute="trailing" constant="12" id="0hM-nA-q7Z"/>
+                                                <constraint firstItem="qG3-Ls-fNK" firstAttribute="leading" secondItem="xtW-F5-S1Y" secondAttribute="leading" id="E5m-nF-ztt"/>
+                                                <constraint firstAttribute="bottom" secondItem="wEh-sV-ivY" secondAttribute="bottom" constant="12" id="L3z-fD-r1a"/>
+                                                <constraint firstItem="wEh-sV-ivY" firstAttribute="top" secondItem="xtW-F5-S1Y" secondAttribute="top" constant="12" id="WzH-6g-6Sp"/>
+                                                <constraint firstItem="qG3-Ls-fNK" firstAttribute="top" secondItem="xtW-F5-S1Y" secondAttribute="top" id="Yj9-Zd-s28"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="wEh-sV-ivY" secondAttribute="trailing" constant="12" id="l6d-0s-4xO"/>
+                                                <constraint firstAttribute="bottom" secondItem="qG3-Ls-fNK" secondAttribute="bottom" id="xqW-18-io6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="BackGround"/>
+                                        <connections>
+                                            <outlet property="category" destination="6X4-9f-B8B" id="zNj-dk-GOA"/>
+                                            <outlet property="duration" destination="usd-Nm-qyi" id="yFq-D2-jCl"/>
+                                            <outlet property="img" destination="qG3-Ls-fNK" id="EQF-8H-kbV"/>
+                                            <outlet property="location" destination="hH3-Yx-T9H" id="akM-3f-rvx"/>
+                                            <outlet property="name" destination="A4D-k5-1ah" id="Ufd-h9-df7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WnV-sX-kfb"/>
                         <color key="backgroundColor" name="BackGround"/>
@@ -1218,19 +1292,27 @@
                             <constraint firstItem="WnV-sX-kfb" firstAttribute="trailing" secondItem="SPh-b4-Giw" secondAttribute="trailing" constant="14" id="3it-Cq-lHc"/>
                             <constraint firstItem="dgm-KV-G1e" firstAttribute="leading" secondItem="WnV-sX-kfb" secondAttribute="leading" id="4oq-Ns-z6g"/>
                             <constraint firstItem="dgm-KV-G1e" firstAttribute="top" secondItem="SPh-b4-Giw" secondAttribute="bottom" id="6Po-Fd-DqH"/>
+                            <constraint firstItem="WnV-sX-kfb" firstAttribute="trailing" secondItem="fGh-vs-Ia6" secondAttribute="trailing" constant="24" id="6gQ-1R-6zM"/>
                             <constraint firstItem="SPh-b4-Giw" firstAttribute="leading" secondItem="WnV-sX-kfb" secondAttribute="leading" constant="14" id="Di2-g1-jzg"/>
                             <constraint firstItem="SPh-b4-Giw" firstAttribute="top" secondItem="WnV-sX-kfb" secondAttribute="top" constant="10" id="FIa-sf-RrI"/>
                             <constraint firstItem="WnV-sX-kfb" firstAttribute="bottom" secondItem="UQQ-Cw-1bq" secondAttribute="bottom" id="Hd2-0H-wCd"/>
+                            <constraint firstItem="fGh-vs-Ia6" firstAttribute="top" secondItem="SPh-b4-Giw" secondAttribute="bottom" constant="12" id="V9c-br-5Vp"/>
                             <constraint firstItem="UQQ-Cw-1bq" firstAttribute="leading" secondItem="WnV-sX-kfb" secondAttribute="leading" constant="24" id="VE3-GL-xb1"/>
                             <constraint firstItem="WnV-sX-kfb" firstAttribute="trailing" secondItem="dgm-KV-G1e" secondAttribute="trailing" id="ee1-nk-dgX"/>
                             <constraint firstItem="AYY-Xf-GPd" firstAttribute="top" secondItem="dgm-KV-G1e" secondAttribute="bottom" constant="44" id="i2y-GV-KWq"/>
+                            <constraint firstItem="fGh-vs-Ia6" firstAttribute="leading" secondItem="WnV-sX-kfb" secondAttribute="leading" constant="24" id="ojU-C6-A9N"/>
                             <constraint firstItem="WnV-sX-kfb" firstAttribute="trailing" secondItem="AYY-Xf-GPd" secondAttribute="trailing" id="xjV-X7-pB0"/>
                             <constraint firstItem="WnV-sX-kfb" firstAttribute="trailing" secondItem="UQQ-Cw-1bq" secondAttribute="trailing" constant="24" id="ynB-HB-tj3"/>
+                            <constraint firstItem="WnV-sX-kfb" firstAttribute="bottom" secondItem="fGh-vs-Ia6" secondAttribute="bottom" constant="24" id="zoV-lS-6AL"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="searchTF" destination="Pdf-5l-OG5" id="j6g-IF-4xR"/>
-                        <outlet property="tableView" destination="UQQ-Cw-1bq" id="d8B-Zy-57S"/>
+                        <outlet property="tableView1" destination="UQQ-Cw-1bq" id="Ixr-0z-BbR"/>
+                        <outlet property="tableView2" destination="fGh-vs-Ia6" id="xJF-gf-rg9"/>
+                        <outletCollection property="preview" destination="dgm-KV-G1e" collectionClass="NSMutableArray" id="mbH-NW-Z0P"/>
+                        <outletCollection property="preview" destination="AYY-Xf-GPd" collectionClass="NSMutableArray" id="XyK-zf-B5b"/>
+                        <outletCollection property="preview" destination="UQQ-Cw-1bq" collectionClass="NSMutableArray" id="zyJ-Hh-Qdf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDk-wn-XNf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1246,6 +1328,7 @@
         <image name="Piece1" width="545" height="726.33331298828125"/>
         <image name="Piece2" width="545" height="726.33331298828125"/>
         <image name="Search_select" width="32.333332061767578" height="32"/>
+        <image name="StoreImg1" width="100.33333587646484" height="120"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="BackGround">
@@ -1259,6 +1342,9 @@
         </namedColor>
         <namedColor name="LightGray">
             <color red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainOrange">
+            <color red="1" green="0.29800000786781311" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
