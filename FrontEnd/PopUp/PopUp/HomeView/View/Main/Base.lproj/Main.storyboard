@@ -666,7 +666,7 @@
                                 <rect key="frame" x="0.0" y="115" width="393" height="553"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="wja-jm-CyV" userLabel="FilterStackView">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="516"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="407"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SiW-uq-Vdr" userLabel="LocationView">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="133"/>
@@ -924,76 +924,8 @@
                                                     <constraint firstAttribute="height" constant="133" id="Vs8-H4-nIL"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nPl-9r-2Vo" userLabel="DateView">
-                                                <rect key="frame" x="0.0" y="330" width="393" height="77"/>
-                                                <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TlV-WU-A0r" userLabel="NameLabelView">
-                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="17"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDe-Nl-j4Q">
-                                                                <rect key="frame" x="24" y="0.0" width="24.333333333333329" height="17"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                                                <color key="textColor" name="LightGray"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="bottom" secondItem="VDe-Nl-j4Q" secondAttribute="bottom" id="3S4-wY-JUL"/>
-                                                            <constraint firstItem="VDe-Nl-j4Q" firstAttribute="leading" secondItem="TlV-WU-A0r" secondAttribute="leading" constant="24" id="Gu6-SQ-iRH"/>
-                                                            <constraint firstAttribute="height" constant="17" id="b5W-JS-jaq"/>
-                                                            <constraint firstItem="VDe-Nl-j4Q" firstAttribute="top" secondItem="TlV-WU-A0r" secondAttribute="top" id="f7d-Qv-p5q"/>
-                                                        </constraints>
-                                                    </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tqe-Xq-JDP" userLabel="BtnView">
-                                                        <rect key="frame" x="16" y="37" width="361" height="40"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfC-Rk-Y8t">
-                                                                <rect key="frame" x="0.0" y="0.0" width="76.333333333333329" height="40"/>
-                                                                <color key="backgroundColor" name="G4"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="40" id="kkR-Ae-YYq"/>
-                                                                </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="오픈 예정">
-                                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
-                                                                </buttonConfiguration>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ol0-cs-pFd">
-                                                                <rect key="frame" x="92.333333333333343" y="0.0" width="76.333333333333343" height="40"/>
-                                                                <color key="backgroundColor" name="G4"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="40" id="EIY-b9-uss"/>
-                                                                </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="마감 임박">
-                                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
-                                                                </buttonConfiguration>
-                                                            </button>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstItem="gfC-Rk-Y8t" firstAttribute="centerY" secondItem="Tqe-Xq-JDP" secondAttribute="centerY" id="A76-uO-01a"/>
-                                                            <constraint firstItem="Ol0-cs-pFd" firstAttribute="centerY" secondItem="Tqe-Xq-JDP" secondAttribute="centerY" id="BRc-Ex-Zao"/>
-                                                            <constraint firstItem="Ol0-cs-pFd" firstAttribute="leading" secondItem="gfC-Rk-Y8t" secondAttribute="trailing" constant="16" id="OAe-sZ-4l2"/>
-                                                            <constraint firstItem="gfC-Rk-Y8t" firstAttribute="leading" secondItem="Tqe-Xq-JDP" secondAttribute="leading" id="WNs-bP-KHk"/>
-                                                        </constraints>
-                                                    </view>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="Tqe-Xq-JDP" secondAttribute="trailing" constant="16" id="D6V-9f-Zyh"/>
-                                                    <constraint firstItem="TlV-WU-A0r" firstAttribute="top" secondItem="nPl-9r-2Vo" secondAttribute="top" id="DD6-h1-NnM"/>
-                                                    <constraint firstItem="Tqe-Xq-JDP" firstAttribute="top" secondItem="TlV-WU-A0r" secondAttribute="bottom" constant="20" id="HaN-ZL-kYQ"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Tqe-Xq-JDP" secondAttribute="bottom" id="Iv2-aQ-w9G"/>
-                                                    <constraint firstItem="TlV-WU-A0r" firstAttribute="leading" secondItem="nPl-9r-2Vo" secondAttribute="leading" id="Qke-FC-qvT"/>
-                                                    <constraint firstAttribute="height" constant="77" id="SLU-6N-lXg"/>
-                                                    <constraint firstItem="Tqe-Xq-JDP" firstAttribute="leading" secondItem="nPl-9r-2Vo" secondAttribute="leading" constant="16" id="avk-ZS-vLX"/>
-                                                    <constraint firstAttribute="trailing" secondItem="TlV-WU-A0r" secondAttribute="trailing" id="wG7-AE-c1P"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HrA-I6-TjC" userLabel="ETCView">
-                                                <rect key="frame" x="0.0" y="439" width="393" height="77"/>
+                                                <rect key="frame" x="0.0" y="330" width="393" height="77"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L13-5r-cXh" userLabel="NameLabelView">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="17"/>
@@ -1170,8 +1102,6 @@
                         <outletCollection property="filterBtn" destination="Rw9-74-54u" collectionClass="NSMutableArray" id="NVm-ff-pdA"/>
                         <outletCollection property="filterBtn" destination="Emk-ty-eBB" collectionClass="NSMutableArray" id="e8D-KL-Vz5"/>
                         <outletCollection property="filterBtn" destination="zB0-zZ-2w8" collectionClass="NSMutableArray" id="dY7-Qk-pkS"/>
-                        <outletCollection property="filterBtn" destination="gfC-Rk-Y8t" collectionClass="NSMutableArray" id="Ogh-JG-g2U"/>
-                        <outletCollection property="filterBtn" destination="Ol0-cs-pFd" collectionClass="NSMutableArray" id="LUf-B6-1zt"/>
                         <outletCollection property="filterBtn" destination="wZ8-wE-JEW" collectionClass="NSMutableArray" id="rNr-wE-wO6"/>
                         <outletCollection property="filterBtn" destination="Qpr-Q1-R5o" collectionClass="NSMutableArray" id="kQc-04-YZA"/>
                         <outletCollection property="filterBtn" destination="CPD-dJ-lVU" collectionClass="NSMutableArray" id="nmq-79-GUI"/>
