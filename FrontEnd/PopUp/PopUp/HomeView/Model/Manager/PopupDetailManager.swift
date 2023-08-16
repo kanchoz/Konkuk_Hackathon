@@ -45,7 +45,28 @@ struct PopupDetailManager {
                     completion(.failure(error))
                 }
             }
-
-        }
+        
+    }
+    
+    static func searchPop(name: String, completion: @escaping (Result<PopupDetail, Error>) -> Void) {
+        let endPoint = APIConstants.Search.searchURL
+        
+        let parameters: [String: Any] = [
+            "name": name,
+        ]
+        
+        AF.request(endPoint, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: APIConstants.headers)
+            .validate()
+            .responseDecodable(of: PopupDetailStruct.self) { response in
+                switch response.result {
+                case .success(let res):
+                    let data = res.data
+                    completion(.success(data))
+                case .failure(let error):
+                    completion(.failure(error))
+                }
+            }
+        
+    }
     
 }

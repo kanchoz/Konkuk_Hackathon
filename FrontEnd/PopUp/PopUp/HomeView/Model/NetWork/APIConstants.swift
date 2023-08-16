@@ -48,7 +48,7 @@ struct APIConstants {
     }
     
     struct Search {
-        
+        static let searchURL = baseURL + "/search"
     }
     
     struct Login {
