@@ -19,18 +19,27 @@ class MakePiecePictureViewController: UIViewController, UIImagePickerControllerD
     @IBOutlet var cardImageView: UIImageView!
     @IBOutlet var myImageView: UIImageView!
     @IBOutlet var backBtn: UIButton!
+    
+    var imgName: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         backBtn.setTitle("", for: .normal)
         backBtn.setImage(UIImage(named: "NavBack"), for: .normal)
         selectedPicBtn.setTitle("", for: .normal)
-        selectedPicBtn.setImage(UIImage(named: "selectPic"), for: .normal)
+        //selectedPicBtn.setImage(UIImage(named: "selectPic"), for: .normal)
         //myImageView.image = UIImage(named: "Piece1")
         cardImageView.image = UIImage(named: "cardImage")
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(selectPicBtnTapped(_:)))
         selectedPicBtn.addGestureRecognizer(tapGesture)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("ew;ofjwefewfe")
+        print(imgName)
+        selectedPicBtn.setImage(UIImage(named: imgName), for: .normal)
     }
     
     

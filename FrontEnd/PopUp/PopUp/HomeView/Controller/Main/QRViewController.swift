@@ -34,10 +34,15 @@ class QRViewController: UIViewController, UIViewControllerTransitioningDelegate 
     
     @IBAction func makeBtnTapped(_ sender: UIButton) {
         
-        let makeSB = UIStoryboard(name: "PieceViewController", bundle: nil)
-        let makeVC = makeSB.instantiateViewController(withIdentifier: "MakePieceViewController") as! MakePieceViewController
-        makeVC.modalPresentationStyle = .overFullScreen
-        self.present(makeVC, animated: false)
+        
+        
+        
+        let nextSB = UIStoryboard(name: "PieceViewController", bundle: nil)
+        let nextVC = nextSB.instantiateViewController(identifier: "MakePiecePictureViewController") as! MakePiecePictureViewController
+        nextVC.imgName = "9Frame"
+        nextVC.modalPresentationStyle = .overFullScreen
+        
+        present(nextVC, animated: true)
     }
     
     @IBAction func nextBtnTapped(_ sender: UIButton) {

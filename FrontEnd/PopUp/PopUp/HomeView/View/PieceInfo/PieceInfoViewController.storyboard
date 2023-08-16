@@ -936,9 +936,11 @@
                     </view>
                     <size key="freeformSize" width="393" height="1700"/>
                     <connections>
+                        <outlet property="SNSLabel" destination="DkQ-dy-U6K" id="Qcc-4c-Ffp"/>
                         <outlet property="backBtn" destination="gpu-9v-2Ff" id="4yB-Wm-jtR"/>
                         <outlet property="categoryLabel" destination="idJ-bp-Ppy" id="lt7-bJ-vj2"/>
                         <outlet property="collectionView" destination="RLs-Du-zx5" id="0DS-eR-j1C"/>
+                        <outlet property="detailLocationLabel" destination="QAs-5N-Ook" id="wxv-53-eS6"/>
                         <outlet property="popupDetailInfoLabel" destination="26H-y9-1xY" id="U7c-11-bcA"/>
                         <outlet property="popupImage" destination="mVk-9P-Eev" id="BoV-Pf-DXP"/>
                         <outlet property="popupInfoLabel" destination="R2b-KU-V2Q" id="p6S-nR-uN2"/>
