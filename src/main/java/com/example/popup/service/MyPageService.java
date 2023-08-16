@@ -23,7 +23,7 @@ public class MyPageService {
         List<Popup> popupList = popupRepository.findAllByIsMarkedTrue();
 
 
-        return GlobalResDto.success(popupList,null);
+        return GlobalResDto.success(popupList, null);
     }
 
     @Transactional
@@ -37,6 +37,6 @@ public class MyPageService {
 
         popupRepository.save(popup);
 
-        return GlobalResDto.success(null,null);
+        return GlobalResDto.success(null, null);
     }
 }

@@ -23,9 +23,9 @@ public class Member {
     @Column
     private String accountPw;
 
-    public Member(MemberReqDto memberReqDto){
+    public Member(MemberReqDto memberReqDto) {
 
-        this.email=memberReqDto.getEmail();
-        this.accountPw=memberReqDto.getAccountPw();
+        this.email = memberReqDto.getEmail();
+        this.accountPw = memberReqDto.getAccountPw();
     }
 }

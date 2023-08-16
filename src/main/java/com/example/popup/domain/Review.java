@@ -28,7 +28,7 @@ public class Review {
 
     public Review(ReviewReqDto reviewReqDto) {
 
-        this.image=reviewReqDto.getImage();
-        this.content=reviewReqDto.getContent();
+        this.image = reviewReqDto.getImage();
+        this.content = reviewReqDto.getContent();
     }
 }

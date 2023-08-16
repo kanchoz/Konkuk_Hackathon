@@ -21,7 +21,7 @@ public class MemberService {
         Member member = new Member(memberReqDto);
         memberRepository.save(member);
 
-        return GlobalResDto.success(null,null);
+        return GlobalResDto.success(null, null);
 
     }
 }

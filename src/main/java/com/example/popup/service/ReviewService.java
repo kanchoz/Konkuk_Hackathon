@@ -1,6 +1,5 @@
 package com.example.popup.service;
 
-import com.example.popup.domain.Popup;
 import com.example.popup.domain.Review;
 import com.example.popup.dto.ReqDto.ReviewReqDto;
 import com.example.popup.repository.ReviewRepository;

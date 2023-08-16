@@ -1,7 +1,7 @@
 spring:
   jpa:
     hibernate:
-#      ddl-auto: create-drop
+      #      ddl-auto: create-drop
       ddl-auto: update
   datasource:
     password: ENC(Yb6HItJDtAQEMqaqL+8lNdz4wJd+n2dp)

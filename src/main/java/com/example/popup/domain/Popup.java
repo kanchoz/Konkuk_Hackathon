@@ -64,28 +64,28 @@ public class Popup {
 
     public Popup(PopupReqDto popupReqDto) {
 
-        this.image=popupReqDto.getImage();
-        this.theme=popupReqDto.getTheme();
-        this.name=popupReqDto.getName();
-        this.location=popupReqDto.getLocation();
-        this.duration=popupReqDto.getDuration();
-        this.schedule=popupReqDto.getSchedule();
-        this.isFree=popupReqDto.getIsFree();
-        this.parking=popupReqDto.getParking();
-        this.isMarked=popupReqDto.getIsMarked();
-        this.detailLocation=popupReqDto.getDetailLocation();
-        this.sns=popupReqDto.getSns();
-        this.detailInfo=popupReqDto.getDetailInfo();
-        this.reviewCounts=popupReqDto.getReviewCounts();
+        this.image = popupReqDto.getImage();
+        this.theme = popupReqDto.getTheme();
+        this.name = popupReqDto.getName();
+        this.location = popupReqDto.getLocation();
+        this.duration = popupReqDto.getDuration();
+        this.schedule = popupReqDto.getSchedule();
+        this.isFree = popupReqDto.getIsFree();
+        this.parking = popupReqDto.getParking();
+        this.isMarked = popupReqDto.getIsMarked();
+        this.detailLocation = popupReqDto.getDetailLocation();
+        this.sns = popupReqDto.getSns();
+        this.detailInfo = popupReqDto.getDetailInfo();
+        this.reviewCounts = popupReqDto.getReviewCounts();
     }
 
-    public void updatePopup(BookMarkReqDto bookMarkReqDto){
+    public void updatePopup(BookMarkReqDto bookMarkReqDto) {
 
-        this.isMarked=bookMarkReqDto.getIsMarked();
+        this.isMarked = bookMarkReqDto.getIsMarked();
     }
 
-    public void update2Popup(){
+    public void update2Popup() {
 
-        this.isMarked=false;
+        this.isMarked = false;
     }
 }

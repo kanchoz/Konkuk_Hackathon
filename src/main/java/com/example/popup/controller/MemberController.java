@@ -1,8 +1,6 @@
 package com.example.popup.controller;
 
-import com.example.popup.domain.Popup;
 import com.example.popup.dto.ReqDto.MemberReqDto;
-import com.example.popup.dto.ReqDto.PopupReqDto;
 import com.example.popup.dto.ResDto.GlobalResDto;
 import com.example.popup.service.MemberService;
 import lombok.RequiredArgsConstructor;
@@ -21,7 +19,7 @@ public class MemberController {
     private final MemberService memberService;
 
     @PostMapping("/login")
-    public GlobalResDto<?> login(@RequestBody MemberReqDto memberReqDto){
+    public GlobalResDto<?> login(@RequestBody MemberReqDto memberReqDto) {
 
 
         return memberService.login(memberReqDto);

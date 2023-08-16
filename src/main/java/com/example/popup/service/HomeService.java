@@ -26,7 +26,7 @@ public class HomeService {
                 .map(Popup::getName)
                 .collect(Collectors.toList());
 
-        return GlobalResDto.success(popupNames,null);
+        return GlobalResDto.success(popupNames, null);
     }
 
     @Transactional
@@ -39,6 +39,6 @@ public class HomeService {
                 .map(PopupHomeResDto::new)
                 .collect(Collectors.toList());
 
-        return GlobalResDto.success(popupResDtoList,null);
+        return GlobalResDto.success(popupResDtoList, null);
     }
 }

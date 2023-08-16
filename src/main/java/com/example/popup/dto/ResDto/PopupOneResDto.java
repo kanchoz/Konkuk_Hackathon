@@ -1,7 +1,6 @@
 package com.example.popup.dto.ResDto;
 
 import com.example.popup.domain.Popup;
-import com.example.popup.domain.Review;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -48,7 +47,7 @@ public class PopupOneResDto {
         this.isFree = popup.getIsFree();
         this.parking = popup.getParking();
         this.isMarked = popup.getIsMarked();
-        this.sns=popup.getSns();
-        this.reviewCounts=popup.getReviewCounts();
+        this.sns = popup.getSns();
+        this.reviewCounts = popup.getReviewCounts();
     }
 }

@@ -1,7 +1,6 @@
 package com.example.popup.service;
 
 import com.example.popup.domain.Popup;
-import com.example.popup.domain.Review;
 import com.example.popup.dto.ReqDto.BookMarkReqDto;
 import com.example.popup.dto.ReqDto.PopupReqDto;
 import com.example.popup.dto.ResDto.GlobalResDto;
@@ -14,7 +13,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -44,7 +42,7 @@ public class PopupService {
 
         PopupOneResDto popupOneResDto = new PopupOneResDto(popup);
 
-        return GlobalResDto.success(popupOneResDto,null);
+        return GlobalResDto.success(popupOneResDto, null);
     }
 
     public GlobalResDto<?> bookmarkPopup(Long popupId, BookMarkReqDto bookMarkReqDto) {

@@ -44,11 +44,11 @@ public class PopupHomeResDto {
         this.schedule = popup.getSchedule();
         this.isFree = popup.getIsFree();
         this.parking = popup.getParking();
-        this.parking=popup.getParking();
-        this.isMarked=popup.getIsMarked();
-        this.detailLocation=popup.getDetailLocation();
-        this.sns=popup.getSns();
-        this.detailInfo=popup.getDetailInfo();
-        this.reviewCounts=popup.getReviewCounts();
+        this.parking = popup.getParking();
+        this.isMarked = popup.getIsMarked();
+        this.detailLocation = popup.getDetailLocation();
+        this.sns = popup.getSns();
+        this.detailInfo = popup.getDetailInfo();
+        this.reviewCounts = popup.getReviewCounts();
     }
 }

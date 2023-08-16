@@ -18,20 +18,20 @@ public class PopupController {
     private final PopupService popupService;
 
     @PostMapping("/save")
-    public Popup getSave(@RequestBody PopupReqDto popupReqDto){
+    public Popup getSave(@RequestBody PopupReqDto popupReqDto) {
 
 
         return popupService.getSave(popupReqDto);
     }
 
     @GetMapping("/{popupId}")
-    public GlobalResDto<?> getOnePopup(@PathVariable Long popupId){
+    public GlobalResDto<?> getOnePopup(@PathVariable Long popupId) {
 
         return popupService.getOnePopup(popupId);
     }
 
     @PostMapping("/{popupId}")
-    public GlobalResDto<?> bookmarkPopup(@PathVariable Long popupId, @RequestBody BookMarkReqDto bookMarkReqDto){
+    public GlobalResDto<?> bookmarkPopup(@PathVariable Long popupId, @RequestBody BookMarkReqDto bookMarkReqDto) {
 
         return popupService.bookmarkPopup(popupId, bookMarkReqDto);
     }

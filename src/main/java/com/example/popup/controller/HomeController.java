@@ -1,6 +1,5 @@
 package com.example.popup.controller;
 
-import com.example.popup.dto.ReqDto.PopupReqDto;
 import com.example.popup.dto.ResDto.GlobalResDto;
 import com.example.popup.service.HomeService;
 import lombok.RequiredArgsConstructor;
@@ -19,7 +18,7 @@ public class HomeController {
 
 
     @GetMapping("/hotPopup")
-    public GlobalResDto<?> getHotPopup(){
+    public GlobalResDto<?> getHotPopup() {
 
         return homeService.getHotPopup();
     }

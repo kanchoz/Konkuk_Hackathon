@@ -26,6 +26,6 @@ public class GlobalResDto<T> {
 
 
     public static GlobalResDto<String> fail(String msg) {
-        return new GlobalResDto<>(400,null,msg);
+        return new GlobalResDto<>(400, null, msg);
     }
 }
