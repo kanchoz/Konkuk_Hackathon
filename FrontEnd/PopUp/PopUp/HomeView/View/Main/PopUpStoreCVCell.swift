@@ -10,4 +10,20 @@ import UIKit
 class PopUpStoreCVCell: UICollectionViewCell {
     @IBOutlet var storeImg: UIImageView!
     
+    @IBOutlet var buttonTapped: UIButton!
+    
+    var id: Int = 0
+    
+    weak var delegate: NextBtnDelegate?
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+//        storeImg.image = UIImage(named: "\(id)HotStore")
+        buttonTapped.addTarget(self, action: #selector(tapped), for: .touchUpInside)
+    }
+    
+    @objc func tapped() {
+        delegate?.nextButtonTappedd(id: id)
+        print("asdasdasdasdasd")
+    }
 }

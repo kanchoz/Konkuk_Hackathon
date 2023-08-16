@@ -38,6 +38,10 @@
 		318FC3DE2A820C5E0051CBEE /* PopUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FC3DD2A820C5E0051CBEE /* PopUpUITests.swift */; };
 		318FC3E02A820C5E0051CBEE /* PopUpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FC3DF2A820C5E0051CBEE /* PopUpUITestsLaunchTests.swift */; };
 		319EDE402A8665F9006AD28C /* SearchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319EDE3F2A8665F9006AD28C /* SearchView.storyboard */; };
+		31B39E672A8D268C00F6B25E /* StoreSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B39E662A8D268C00F6B25E /* StoreSimple.swift */; };
+		31B39E692A8D3F4700F6B25E /* PopUpStoreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B39E682A8D3F4700F6B25E /* PopUpStoreListViewController.swift */; };
+		31B39E6B2A8D3FE400F6B25E /* EntireStoreListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B39E6A2A8D3FE400F6B25E /* EntireStoreListTVCell.swift */; };
+		31B39E6D2A8D562C00F6B25E /* NextBtnDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B39E6C2A8D562C00F6B25E /* NextBtnDelegate.swift */; };
 		31DF1A332A87759000CD5A73 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF1A322A87759000CD5A73 /* RankingTableViewCell.swift */; };
 		31DF1A352A8784DA00CD5A73 /* DataSendDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF1A342A8784DA00CD5A73 /* DataSendDelegate.swift */; };
 		31DF1A372A87D98500CD5A73 /* DummyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF1A362A87D98500CD5A73 /* DummyStore.swift */; };
@@ -141,6 +145,10 @@
 		318FC3DD2A820C5E0051CBEE /* PopUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpUITests.swift; sourceTree = "<group>"; };
 		318FC3DF2A820C5E0051CBEE /* PopUpUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		319EDE3F2A8665F9006AD28C /* SearchView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchView.storyboard; sourceTree = "<group>"; };
+		31B39E662A8D268C00F6B25E /* StoreSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSimple.swift; sourceTree = "<group>"; };
+		31B39E682A8D3F4700F6B25E /* PopUpStoreListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpStoreListViewController.swift; sourceTree = "<group>"; };
+		31B39E6A2A8D3FE400F6B25E /* EntireStoreListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntireStoreListTVCell.swift; sourceTree = "<group>"; };
+		31B39E6C2A8D562C00F6B25E /* NextBtnDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBtnDelegate.swift; sourceTree = "<group>"; };
 		31DF1A322A87759000CD5A73 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
 		31DF1A342A8784DA00CD5A73 /* DataSendDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataSendDelegate.swift; path = PopUp/HomeView/View/Search/DataSendDelegate.swift; sourceTree = SOURCE_ROOT; };
 		31DF1A362A87D98500CD5A73 /* DummyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DummyStore.swift; path = PopUp/HomeView/View/Search/DummyStore.swift; sourceTree = SOURCE_ROOT; };
@@ -252,6 +260,7 @@
 				313B68C82A8CA612007D70B7 /* UserInfoData.swift */,
 				3185E6A82A8D085C00716F17 /* StoreInfo.swift */,
 				5BAEA4D52A8D266000E2D382 /* StoreDetail.swift */,
+				31B39E662A8D268C00F6B25E /* StoreSimple.swift */,
 			);
 			path = ParsingData;
 			sourceTree = "<group>";
@@ -364,6 +373,7 @@
 			children = (
 				318FC3C22A820C5C0051CBEE /* Main.storyboard */,
 				31EEB6B32A83351100ABA9CF /* PopUpStoreCVCell.swift */,
+				31B39E6A2A8D3FE400F6B25E /* EntireStoreListTVCell.swift */,
 				31EEB6B52A83352F00ABA9CF /* VisitedPieceCVCell.swift */,
 				31EEB6BB2A83937D00ABA9CF /* CategoryCVCell.swift */,
 				31EEB6B72A83354100ABA9CF /* StoreListCVCell.swift */,
@@ -409,6 +419,8 @@
 				5BAEA4D72A8D477900E2D382 /* PopupResponseStructure.swift */,
 				5BAEA4DB2A8D547600E2D382 /* PopupDetailResponseStructure.swift */,
 				5BAEA4DD2A8D5A8D00E2D382 /* MyPopupResponseStructure.swift */,
+				31B39E6C2A8D562C00F6B25E /* NextBtnDelegate.swift */,
+
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -484,6 +496,7 @@
 				5B9BF4DE2A8BC7AD00F564CC /* CustomPresentationController.swift */,
 				5B9BF4E02A8BD0CC00F564CC /* RecommandPopupViewController.swift */,
 				5B9BF4E22A8BD2DE00F564CC /* RecommandCollectionViewCell.swift */,
+				31B39E682A8D3F4700F6B25E /* PopUpStoreListViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -800,6 +813,7 @@
 				31EEB6B62A83352F00ABA9CF /* VisitedPieceCVCell.swift in Sources */,
 				31DF1A332A87759000CD5A73 /* RankingTableViewCell.swift in Sources */,
 				3111896D2A8BD24F00C27E3E /* NotificationTableViewCell.swift in Sources */,
+				31B39E672A8D268C00F6B25E /* StoreSimple.swift in Sources */,
 				5BAEA4CA2A8CC31F00E2D382 /* PopupDetailBookMarkResponseData.swift in Sources */,
 				5B9BF4DF2A8BC7AD00F564CC /* CustomPresentationController.swift in Sources */,
 				5BAEA4D22A8CD71700E2D382 /* PopupDetailManager.swift in Sources */,
@@ -815,6 +829,7 @@
 				5B447A542A8A89DC009488F1 /* PieceInfoTableViewCell.swift in Sources */,
 				313B68C62A8CA27A007D70B7 /* KakaoWebViewViewController.swift in Sources */,
 				5B447A562A8A9A5C009488F1 /* PieceInfoCollectionViewCell.swift in Sources */,
+				31B39E6B2A8D3FE400F6B25E /* EntireStoreListTVCell.swift in Sources */,
 				311325E72A8728EC006F3140 /* SearchDetailViewController.swift in Sources */,
 				31E5C0E52A86681300A9B383 /* SearchViewController.swift in Sources */,
 				31DF1A352A8784DA00CD5A73 /* DataSendDelegate.swift in Sources */,
@@ -842,12 +857,14 @@
 				31EEB6BC2A83937D00ABA9CF /* CategoryCVCell.swift in Sources */,
 				5BAEA4CD2A8CC4CE00E2D382 /* HomeManager.swift in Sources */,
 				318C44152A8A29CB0036582D /* VisitedRecordViewController.swift in Sources */,
+				31B39E692A8D3F4700F6B25E /* PopUpStoreListViewController.swift in Sources */,
 				318C44192A8A38FA0036582D /* StoredTableViewCell.swift in Sources */,
 				5B0D947E2A89178E00F361C8 /* PieceNavigationController.swift in Sources */,
 				5BAEA4D62A8D266000E2D382 /* StoreDetail.swift in Sources */,
 				31EEB6B42A83351100ABA9CF /* PopUpStoreCVCell.swift in Sources */,
 				318C441B2A8A738B0036582D /* StoredPopUpViewController.swift in Sources */,
 				31113F8E2A8939D700A82CCD /* StoreInfoViewController.swift in Sources */,
+				31B39E6D2A8D562C00F6B25E /* NextBtnDelegate.swift in Sources */,
 				5B0D947F2A89178E00F361C8 /* PieceDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

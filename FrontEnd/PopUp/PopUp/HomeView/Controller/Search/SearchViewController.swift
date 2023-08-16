@@ -243,11 +243,23 @@ extension SearchViewController: MKMapViewDelegate, CLLocationManagerDelegate{
                 
             }
             else {
-                //                let storeVC = self.storyboard?.instantiateViewController(identifier: "StoreInfoVC") as! StoreInfoViewController
+                var tempindex = 0;
+                if annotation.title == "젠틀몬스터 이즈백"{
+                    tempindex = 0
+                }
+                else if annotation.title == "르세라핌"{
+                    tempindex = 1
+                }
+                else if annotation.title == "뉴진스 바니랜드"{
+                    tempindex = 2
+                }
+                else{
+                    tempindex = 3
+                }
                 
                 let storeVC = self.storyboard?.instantiateViewController(identifier: "StoreInfoVC") as! StoreInfoViewController
                 storeVC.modalPresentationStyle = .pageSheet
-                
+                storeVC.data = DummyStore.storeLocation[tempindex]
                 if #available(iOS 15.0, *) {
                     if let sheet = storeVC.sheetPresentationController {
                         sheet.delegate = self
