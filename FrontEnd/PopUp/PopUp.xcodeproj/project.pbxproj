@@ -15,6 +15,8 @@
 		311189762A8BDAC700C27E3E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311189752A8BDAC700C27E3E /* LoginViewController.swift */; };
 		311325E52A8728DB006F3140 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311325E42A8728DB006F3140 /* FilterViewController.swift */; };
 		311325E72A8728EC006F3140 /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311325E62A8728EC006F3140 /* SearchDetailViewController.swift */; };
+		313B68C62A8CA27A007D70B7 /* KakaoWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313B68C52A8CA27A007D70B7 /* KakaoWebViewViewController.swift */; };
+		313B68C92A8CA612007D70B7 /* UserInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313B68C82A8CA612007D70B7 /* UserInfoData.swift */; };
 		318C440F2A8A28A60036582D /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318C440E2A8A28A60036582D /* MyPage.storyboard */; };
 		318C44112A8A29460036582D /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C44102A8A29460036582D /* MyPageViewController.swift */; };
 		318C44152A8A29CB0036582D /* VisitedRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C44142A8A29CB0036582D /* VisitedRecordViewController.swift */; };
@@ -97,6 +99,8 @@
 		311189752A8BDAC700C27E3E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		311325E42A8728DB006F3140 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		311325E62A8728EC006F3140 /* SearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
+		313B68C52A8CA27A007D70B7 /* KakaoWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoWebViewViewController.swift; sourceTree = "<group>"; };
+		313B68C82A8CA612007D70B7 /* UserInfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoData.swift; sourceTree = "<group>"; };
 		318C440E2A8A28A60036582D /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		318C44102A8A29460036582D /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		318C44142A8A29CB0036582D /* VisitedRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedRecordViewController.swift; sourceTree = "<group>"; };
@@ -195,6 +199,7 @@
 			children = (
 				311189732A8BDAAB00C27E3E /* AfterLoginViewController.swift */,
 				311189752A8BDAC700C27E3E /* LoginViewController.swift */,
+				313B68C52A8CA27A007D70B7 /* KakaoWebViewViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -208,6 +213,14 @@
 				31113F8D2A8939D700A82CCD /* StoreInfoViewController.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		313B68CA2A8CA635007D70B7 /* ParsingData */ = {
+			isa = PBXGroup;
+			children = (
+				313B68C82A8CA612007D70B7 /* UserInfoData.swift */,
+			);
+			path = ParsingData;
 			sourceTree = "<group>";
 		};
 		318C440C2A8A28860036582D /* MyPage */ = {
@@ -352,6 +365,7 @@
 		31EEB6B12A8334BB00ABA9CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				313B68CA2A8CA635007D70B7 /* ParsingData */,
 				318C441C2A8A79360036582D /* MyPage */,
 				31DF1A342A8784DA00CD5A73 /* DataSendDelegate.swift */,
 				31DF1A362A87D98500CD5A73 /* DummyStore.swift */,
@@ -390,7 +404,6 @@
 				4FB393E167B8F9250A47B7AE /* Pods-PopUpTests.debug.xcconfig */,
 				570AA3A97084F5D5D09C7B3A /* Pods-PopUpTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -464,7 +477,6 @@
 				318FC3B62A820C5C0051CBEE /* Frameworks */,
 				318FC3B72A820C5C0051CBEE /* Resources */,
 				D9950E9E9671C0C994500A27 /* [CP] Embed Pods Frameworks */,
-				AAABE06D342825DB95206A40 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -503,7 +515,6 @@
 				318FC3D62A820C5E0051CBEE /* Frameworks */,
 				318FC3D72A820C5E0051CBEE /* Resources */,
 				99B395D5ED97E495CC188F85 /* [CP] Embed Pods Frameworks */,
-				27E9C72B452AD73DE994F33C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -591,23 +602,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27E9C72B452AD73DE994F33C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PopUp-PopUpUITests/Pods-PopUp-PopUpUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PopUp-PopUpUITests/Pods-PopUp-PopUpUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PopUp-PopUpUITests/Pods-PopUp-PopUpUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5E8BFFD082AC7C6DBCF031E7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -645,23 +639,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PopUp-PopUpUITests/Pods-PopUp-PopUpUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AAABE06D342825DB95206A40 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PopUp/Pods-PopUp-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PopUp/Pods-PopUp-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PopUp/Pods-PopUp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CA4D9DF6C568EA6CDC1FB1FF /* [CP] Check Pods Manifest.lock */ = {
@@ -749,6 +726,7 @@
 				5B447A512A8A789F009488F1 /* PieceInfoViewController.swift in Sources */,
 				311189742A8BDAAB00C27E3E /* AfterLoginViewController.swift in Sources */,
 				5B447A542A8A89DC009488F1 /* PieceInfoTableViewCell.swift in Sources */,
+				313B68C62A8CA27A007D70B7 /* KakaoWebViewViewController.swift in Sources */,
 				5B447A562A8A9A5C009488F1 /* PieceInfoCollectionViewCell.swift in Sources */,
 				311325E72A8728EC006F3140 /* SearchDetailViewController.swift in Sources */,
 				31E5C0E52A86681300A9B383 /* SearchViewController.swift in Sources */,
@@ -765,6 +743,7 @@
 				3111896B2A8BD1A700C27E3E /* NotificationViewController.swift in Sources */,
 				318C44112A8A29460036582D /* MyPageViewController.swift in Sources */,
 				5B9BF4E12A8BD0CC00F564CC /* RecommandPopupViewController.swift in Sources */,
+				313B68C92A8CA612007D70B7 /* UserInfoData.swift in Sources */,
 				5B0D94872A8917E300F361C8 /* PieceCollectionViewCell.swift in Sources */,
 				318C44242A8A7DF60036582D /* VisitedPopUpRecordTableViewCell.swift in Sources */,
 				318FC3BD2A820C5C0051CBEE /* AppDelegate.swift in Sources */,
@@ -956,7 +935,6 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/IOS_DaumMap_SDK_1.4.0/lib/DaumMap.embeddedframework",
@@ -981,7 +959,9 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -996,7 +976,6 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/IOS_DaumMap_SDK_1.4.0/lib/DaumMap.embeddedframework",
@@ -1021,7 +1000,9 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

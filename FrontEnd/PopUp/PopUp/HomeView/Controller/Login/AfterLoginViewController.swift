@@ -6,11 +6,11 @@
 //
 
 import UIKit
+import Alamofire
 
 class AfterLoginViewController: UIViewController {
     
     @IBOutlet var nicknameLabel: UILabel!
-    
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var imageViews: [UIImageView]!
     var currentIndex: Int = 0
@@ -21,8 +21,37 @@ class AfterLoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("s")
         startAutoScroll()
+        
+        print("\n\n\n\nddsdsdsdsdssdsdsdsssdn\n")
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("로그인 확인")
+        let defaults = UserDefaults.standard
+        let check = defaults.value(forKey: "isLoggedIn")
+        if check as! Bool{
+            let name = "ㅇㅇㅇ"
+            nicknameLabel.text = "\(name)님,\n안녕하세요!"
+            //이름 요청
+        }
+        //로그인이 되어 있지 않은 상태
+        else{
+            let sb  = UIStoryboard(name: "LoginView", bundle: nil)
+            let loginVC = sb.instantiateViewController(withIdentifier: "loginVC") as! LoginViewController
+            print(loginVC)
+            loginVC.modalTransitionStyle = .coverVertical
+            loginVC.modalPresentationStyle = .fullScreen
+            
+            self.present(loginVC, animated: false, completion: nil)
+        }
+    }
+    
+    
+    
+    @IBAction func startBtnTapped(_ sender: Any) {
+        dismiss(animated: true)
     }
     
     func startAutoScroll() {

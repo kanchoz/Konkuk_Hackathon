@@ -6,7 +6,6 @@ target 'PopUp' do
   use_frameworks!
 
   pod 'Alamofire', '~> 5.7'
-  pod 'KakaoSDK'
   # Pods for PopUp
 
   target 'PopUpTests' do
