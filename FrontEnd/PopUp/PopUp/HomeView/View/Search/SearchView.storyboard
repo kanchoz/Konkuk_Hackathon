@@ -1032,6 +1032,18 @@
                                                     <constraint firstAttribute="width" constant="24" id="qSd-r9-uzW"/>
                                                 </constraints>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzX-h5-GZK">
+                                                <rect key="frame" x="16" y="16" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="Gwz-Lu-TGF"/>
+                                                    <constraint firstAttribute="width" constant="24" id="fvQ-in-ceh"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="searchBtnTapped:" destination="2Eb-ka-N9K" eventType="touchUpInside" id="KUl-9j-ZmJ"/>
+                                                </connections>
+                                            </button>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="지역, 팝업 스토어 이름 검색" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pdf-5l-OG5">
                                                 <rect key="frame" x="56" y="16" width="261" height="24"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1047,8 +1059,11 @@
                                             <constraint firstItem="mNE-CJ-wkO" firstAttribute="leading" secondItem="CLb-4L-wBu" secondAttribute="leading" constant="16" id="Jn1-aL-YOM"/>
                                             <constraint firstAttribute="trailing" secondItem="Pdf-5l-OG5" secondAttribute="trailing" constant="12" id="MYg-mj-b1q"/>
                                             <constraint firstAttribute="height" constant="56" id="T70-3u-khM"/>
+                                            <constraint firstAttribute="bottom" secondItem="uzX-h5-GZK" secondAttribute="bottom" constant="16" id="V0o-yu-t0i"/>
                                             <constraint firstAttribute="bottom" secondItem="mNE-CJ-wkO" secondAttribute="bottom" constant="16" id="YQF-hV-XIU"/>
+                                            <constraint firstItem="uzX-h5-GZK" firstAttribute="leading" secondItem="CLb-4L-wBu" secondAttribute="leading" constant="16" id="Zv3-Vl-nqs"/>
                                             <constraint firstItem="Pdf-5l-OG5" firstAttribute="top" secondItem="CLb-4L-wBu" secondAttribute="top" constant="16" id="qSi-XG-6x1"/>
+                                            <constraint firstItem="uzX-h5-GZK" firstAttribute="top" secondItem="CLb-4L-wBu" secondAttribute="top" constant="16" id="rf8-uS-2Sc"/>
                                             <constraint firstAttribute="bottom" secondItem="Pdf-5l-OG5" secondAttribute="bottom" constant="16" id="sIh-R0-VwG"/>
                                             <constraint firstItem="Pdf-5l-OG5" firstAttribute="leading" secondItem="mNE-CJ-wkO" secondAttribute="trailing" constant="16" id="xWd-r7-ch4"/>
                                         </constraints>

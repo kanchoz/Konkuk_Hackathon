@@ -420,7 +420,6 @@
 				5BAEA4DB2A8D547600E2D382 /* PopupDetailResponseStructure.swift */,
 				5BAEA4DD2A8D5A8D00E2D382 /* MyPopupResponseStructure.swift */,
 				31B39E6C2A8D562C00F6B25E /* NextBtnDelegate.swift */,
-
 			);
 			path = Model;
 			sourceTree = "<group>";
