@@ -77,6 +77,11 @@
 		5BAEA4CD2A8CC4CE00E2D382 /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEA4CC2A8CC4CE00E2D382 /* HomeManager.swift */; };
 		5BAEA4D22A8CD71700E2D382 /* PopupDetailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEA4D12A8CD71700E2D382 /* PopupDetailManager.swift */; };
 		5BAEA4D42A8D16D600E2D382 /* Login2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEA4D32A8D16D600E2D382 /* Login2ViewController.swift */; };
+		5BAEA4D62A8D266000E2D382 /* StoreDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEA4D52A8D266000E2D382 /* StoreDetail.swift */; };
+		5BAEA4D82A8D477900E2D382 /* PopupResponseStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEA4D72A8D477900E2D382 /* PopupResponseStructure.swift */; };
+		5BAEA4DA2A8D47AA00E2D382 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEA4D92A8D47AA00E2D382 /* PopupManager.swift */; };
+		5BAEA4DC2A8D547600E2D382 /* PopupDetailResponseStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEA4DB2A8D547600E2D382 /* PopupDetailResponseStructure.swift */; };
+		5BAEA4DE2A8D5A8D00E2D382 /* MyPopupResponseStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEA4DD2A8D5A8D00E2D382 /* MyPopupResponseStructure.swift */; };
 		D7ED2EDD3063295B59E2BF43 /* Pods_PopUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8259B5120241622544272A9 /* Pods_PopUp.framework */; };
 		DC23FB5AB0C41933D6451B1F /* Pods_PopUp_PopUpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CE07B182A8FFD143C621B3 /* Pods_PopUp_PopUpUITests.framework */; };
 		EAF258F42A52E53FBA5CE3C8 /* Pods_PopUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A25E2221F7FCFFF7D7DBC73 /* Pods_PopUpTests.framework */; };
@@ -179,6 +184,11 @@
 		5BAEA4CC2A8CC4CE00E2D382 /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
 		5BAEA4D12A8CD71700E2D382 /* PopupDetailManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDetailManager.swift; sourceTree = "<group>"; };
 		5BAEA4D32A8D16D600E2D382 /* Login2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login2ViewController.swift; sourceTree = "<group>"; };
+		5BAEA4D52A8D266000E2D382 /* StoreDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetail.swift; sourceTree = "<group>"; };
+		5BAEA4D72A8D477900E2D382 /* PopupResponseStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupResponseStructure.swift; sourceTree = "<group>"; };
+		5BAEA4D92A8D47AA00E2D382 /* PopupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
+		5BAEA4DB2A8D547600E2D382 /* PopupDetailResponseStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDetailResponseStructure.swift; sourceTree = "<group>"; };
+		5BAEA4DD2A8D5A8D00E2D382 /* MyPopupResponseStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPopupResponseStructure.swift; sourceTree = "<group>"; };
 		6360D02F942C34D288A76E31 /* Pods-PopUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopUp.release.xcconfig"; path = "Target Support Files/Pods-PopUp/Pods-PopUp.release.xcconfig"; sourceTree = "<group>"; };
 		7A25E2221F7FCFFF7D7DBC73 /* Pods_PopUpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopUpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8259B5120241622544272A9 /* Pods_PopUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,6 +251,7 @@
 			children = (
 				313B68C82A8CA612007D70B7 /* UserInfoData.swift */,
 				3185E6A82A8D085C00716F17 /* StoreInfo.swift */,
+				5BAEA4D52A8D266000E2D382 /* StoreDetail.swift */,
 			);
 			path = ParsingData;
 			sourceTree = "<group>";
@@ -395,6 +406,9 @@
 				318C441C2A8A79360036582D /* MyPage */,
 				31DF1A342A8784DA00CD5A73 /* DataSendDelegate.swift */,
 				31DF1A362A87D98500CD5A73 /* DummyStore.swift */,
+				5BAEA4D72A8D477900E2D382 /* PopupResponseStructure.swift */,
+				5BAEA4DB2A8D547600E2D382 /* PopupDetailResponseStructure.swift */,
+				5BAEA4DD2A8D5A8D00E2D382 /* MyPopupResponseStructure.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -523,6 +537,7 @@
 			children = (
 				5BAEA4CC2A8CC4CE00E2D382 /* HomeManager.swift */,
 				5BAEA4D12A8CD71700E2D382 /* PopupDetailManager.swift */,
+				5BAEA4D92A8D47AA00E2D382 /* PopupManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -772,13 +787,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				318C44222A8A79D80036582D /* ReviewBtnDelegate.swift in Sources */,
+				5BAEA4DA2A8D47AA00E2D382 /* PopupManager.swift in Sources */,
 				5B9BF4D72A8B83E400F564CC /* MakePieceTableViewCell.swift in Sources */,
 				31DF1A372A87D98500CD5A73 /* DummyStore.swift in Sources */,
 				3185E6A92A8D085C00716F17 /* StoreInfo.swift in Sources */,
 				318FC3C12A820C5C0051CBEE /* ViewController.swift in Sources */,
 				5B9BF4DB2A8BA58500F564CC /* PieceSaveViewController.swift in Sources */,
 				5BAEA4C42A8CC0F400E2D382 /* HomeAllPopupResponseData.swift in Sources */,
+				5BAEA4D82A8D477900E2D382 /* PopupResponseStructure.swift in Sources */,
 				318C44172A8A29D90036582D /* ReviewViewController.swift in Sources */,
+				5BAEA4DE2A8D5A8D00E2D382 /* MyPopupResponseStructure.swift in Sources */,
 				31EEB6B62A83352F00ABA9CF /* VisitedPieceCVCell.swift in Sources */,
 				31DF1A332A87759000CD5A73 /* RankingTableViewCell.swift in Sources */,
 				3111896D2A8BD24F00C27E3E /* NotificationTableViewCell.swift in Sources */,
@@ -791,6 +809,7 @@
 				5BAEA4C82A8CC2BE00E2D382 /* PopupDetailResponseData.swift in Sources */,
 				5B0D94892A8917E300F361C8 /* PieceDetailTableViewCell.swift in Sources */,
 				5B447A512A8A789F009488F1 /* PieceInfoViewController.swift in Sources */,
+				5BAEA4DC2A8D547600E2D382 /* PopupDetailResponseStructure.swift in Sources */,
 				311189742A8BDAAB00C27E3E /* AfterLoginViewController.swift in Sources */,
 				5BAEA4BC2A8C9F8800E2D382 /* APIConstants.swift in Sources */,
 				5B447A542A8A89DC009488F1 /* PieceInfoTableViewCell.swift in Sources */,
@@ -825,6 +844,7 @@
 				318C44152A8A29CB0036582D /* VisitedRecordViewController.swift in Sources */,
 				318C44192A8A38FA0036582D /* StoredTableViewCell.swift in Sources */,
 				5B0D947E2A89178E00F361C8 /* PieceNavigationController.swift in Sources */,
+				5BAEA4D62A8D266000E2D382 /* StoreDetail.swift in Sources */,
 				31EEB6B42A83351100ABA9CF /* PopUpStoreCVCell.swift in Sources */,
 				318C441B2A8A738B0036582D /* StoredPopUpViewController.swift in Sources */,
 				31113F8E2A8939D700A82CCD /* StoreInfoViewController.swift in Sources */,
