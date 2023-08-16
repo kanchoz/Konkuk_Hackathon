@@ -20,7 +20,30 @@ class StoredPopUpViewController: UIViewController {
     
     @IBAction func backBtnTapped(_ sender: Any) {
         dismiss(animated: true)
-    }    
+    }
+    
+    //MARK: - 테이블 뷰 새로고침 구현
+//    func reloadTableView(){
+//        PopupManager.getMyAllSavedPopup { result in
+//            switch result {
+//            case .success(let messages):
+//                // 메시지 배열을 받아와서 처리
+//                self.chatMessages = messages.reversed()
+//                for message in messages {
+//                    // 각 메시지에 대한 처리 로직을 구현
+//                    print("Message: \(message.content)")
+//                }
+//                DispatchQueue.main.async {
+//                    self.tableView.reloadData()
+//                    self.scrollToBottom()
+//                }
+//            case .failure(let error):
+//                print("Error: \(error)")
+//            }
+//        }
+//    }
+
+    
 }
 
 extension StoredPopUpViewController: UITableViewDelegate, UITableViewDataSource{

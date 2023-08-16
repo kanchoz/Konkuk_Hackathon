@@ -35,9 +35,9 @@ struct APIConstants {
     }
     
     struct PopupDetail {
-        static let getPopupDetail = baseURL + "/popup/@"
+        static let getPopupDetail = baseURL + "/popup/%d"
         // ex) let endpoint = String(format: APIConstants.PopupDetail.getPopupDetail, popupID)
-        static let postPopupDetailBookMark = baseURL + "/popup/@"
+        static let postPopupDetailBookMark = baseURL + "/popup/%d"
         
     }
     

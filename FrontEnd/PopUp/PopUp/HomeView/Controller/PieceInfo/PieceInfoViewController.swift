@@ -22,6 +22,10 @@ class PieceInfoViewController: UIViewController, UICollectionViewDelegateFlowLay
     @IBOutlet var reviewContents: [UILabel]!
     @IBOutlet var reviewCnt: [UILabel]!
     
+    
+    var id: Int = 0
+    var storeDetailStruct: StoreDetail?
+    
     //리뷰 갯수
     var reviewCount = 0
     var reviews: [String] = ["볼 거리가 많아요", "이벤트가 있어요", "매장이 넓어요", "웨이팅이 길어요", "친절해요"]

@@ -274,11 +274,44 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
 //        notificationVC.modalPresentationStyle = .fullScreen
 //        self.present(notificationVC, animated: true, completion: nil)
         
-        let logSB = UIStoryboard(name: "LoginView", bundle: nil)
-        let logVC = logSB.instantiateViewController(withIdentifier: "Login2ViewController") as! Login2ViewController
-        logVC.modalPresentationStyle = .overFullScreen
-        self.present(logVC, animated: false)
-    }
+//        let logSB = UIStoryboard(name: "LoginView", bundle: nil)
+//        let logVC = logSB.instantiateViewController(withIdentifier: "Login2ViewController") as! Login2ViewController
+//        logVC.modalPresentationStyle = .overFullScreen
+//        self.present(logVC, animated: false)
+        
+        
+//        PopupManager.getAllPopup() { result in
+//            switch result {
+//            case .success(let messages):
+//                print("success")
+//            case .failure(_):
+//                print("error")
+//            }
+//
+//            }
+        
+//        PopupManager.getPopupDetail(id: 1) { result in
+//            switch result{
+//            case .success(let message):
+//                print("success")
+//            case .failure(_):
+//                print("error")
+//            }
+//        }
+        
+        PopupManager.getMyAllSavedPopup { result in
+            switch result{
+            case.success(let message):
+                print("success")
+            case.failure(_):
+                print("error")
+            }
+        }
+        
+        }
+        
+       
+    
     
     //내가 모은 방문조각 버튼 눌림
     
