@@ -293,6 +293,17 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
         verifyVC.modalPresentationStyle = .fullScreen
         self.present(verifyVC, animated: true)
     }
+    
+    
+    @IBAction func showEntireBtnTapped(_ sender: Any) {
+        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "popUpListVC") as! PopUpStoreListViewController
+        
+        nextVC.modalPresentationStyle = .fullScreen
+        self.present(nextVC, animated: true)
+    }
+    
+    
+    
 }
 
 // MARK: - collectionView delegate, dataSource
