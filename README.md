@@ -30,8 +30,8 @@
     </li>
     <li><a href="#preview">Preview</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#contributors">Contributors</a></li>
   </ol>
 </details>
 
@@ -40,7 +40,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![image](https://github.com/dhun0103/algorithm/assets/112223836/69b31ca5-6adb-47dd-b697-b676076f8b3b)
+![image](https://github.com/dhun0103/algorithm/assets/112223836/82455f18-550c-4d44-beee-f3929ffa933f)
 
 팝업스토어는 다양한 장소에서 짧은 기간 동안 운영되는 오프라인 매장입니다.
 최근 물건을 판매하는 임시 매장이라는 기존 개념에서 체험 부스를 통해 한정 기간 동안 특별한 경험을 할 수 있는 공간으로 팝업스토어의 의미가 확장되고 있습니다. 따라서 '경험'을 통한 소비에 적극적인 MZ세대에게 팝업스토어는 즐거움의 공간으로 인식되어 핫플레이스로 주목받고 있습니다. 그러나 단발적으로 운영되는 팝업스토어 특성상 정보 탐색이 어려우며, 방문 이후 공간에 대한 기록･수집까지 경험이 연결되고 있지 않습니다.
@@ -54,7 +54,7 @@
 
 사용 기술 스택
 
-* <img src="https://img.shields.io/badge/swift-F05138?style=for-the-badge&logo=swift&logoColor=white">
+* <img src="https://img.shields.io/badge/UIkit-2396F3?style=for-the-badge&logo=UIkit&logoColor=white">
 
 * <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
 * <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white">
@@ -79,7 +79,25 @@
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Copyright (c) 2014-2022 Alamofire Software Foundation (http://alamofire.org/)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,18 +114,18 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 * [Mysql](https://dhun.tistory.com/7)
 * [Kakao Login](https://shxrecord.tistory.com/290)
 * [Gihub Actions](https://bcp0109.tistory.com/363)
-* [?](https://bcp0109.tistory.com/363)
-* [?](https://bcp0109.tistory.com/363)
+* [Apple](https://developer.apple.com/documentation/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## ⭐️ Contributors
 <hr/>
 
 | Position                 | Name   | Github                                                     | Email   |      EN_Name        |       
 | ------------------------ | ------ | -------------------------------------------------------- | ---- | -------------- |
-| 🔰 IOS·Swift | 이동현 | 🔗 [GitHub::taipaise](https://github.com/taipaise)       | taipaise@gmail.com |      Lee Donghyun         |
-| IOS·Swift   | 최다경 | 🔗 [GitHub::ekrud99](https://github.com/ekrud99)     | dagyeong33@gmail.com |      Dagyeong Choi          |
+| 🔰 IOS·UIKIT | 이동현 | 🔗 [GitHub::taipaise](https://github.com/taipaise)       | taipaise@gmail.com |      Lee Donghyun         |
+| IOS·UIKIT   | 최다경 | 🔗 [GitHub::ekrud99](https://github.com/ekrud99)     | dagyeong33@gmail.com |      Dagyeong Choi          |
 | BE·Spring                | 정동훈 | 🔗 [GitHub::dhun0103](https://github.com/dhun0103)   | arrrrr180@gmail.com |     Jeong Dong Hun            |
 | PM & UX/UI             | 김미정 | 🔗 [GitHub::mijeong7878](https://github.com/mijeong7878)   | ggee3774@gmail.com |       Kim Mi Jeong               |
 | UX/UI                    | 장유정 | 🔗 [GitHub::jeongjangU](https://github.com/jeongjangu)      | muzloa3474@konkuk.ac.kr |    Jang Yujeong         |
