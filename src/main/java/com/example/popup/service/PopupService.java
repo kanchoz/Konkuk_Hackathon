@@ -55,6 +55,8 @@ public class PopupService {
 
         popup.updatePopup(bookMarkReqDto);
 
+        popupRepository.save(popup);
+
         return GlobalResDto.success(null, null);
     }
 }
