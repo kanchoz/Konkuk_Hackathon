@@ -114,7 +114,7 @@ THE SOFTWARE.
 * [Mysql](https://dhun.tistory.com/7)
 * [Kakao Login](https://shxrecord.tistory.com/290)
 * [Gihub Actions](https://bcp0109.tistory.com/363)
-* [Apple](https://developer.apple.com/documentation/)
+* [Apple Developer](https://developer.apple.com/documentation/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
