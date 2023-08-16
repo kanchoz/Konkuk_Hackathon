@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Photos
 
 class PieceDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -64,6 +65,29 @@ class PieceDetailViewController: UIViewController, UITableViewDelegate, UITableV
     
     @IBAction func saveBtnTapped(_ sender: UIButton) {
         //사진 저장 action 추가
+        
+      
+        UIGraphicsEndImageContext()
+        var image: UIImage?
+        if(flag == 1){
+            image = UIImage(named: "Piece1")
+        }else if(flag == 2){
+            image = UIImage(named: "Piece2")
+        }else{
+            image = UIImage(named: "Piece3")
+        }
+
+        // 합쳐진 이미지를 사진 앨범에 저장
+        PHPhotoLibrary.shared().performChanges({
+                    // 변경 내용을 기록합니다.
+                    PHAssetChangeRequest.creationRequestForAsset(from: image!)
+                }) { (success, error) in
+                    if success {
+                        print("이미지가 앨범에 저장되었습니다.")
+                    } else {
+                        print("이미지 저장에 실패했습니다. 오류: \(error?.localizedDescription ?? "알 수 없음")")
+                    }
+                }
         
         showToast(message: "사진이 저장되었습니다")
     }
