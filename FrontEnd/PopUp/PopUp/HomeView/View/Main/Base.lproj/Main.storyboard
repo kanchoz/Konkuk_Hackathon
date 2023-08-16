@@ -1246,7 +1246,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="패션" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwK-OD-VN8">
-                                                    <rect key="frame" x="0.0" y="249" width="37" height="17"/>
+                                                    <rect key="frame" x="0.0" y="259" width="37" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="37" id="DUl-Zi-dRw"/>
                                                         <constraint firstAttribute="height" constant="17" id="eUD-78-Q4F"/>
@@ -1256,7 +1256,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="젠틀 몬스터 이즈백" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIx-lA-IP3">
-                                                    <rect key="frame" x="0.0" y="266" width="120" height="20"/>
+                                                    <rect key="frame" x="0.0" y="276" width="120" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="120" id="QL0-pa-S0P"/>
                                                         <constraint firstAttribute="height" constant="20" id="bRh-3z-nKs"/>
@@ -1266,7 +1266,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울 영등포구" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6S-5m-FvC">
-                                                    <rect key="frame" x="0.0" y="286" width="77" height="17"/>
+                                                    <rect key="frame" x="0.0" y="296" width="77" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="77" id="fhU-da-xMY"/>
                                                         <constraint firstAttribute="height" constant="17" id="lqm-CS-G4s"/>
@@ -1282,7 +1282,7 @@
                                                 <constraint firstItem="O6S-5m-FvC" firstAttribute="top" secondItem="NIx-lA-IP3" secondAttribute="bottom" id="N8E-ZR-CLd"/>
                                                 <constraint firstItem="fXo-qr-FXe" firstAttribute="leading" secondItem="k8z-Fz-D1Q" secondAttribute="leading" id="OKP-8i-u7K"/>
                                                 <constraint firstItem="NIx-lA-IP3" firstAttribute="leading" secondItem="k8z-Fz-D1Q" secondAttribute="leading" id="Or1-yn-61d"/>
-                                                <constraint firstItem="PwK-OD-VN8" firstAttribute="top" secondItem="fXo-qr-FXe" secondAttribute="bottom" id="St5-dZ-F0x"/>
+                                                <constraint firstItem="PwK-OD-VN8" firstAttribute="top" secondItem="fXo-qr-FXe" secondAttribute="bottom" constant="10" id="St5-dZ-F0x"/>
                                                 <constraint firstItem="NIx-lA-IP3" firstAttribute="top" secondItem="PwK-OD-VN8" secondAttribute="bottom" id="WcQ-xN-jbc"/>
                                                 <constraint firstItem="fXo-qr-FXe" firstAttribute="top" secondItem="k8z-Fz-D1Q" secondAttribute="top" id="Yk5-s6-r0V"/>
                                                 <constraint firstItem="O6S-5m-FvC" firstAttribute="leading" secondItem="k8z-Fz-D1Q" secondAttribute="leading" id="cca-5r-4Md"/>
