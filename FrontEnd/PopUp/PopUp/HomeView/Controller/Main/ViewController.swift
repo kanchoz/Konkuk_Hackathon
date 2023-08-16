@@ -310,7 +310,7 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == popUpStoreCV{
-            return 3
+            return 4
             
         }
         else if collectionView == visitedPieceCV{
@@ -328,6 +328,10 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
         if collectionView == popUpStoreCV{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PopUpStoreCVCell", for: indexPath) as! PopUpStoreCVCell
             print("팝업 셀 출력")
+            
+            cell.id = DummyStore.HotStore[indexPath.row]
+            cell.delegate = self
+            cell.storeImg.image = UIImage(named: "\(DummyStore.HotStore[indexPath.row])HotStore")
             return cell
         }
         else if collectionView == visitedPieceCV{
@@ -444,4 +448,17 @@ extension ViewController: UIViewControllerTransitioningDelegate {
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
         return CustomPresentationController(presentedViewController: presented, presenting: presenting)
     }
+}
+
+extension ViewController: NextBtnDelegate{
+    func nextButtonTappedd(id: Int) {
+        //api호출
+        
+        let sb = UIStoryboard(name: "PieceInfoViewController", bundle: nil)
+        let nextVC = sb.instantiateViewController(withIdentifier: "PieceInfoViewController") as! PieceInfoViewController
+        
+        nextVC.modalPresentationStyle = .fullScreen
+        present(nextVC, animated: true)
+    }
+
 }
