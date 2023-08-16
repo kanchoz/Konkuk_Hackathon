@@ -39,14 +39,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#preview">Preview</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -58,7 +51,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![image](https://github.com/dhun0103/algorithm/assets/112223836/69b31ca5-6adb-47dd-b697-b676076f8b3b)
 
 팝업스토어는 다양한 장소에서 짧은 기간 동안 운영되는 오프라인 매장입니다.
 최근 물건을 판매하는 임시 매장이라는 기존 개념에서 체험 부스를 통해 한정 기간 동안 특별한 경험을 할 수 있는 공간으로 팝업스토어의 의미가 확장되고 있습니다. 따라서 '경험'을 통한 소비에 적극적인 MZ세대에게 팝업스토어는 즐거움의 공간으로 인식되어 핫플레이스로 주목받고 있습니다. 그러나 단발적으로 운영되는 팝업스토어 특성상 정보 탐색이 어려우며, 방문 이후 공간에 대한 기록･수집까지 경험이 연결되고 있지 않습니다.
@@ -81,41 +74,12 @@
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Preview
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+![image](https://github.com/dhun0103/algorithm/assets/112223836/bebf2ca0-b0ca-41b6-950a-3bb9e250e14b)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
