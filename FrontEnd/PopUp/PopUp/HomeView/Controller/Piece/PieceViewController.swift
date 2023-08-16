@@ -10,6 +10,7 @@ import UIKit
 class PieceViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
 
     
+    @IBOutlet var makePieceBtn: UIButton!
     @IBOutlet var pieceBtn: UIButton!
     @IBOutlet var tableView: UITableView!
     
@@ -22,8 +23,43 @@ class PieceViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.dataSource = self
         tableView.backgroundColor = .black
         //tableView.layer.zPosition = -1
-
         
+        let borderColor = UIColor(red: 0.502, green: 0.502, blue: 0.502, alpha: 1.0)
+        makePieceBtn.layer.borderColor = borderColor.cgColor
+        makePieceBtn.layer.borderWidth = 1.0 // 테두리 두께 설정
+        let cornerRadius: CGFloat = 10.0 // 적절한 값을 선택하세요
+        makePieceBtn.layer.cornerRadius = cornerRadius
+        
+        // Create a string with the main text and the colored word
+        let mainText = "나만의 방문조각 만들기"
+        let coloredText = "3개"
+        let tailText = " 있어요!"
+
+        // Combine the main text, colored text, and tail text
+        let attributedText = NSMutableAttributedString(string: mainText)
+        attributedText.append(NSAttributedString(string: "                     "))
+//        let coloredAttributes: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor(named: "MainOrange")!]
+//        let coloredAttributedString = NSAttributedString(string: coloredText, attributes: coloredAttributes)
+//        attributedText.append(coloredAttributedString)
+//        attributedText.append(NSAttributedString(string: tailText))
+        
+        // Create a system image with white color
+        if let image = UIImage(systemName: "arrow.forward")?.withTintColor(.white, renderingMode: .alwaysOriginal) {
+            let imageAttachment = NSTextAttachment()
+            imageAttachment.image = image
+            let imageString = NSAttributedString(attachment: imageAttachment)
+            attributedText.append(NSAttributedString(string: "               "))
+            attributedText.append(imageString)
+        }
+
+        // Assign the attributed text to the button's title label
+        makePieceBtn.titleLabel?.numberOfLines = 1
+        makePieceBtn.titleLabel?.lineBreakMode = .byTruncatingTail
+        makePieceBtn.contentHorizontalAlignment = .left
+        makePieceBtn.setAttributedTitle(attributedText, for: .normal)
+        makePieceBtn.setAttributedTitle(attributedText, for: .normal)
+
+
         view.addSubview(pieceBtn)
 
         // UIButton 생성 및 설정

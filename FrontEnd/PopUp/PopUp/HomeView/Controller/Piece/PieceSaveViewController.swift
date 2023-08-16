@@ -21,17 +21,21 @@ class PieceSaveViewController: UIViewController {
     @IBOutlet var cardImageView: UIImageView!
     @IBOutlet var myImageView: UIImageView!
     
+    var imgName: String = ""
+    
     var img: UIImage?
    
     var myImageName: String = ""
     var cardImageName: String = ""
     
     var mgdImage: UIImage?
+    var cardImg: UIImage?
    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        cardImageView.image = UIImage(named: "cardImage")
+        //cardImageView.image = UIImage(named: "cardImage")
+        cardImageView.image = cardImg
         myImageView.image = img
         
         backBtn.setTitle("", for: .normal)
@@ -41,7 +45,30 @@ class PieceSaveViewController: UIViewController {
         let buttonWidth = UIScreen.main.bounds.width / 2
         shareBtn.widthAnchor.constraint(equalToConstant: buttonWidth).isActive = true
         saveBtn.widthAnchor.constraint(equalToConstant: buttonWidth).isActive = true
+        setuplabel()
         
+    }
+    
+    func setuplabel(){
+        if(imgName == "11Frame"){
+            visitedLabel.text = "2023년 9월 15일"
+            popupLabel.text = "짱구는 못말려"
+            infoLabel.text = "인기 만화 '짱구는 못말려'를 주제로 한 다양한 이벤트와 상품들이 준비된 기타 팝업스토어"
+            locaLabel.text = "서울 마포구 망원로 456번길"
+            snsLabel.text = "@jingunamotmalryeo_event"
+        }else if(imgName == "9Frame"){
+            visitedLabel.text = "2023년 8월 15일"
+            popupLabel.text = "뉴진스"
+            infoLabel.text = "연예인들이 사랑하는 다양한 브랜드들의 제품을 만나볼 수 있는 뉴진스 팝업스토어"
+            locaLabel.text = "서울 강남구 역삼로 123번길"
+            snsLabel.text = "@NEW_JEANS"
+        }else{
+            visitedLabel.text = "2023년 6월 15일"
+            popupLabel.text = "토일렛 페이퍼"
+            infoLabel.text = "유니크하고 창의적인 아트 매거진 '토일렛 페이퍼'의 다양한 작품과 이벤트를 즐길 수 있는 기타 팝업스토어"
+            locaLabel.text = "서울 강북구 도봉로 789번길"
+            snsLabel.text = "@TLTPPR"
+        }
     }
     
 
@@ -62,6 +89,7 @@ class PieceSaveViewController: UIViewController {
                 if success {
                     self.mgdImage = mergedImage
                     print("이미지가 사진 앨범에 저장되었습니다.")
+                    print(mergedImage)
                     self.showToast(message: "사진이 저장되었습니다")
                 } else {
                     print("이미지 저장에 실패하였습니다. 오류: \(error?.localizedDescription ?? "알 수 없음")")

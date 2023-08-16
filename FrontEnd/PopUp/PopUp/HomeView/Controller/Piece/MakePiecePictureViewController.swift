@@ -22,15 +22,17 @@ class MakePiecePictureViewController: UIViewController, UIImagePickerControllerD
     
     var imgName: String = ""
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         backBtn.setTitle("", for: .normal)
         backBtn.setImage(UIImage(named: "NavBack"), for: .normal)
         selectedPicBtn.setTitle("", for: .normal)
-        //selectedPicBtn.setImage(UIImage(named: "selectPic"), for: .normal)
+        selectedPicBtn.setImage(UIImage(named: "selectPic"), for: .normal)
         //myImageView.image = UIImage(named: "Piece1")
-        cardImageView.image = UIImage(named: "cardImage")
+        //cardImageView.image = UIImage(named: "cardImage")
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(selectPicBtnTapped(_:)))
         selectedPicBtn.addGestureRecognizer(tapGesture)
@@ -38,8 +40,31 @@ class MakePiecePictureViewController: UIViewController, UIImagePickerControllerD
     
     override func viewWillAppear(_ animated: Bool) {
         print("ew;ofjwefewfe")
+        setuplabel()
         print(imgName)
-        selectedPicBtn.setImage(UIImage(named: imgName), for: .normal)
+        cardImageView.image = UIImage(named: imgName)
+    }
+    
+    func setuplabel(){
+        if(imgName == "11Frame"){
+            visitLabel.text = "2023년 9월 15일"
+            popupLabel.text = "짱구는 못말려"
+            infoLabel.text = "인기 만화 '짱구는 못말려'를 주제로 한 다양한 이벤트와 상품들이 준비된 기타 팝업스토어"
+            locaLabel.text = "서울 마포구 망원로 456번길"
+            snsLabel.text = "@jingunamotmalryeo_event"
+        }else if(imgName == "9Frame"){
+            visitLabel.text = "2023년 8월 15일"
+            popupLabel.text = "뉴진스"
+            infoLabel.text = "연예인들이 사랑하는 다양한 브랜드들의 제품을 만나볼 수 있는 뉴진스 팝업스토어"
+            locaLabel.text = "서울 강남구 역삼로 123번길"
+            snsLabel.text = "@NEW_JEANS"
+        }else{
+            visitLabel.text = "2023년 6월 15일"
+            popupLabel.text = "토일렛 페이퍼"
+            infoLabel.text = "유니크하고 창의적인 아트 매거진 '토일렛 페이퍼'의 다양한 작품과 이벤트를 즐길 수 있는 기타 팝업스토어"
+            locaLabel.text = "서울 강북구 도봉로 789번길"
+            snsLabel.text = "@TLTPPR"
+        }
     }
     
     
@@ -94,8 +119,9 @@ class MakePiecePictureViewController: UIViewController, UIImagePickerControllerD
         let nextVC = storyboard!.instantiateViewController(identifier: "PieceSaveViewController") as! PieceSaveViewController
         print("image")
         print(myImageView.image)
+        nextVC.imgName = self.imgName
         nextVC.img = myImageView.image
-        nextVC.cardImageView?.image = UIImage(named: "cardImage")
+        nextVC.cardImg = UIImage(named: imgName)
         nextVC.modalPresentationStyle = .overFullScreen
         present(nextVC, animated: false)
     }

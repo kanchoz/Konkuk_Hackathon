@@ -19,7 +19,7 @@ class MakePieceViewController: UIViewController, UITableViewDataSource, UITableV
     var cates : [String] = ["기타", "연예인", "기타"]
     var names : [String] = ["짱구는 못말려 : 시네마 퍼레이드 투어", "뉴진스 버니랜드 (스포티파이X뉴진스)", "토일렛페이터 X 롱샴"]
     var duras: [String] = ["2023년 7월 28일 ~ 2023년 8월 6일", "2023년 7월 28일 ~ 2023년 8월 6일", "2023년 7월 28일 ~ 2023년 8월 6일"]
-    var imgNames: [String] = ["Piece1", "Piece2", "Piece3"]
+    var imgNames: [String] = ["11Thumbnail", "Piece2", "Piece3"]
     var locas : [String] = ["서울 서대문구", "서울 송파구", "서울 종로구"]
     
     override func viewDidLoad() {
@@ -62,4 +62,22 @@ class MakePieceViewController: UIViewController, UITableViewDataSource, UITableV
         return 260 // 원하는 높이로 설정
     }
     
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let nextVC = storyboard!.instantiateViewController(withIdentifier: "MakePiecePictureViewController") as! MakePiecePictureViewController
+        
+        if(indexPath.row == 0){
+            nextVC.imgName = "11Frame"
+            nextVC.modalPresentationStyle = .fullScreen
+            present(nextVC, animated: true)
+        }else if(indexPath.row == 1){
+            nextVC.modalPresentationStyle = .fullScreen
+            nextVC.imgName = "9Frame"
+            present(nextVC, animated: true)
+        }else{
+            nextVC.modalPresentationStyle = .fullScreen
+            nextVC.imgName = "10Frame"
+            present(nextVC, animated: true)
+        }
+    }
 }
