@@ -326,14 +326,26 @@
                                                         <color key="textColor" name="LightGray"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGo-dK-UCy">
+                                                        <rect key="frame" x="203.33333333333334" y="0.0" width="39.666666666666657" height="41"/>
+                                                        <color key="tintColor" name="White"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="chevron.forward" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="detailBtnTapped:" destination="l15-KF-WP6" eventType="touchUpInside" id="xNe-vT-3fr"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="BackGround"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="243" id="1nl-ZW-DQ1"/>
                                                     <constraint firstItem="Od1-4W-ao3" firstAttribute="leading" secondItem="prc-Ld-aLs" secondAttribute="leading" id="MXh-lg-oiy"/>
+                                                    <constraint firstAttribute="trailing" secondItem="MGo-dK-UCy" secondAttribute="trailing" id="Wha-Kn-1sX"/>
+                                                    <constraint firstAttribute="bottom" secondItem="MGo-dK-UCy" secondAttribute="bottom" id="cJZ-FO-TIQ"/>
                                                     <constraint firstItem="2lV-zi-X0i" firstAttribute="leading" secondItem="prc-Ld-aLs" secondAttribute="leading" id="dhF-Ws-ho6"/>
                                                     <constraint firstAttribute="bottom" secondItem="2lV-zi-X0i" secondAttribute="bottom" id="fLT-Yo-SxR"/>
                                                     <constraint firstItem="Od1-4W-ao3" firstAttribute="top" secondItem="prc-Ld-aLs" secondAttribute="top" id="jts-tI-d3G"/>
+                                                    <constraint firstItem="MGo-dK-UCy" firstAttribute="top" secondItem="prc-Ld-aLs" secondAttribute="top" id="nXD-pV-IhT"/>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7S-2V-T3U">
@@ -360,7 +372,7 @@
                                         <rect key="frame" x="16" y="73" width="361" height="192"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="n8V-4n-UsR">
-                                                <rect key="frame" x="0.0" y="0.0" width="1000" height="192"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="496" height="192"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Piece1" translatesAutoresizingMaskIntoConstraints="NO" id="poU-Df-0wc" userLabel="img1">
                                                         <rect key="frame" x="0.0" y="0.0" width="160" height="192"/>
@@ -378,24 +390,6 @@
                                                         <rect key="frame" x="336" y="0.0" width="160" height="192"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="160" id="f5X-ge-bg6"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Piece3" translatesAutoresizingMaskIntoConstraints="NO" id="wPE-u4-rzX" userLabel="img4">
-                                                        <rect key="frame" x="504" y="0.0" width="160" height="192"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="160" id="YzQ-Gc-LzZ"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Piece1" translatesAutoresizingMaskIntoConstraints="NO" id="UC1-dV-GER" userLabel="img5">
-                                                        <rect key="frame" x="672" y="0.0" width="160" height="192"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="160" id="Dgk-qZ-2WT"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Piece2" translatesAutoresizingMaskIntoConstraints="NO" id="dr7-YW-TMT" userLabel="img6">
-                                                        <rect key="frame" x="840" y="0.0" width="160" height="192"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="160" id="M7z-49-rke"/>
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
@@ -447,6 +441,13 @@
                             <constraint firstItem="ROU-hN-PZx" firstAttribute="bottom" secondItem="Ncf-CX-yJ6" secondAttribute="bottom" id="wLP-Dm-Utp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="img1" destination="poU-Df-0wc" id="szG-Uq-uTc"/>
+                        <outlet property="img2" destination="Qcu-3M-K34" id="Hmu-Uw-WJV"/>
+                        <outlet property="img3" destination="o0n-j8-2mU" id="awW-Pf-cvD"/>
+                        <outlet property="locationLabel" destination="2lV-zi-X0i" id="r5o-xB-Gfm"/>
+                        <outlet property="name" destination="Od1-4W-ao3" id="M4T-2M-TyT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nNn-7N-BjM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1229,8 +1230,8 @@
         <image name="NavigaitionIcon" width="24.333333969116211" height="24.333333969116211"/>
         <image name="Piece1" width="545" height="726.33331298828125"/>
         <image name="Piece2" width="545" height="726.33331298828125"/>
-        <image name="Piece3" width="545" height="727"/>
         <image name="Search_select" width="32.333332061767578" height="32"/>
+        <image name="chevron.forward" catalog="system" width="97" height="128"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="BackGround">
