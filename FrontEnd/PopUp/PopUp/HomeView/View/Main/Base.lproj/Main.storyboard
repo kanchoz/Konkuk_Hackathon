@@ -1600,7 +1600,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
                                                 <connections>
-                                                    <action selector="backBtnTapped:" destination="7ac-Us-ria" eventType="touchUpInside" id="Zvy-yV-KiJ"/>
+                                                    <action selector="backBtnTapped:" destination="Q0m-Pg-1NP" eventType="touchUpInside" id="vAn-SV-wSy"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알림" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUl-K6-JaZ">
@@ -1711,6 +1711,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="다음">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextBtnTapped:" destination="Q0m-Pg-1NP" eventType="touchUpInside" id="8Cx-lH-flc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="24d-c5-KAz"/>
@@ -1727,6 +1730,10 @@
                             <constraint firstAttribute="trailing" secondItem="Vhy-LX-eFK" secondAttribute="trailing" id="wPU-fa-iVE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="4eK-kb-Xyh" id="WwL-BN-QHU"/>
+                        <outlet property="tf" destination="hWp-nP-9zb" id="v8S-vj-Muj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gBq-Bq-f6l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
