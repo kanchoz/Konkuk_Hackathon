@@ -28,4 +28,10 @@ public class HomeController {
 
         return homeService.getAllPopup();
     }
+
+    @GetMapping("/allPopup/theme")
+    public GlobalResDto<?> getAllThemePopup() throws IOException {
+
+        return homeService.getAllThemePopup();
+    }
 }

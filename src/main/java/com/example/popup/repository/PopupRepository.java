@@ -8,4 +8,5 @@ import java.util.List;
 public interface PopupRepository extends JpaRepository<Popup, Long> {
 
     List<Popup> findAllByIsMarkedTrue();
+    List<Popup> findByTheme(String theme);
 }
