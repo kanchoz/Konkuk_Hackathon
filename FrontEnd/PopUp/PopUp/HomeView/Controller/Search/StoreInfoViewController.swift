@@ -38,7 +38,7 @@ class StoreInfoViewController: UIViewController {
         
         let sb = UIStoryboard(name: "PieceInfoViewController", bundle: nil)
         let nextVC = sb.instantiateViewController(withIdentifier: "PieceInfoViewController") as! PieceInfoViewController
-        
+        nextVC.id = data!.id
         nextVC.modalPresentationStyle = .fullScreen
         present(nextVC, animated: true)
     }

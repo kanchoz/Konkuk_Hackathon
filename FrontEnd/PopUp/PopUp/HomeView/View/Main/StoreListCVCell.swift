@@ -17,7 +17,7 @@ class StoreListCVCell: UICollectionViewCell, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return list.count
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -37,7 +37,7 @@ class StoreListCVCell: UICollectionViewCell, UITableViewDelegate, UITableViewDat
         let sb = UIStoryboard(name: "PieceInfoViewController", bundle: nil)
         let storeInfoView = sb.instantiateViewController(withIdentifier: "PieceInfoViewController") as! PieceInfoViewController
         storeInfoView.modalPresentationStyle = .fullScreen
-
+        storeInfoView.id = list[indexPath.row].id
         self.window?.rootViewController?.present(storeInfoView, animated: true, completion: nil)
         
     }
