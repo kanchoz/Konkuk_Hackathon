@@ -6,6 +6,10 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.Column;
+import javax.persistence.ElementCollection;
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -21,6 +25,14 @@ public class PopupHomeResDto {
     private String schedule;
     private Boolean isFree;
     private Boolean parking;
+    private Boolean isMarked;
+    private String detailLocation;
+    private String sns;
+    private String detailInfo;
+
+    @ElementCollection
+    @Column(name = "review_counts")
+    private List<Long> reviewCounts;
 
     public PopupHomeResDto(Popup popup) {
         this.popupId = popup.getPopupId();
@@ -32,5 +44,11 @@ public class PopupHomeResDto {
         this.schedule = popup.getSchedule();
         this.isFree = popup.getIsFree();
         this.parking = popup.getParking();
+        this.parking=popup.getParking();
+        this.isMarked=popup.getIsMarked();
+        this.detailLocation=popup.getDetailLocation();
+        this.sns=popup.getSns();
+        this.detailInfo=popup.getDetailInfo();
+        this.reviewCounts=popup.getReviewCounts();
     }
 }

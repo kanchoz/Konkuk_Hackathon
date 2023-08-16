@@ -40,9 +40,9 @@ public class PopupService {
                 () -> new CustomException(ErrorCode.Not_Found_Popup)
         );
 
-        List<Review> reviews = reviewRepository.findAll();
+//        List<Review> reviews = reviewRepository.findAll();
 
-        PopupOneResDto popupOneResDto = new PopupOneResDto(popup, reviews);
+        PopupOneResDto popupOneResDto = new PopupOneResDto(popup);
 
         return GlobalResDto.success(popupOneResDto,null);
     }
@@ -55,6 +55,6 @@ public class PopupService {
 
         popup.updatePopup(bookMarkReqDto);
 
-        return GlobalResDto.success(null, "완료");
+        return GlobalResDto.success(null, null);
     }
 }
