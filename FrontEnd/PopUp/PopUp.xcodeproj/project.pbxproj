@@ -464,6 +464,7 @@
 				318FC3B62A820C5C0051CBEE /* Frameworks */,
 				318FC3B72A820C5C0051CBEE /* Resources */,
 				D9950E9E9671C0C994500A27 /* [CP] Embed Pods Frameworks */,
+				AAABE06D342825DB95206A40 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -502,6 +503,7 @@
 				318FC3D62A820C5E0051CBEE /* Frameworks */,
 				318FC3D72A820C5E0051CBEE /* Resources */,
 				99B395D5ED97E495CC188F85 /* [CP] Embed Pods Frameworks */,
+				27E9C72B452AD73DE994F33C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -589,6 +591,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		27E9C72B452AD73DE994F33C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PopUp-PopUpUITests/Pods-PopUp-PopUpUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PopUp-PopUpUITests/Pods-PopUp-PopUpUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PopUp-PopUpUITests/Pods-PopUp-PopUpUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5E8BFFD082AC7C6DBCF031E7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -626,6 +645,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PopUp-PopUpUITests/Pods-PopUp-PopUpUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAABE06D342825DB95206A40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PopUp/Pods-PopUp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PopUp/Pods-PopUp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PopUp/Pods-PopUp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CA4D9DF6C568EA6CDC1FB1FF /* [CP] Check Pods Manifest.lock */ = {
