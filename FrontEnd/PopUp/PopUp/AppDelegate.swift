@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let defaults = UserDefaults.standard
         defaults.set(false, forKey: "isLoggedIn")
-        
+       
         print("app delegate \(defaults.value(forKey: "isLoggedIn"))")
         // 로그인 상태에 따라 로그인 화면으로 갈지 메인화면으로 갈지 분류
         if let loginCheck = defaults.value(forKey: "isLoggedIn") {

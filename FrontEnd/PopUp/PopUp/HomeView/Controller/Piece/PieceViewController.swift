@@ -96,6 +96,7 @@ class PieceViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         cell.pieceImg.image = UIImage(named: pieceName)
         
+        
         return cell
     }
     
