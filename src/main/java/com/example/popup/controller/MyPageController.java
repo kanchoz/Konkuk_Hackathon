@@ -23,4 +23,9 @@ public class MyPageController {
         return myPageService.getAllSavePopup();
     }
 
+    @GetMapping("/savePopup/delete/{popupId}")
+    public GlobalResDto<?> getDeletePopup(@PathVariable Long popupId){
+
+        return myPageService.getDeletePopup();
+    }
 }

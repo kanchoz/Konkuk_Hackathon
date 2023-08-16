@@ -83,4 +83,9 @@ public class Popup {
 
         this.isMarked=bookMarkReqDto.getIsMarked();
     }
+
+    public void update2Popup(){
+
+        this.isMarked=false;
+    }
 }
