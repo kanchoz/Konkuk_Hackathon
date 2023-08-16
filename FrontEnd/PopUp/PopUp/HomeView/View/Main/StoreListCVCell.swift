@@ -10,17 +10,23 @@ import UIKit
 class StoreListCVCell: UICollectionViewCell, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var storeListTV: UITableView!
     
+    var list: [StoreSimple] = []
     override func awakeFromNib(){
         storeListTV.delegate = self
         storeListTV.dataSource = self
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = storeListTV.dequeueReusableCell(withIdentifier: "StoreListTVCell") as! StoreListTVCell
+        cell.categoryLabel.text = list[indexPath.row].category
+        cell.dateLabel.text = list[indexPath.row].duration
+        cell.locationLabel.text = list[indexPath.row].location
+        cell.nameLabel.text = list[indexPath.row].name
+        cell.storeImg.image = UIImage(named: "\(list[indexPath.row].id)Thumbnail")
         cell.selectionStyle = .none
 
         return cell

@@ -36,6 +36,14 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
     let buttonSpacing: CGFloat = 10
     var selectedButton: UIButton?
     
+    var entirePopList:[PopupResponseStructure]?
+    var starPopList:[PopupResponseStructure]?
+    var foodPopList:[PopupResponseStructure]?
+    var fashionPopList:[PopupResponseStructure]?
+    var etcPopList:[PopupResponseStructure]?
+    var characterPopList:[PopupResponseStructure]?
+    var liquorPopList:[PopupResponseStructure]?
+    
 //    override func loadView() {
 //        super.loadView()
 //        let defaults = UserDefaults.standard
@@ -80,6 +88,35 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
         
         
         setupSVBtn()
+        
+        
+        PopupManager.getAllPopup { response in
+            switch response{
+            case .success(_):
+                print(self.entirePopList)
+                DispatchQueue.main.async {
+                    self.storeListCV.reloadData()
+                }
+            case .failure(let err):
+                print(err)
+            }
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.storeListCV.reloadData()
+        //팝업 스토어 전체 리스트받아옴
+        
+        
+        //navigation bar가 스크롤 시에도 색상이 변하지 않도록 함
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor(named: "Background")
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = navigationController?.navigationBar.standardAppearance
+        print("appear")
+
     }
     
     @objc func viewTapped(_ sender: UITapGestureRecognizer) {
@@ -246,18 +283,6 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
     }
     
     
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        //navigation bar가 스크롤 시에도 색상이 변하지 않도록 함
-        let appearance = UINavigationBarAppearance()
-        appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = UIColor(named: "Background")
-        navigationController?.navigationBar.standardAppearance = appearance
-        navigationController?.navigationBar.scrollEdgeAppearance = navigationController?.navigationBar.standardAppearance
-        print("appear")
-    }
-    
     //검색 버튼 눌림
     @IBAction func searchBtnTapped(_ sender: Any) {
         let searchSB = UIStoryboard(name: "SearchView", bundle: nil)
@@ -330,7 +355,7 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
     
     @IBAction func showEntireBtnTapped(_ sender: Any) {
         let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "popUpListVC") as! PopUpStoreListViewController
-        
+        nextVC.list = StoreSimpleList.entireList
         nextVC.modalPresentationStyle = .fullScreen
         self.present(nextVC, animated: true)
     }
@@ -375,7 +400,9 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
         else if collectionView == storeListCV{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StoreListCVCell", for: indexPath) as! StoreListCVCell
             print("리스트 셀 출력")
+            cell.list = StoreSimpleList.storeList[indexPath.row]
             cell.storeListTV.reloadData()
+            print(cell.list)
             return cell
         }
         else{
