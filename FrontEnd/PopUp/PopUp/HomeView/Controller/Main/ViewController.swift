@@ -258,7 +258,7 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
         print("appear")
     }
     
-    
+    //검색 버튼 눌림
     @IBAction func searchBtnTapped(_ sender: Any) {
         let searchSB = UIStoryboard(name: "SearchView", bundle: nil)
         let searchDetailVC = searchSB.instantiateViewController(identifier: "searchDetailVC") as! SearchDetailViewController
@@ -273,6 +273,12 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
         
         notificationVC.modalPresentationStyle = .fullScreen
         self.present(notificationVC, animated: true, completion: nil)
+    }
+    
+    //내가 모은 방문조각 버튼 눌림
+    
+    @IBAction func myPieceBtnTapped(_ sender: Any) {
+        tabBarController?.selectedIndex = 2
     }
     
     

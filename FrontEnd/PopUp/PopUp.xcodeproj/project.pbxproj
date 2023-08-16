@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31113F8E2A8939D700A82CCD /* StoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31113F8D2A8939D700A82CCD /* StoreInfoViewController.swift */; };
+		311168672A8CC45400D68AEE /* VerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311168662A8CC45400D68AEE /* VerifyViewController.swift */; };
 		311189692A8BCCF700C27E3E /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311189682A8BCCF700C27E3E /* LoginView.storyboard */; };
 		3111896B2A8BD1A700C27E3E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111896A2A8BD1A700C27E3E /* NotificationViewController.swift */; };
 		3111896D2A8BD24F00C27E3E /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3111896C2A8BD24F00C27E3E /* NotificationTableViewCell.swift */; };
@@ -92,6 +93,7 @@
 /* Begin PBXFileReference section */
 		14CE07B182A8FFD143C621B3 /* Pods_PopUp_PopUpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopUp_PopUpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31113F8D2A8939D700A82CCD /* StoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInfoViewController.swift; sourceTree = "<group>"; };
+		311168662A8CC45400D68AEE /* VerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyViewController.swift; sourceTree = "<group>"; };
 		311189682A8BCCF700C27E3E /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
 		3111896A2A8BD1A700C27E3E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		3111896C2A8BD24F00C27E3E /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
@@ -437,6 +439,7 @@
 			isa = PBXGroup;
 			children = (
 				318FC3C02A820C5C0051CBEE /* ViewController.swift */,
+				311168662A8CC45400D68AEE /* VerifyViewController.swift */,
 				3111896A2A8BD1A700C27E3E /* NotificationViewController.swift */,
 				5B447A4B2A8A4341009488F1 /* PopupFilterViewController.swift */,
 				5B9BF4DC2A8BC64D00F564CC /* QRViewController.swift */,
@@ -736,6 +739,7 @@
 				318C44202A8A795F0036582D /* DeleteBtnDelegate.swift in Sources */,
 				5B447A4C2A8A4341009488F1 /* PopupFilterViewController.swift in Sources */,
 				31EEB6B82A83354100ABA9CF /* StoreListCVCell.swift in Sources */,
+				311168672A8CC45400D68AEE /* VerifyViewController.swift in Sources */,
 				311189762A8BDAC700C27E3E /* LoginViewController.swift in Sources */,
 				5B9BF4D92A8B873400F564CC /* MakePiecePictureViewController.swift in Sources */,
 				5B9BF4DD2A8BC64D00F564CC /* QRViewController.swift in Sources */,
