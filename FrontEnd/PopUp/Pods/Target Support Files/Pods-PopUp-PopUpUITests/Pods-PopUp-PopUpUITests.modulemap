@@ -1,0 +1,6 @@
+framework module Pods_PopUp_PopUpUITests {
+  umbrella header "Pods-PopUp-PopUpUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
