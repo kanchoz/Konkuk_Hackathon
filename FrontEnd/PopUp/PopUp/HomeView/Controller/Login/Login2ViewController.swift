@@ -51,14 +51,18 @@ class Login2ViewController: UIViewController {
         var id = emailTF.text
         var pw = pwTF.text
         
-        showToast(message: "로그인 성공")
         
         
-        let defaults = UserDefaults.standard
+        if(pw == "1234"){
+            showToast(message: "로그인 성공")
+            let defaults = UserDefaults.standard
+            defaults.set(true, forKey: "isLoggedIn")
+            dismiss(animated: true)
+        }else{
+            showToast(message: "비밀번호를 확인하세요")
+        }
         
-        defaults.set(true, forKey: "isLoggedIn")
         
-        dismiss(animated: true)
     }
     
     func showToast(message: String, font: UIFont = UIFont.boldSystemFont(ofSize: 14.0)) {
