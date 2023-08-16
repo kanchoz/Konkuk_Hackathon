@@ -37,7 +37,7 @@ class SearchDetailViewController: UIViewController {
         } else {
             // 그 외에는 원하는 작업 수행
             
-            PopupDetailManager.
+//            PopupDetailManager.
         }
     }
     
