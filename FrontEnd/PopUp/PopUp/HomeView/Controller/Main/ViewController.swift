@@ -14,8 +14,6 @@ import AVFoundation
 
 class ViewController: UIViewController, UISheetPresentationControllerDelegate, DataSendDelegate, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
-    
-
     @IBOutlet var similarView: UIImageView!
     @IBOutlet var filterSV: UIScrollView!
     @IBOutlet var popUpStoreCV: UICollectionView! //이번 주 핫한 팝업 CV
@@ -37,6 +35,25 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
     let buttonHeight: CGFloat = 33
     let buttonSpacing: CGFloat = 10
     var selectedButton: UIButton?
+    
+    override func loadView() {
+        super.loadView()
+        let defaults = UserDefaults.standard
+        if !(defaults.value(forKey: "isLoggedIn")! as! Bool){ // 로그인 되지 않은 회원의 경우 로그인 화면으로 이동시킴
+            print("login status: false")
+            print("move to login page")
+            
+            let sb = UIStoryboard(name: "LoginView", bundle: nil)
+            let loginVC = sb.instantiateViewController(withIdentifier: "afterLoginVC") as! AfterLoginViewController
+            loginVC.modalTransitionStyle = .coverVertical
+            loginVC.modalPresentationStyle = .fullScreen
+            
+            self.present(loginVC, animated: false, completion: nil)
+        }
+        else{
+//            print(defaults.value(forKey: "UserId"))
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -241,7 +258,7 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
         print("appear")
     }
     
-    
+    //검색 버튼 눌림
     @IBAction func searchBtnTapped(_ sender: Any) {
         let searchSB = UIStoryboard(name: "SearchView", bundle: nil)
         let searchDetailVC = searchSB.instantiateViewController(identifier: "searchDetailVC") as! SearchDetailViewController
@@ -256,6 +273,12 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
         
         notificationVC.modalPresentationStyle = .fullScreen
         self.present(notificationVC, animated: true, completion: nil)
+    }
+    
+    //내가 모은 방문조각 버튼 눌림
+    
+    @IBAction func myPieceBtnTapped(_ sender: Any) {
+        tabBarController?.selectedIndex = 2
     }
     
     

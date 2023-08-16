@@ -272,7 +272,7 @@
                             <constraint firstItem="asO-5w-a5R" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="vUg-cs-wdS"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="Search_unselect" id="Hy2-Ub-uis"/>
+                    <tabBarItem key="tabBarItem" title="" image="Search_select" selectedImage="Search_select" id="Hy2-Ub-uis"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="filterBtn" destination="hTM-mg-tWz" id="FeY-WM-hSO"/>
@@ -430,7 +430,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ncf-CX-yJ6">
                                 <rect key="frame" x="0.0" y="728" width="393" height="90"/>
-                                <color key="backgroundColor" name="G4"/>
+                                <color key="backgroundColor" name="BackGround"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="OVK-1d-uOz"/>
                                 </constraints>
@@ -1230,7 +1230,7 @@
         <image name="Piece1" width="545" height="726.33331298828125"/>
         <image name="Piece2" width="545" height="726.33331298828125"/>
         <image name="Piece3" width="545" height="727"/>
-        <image name="Search_unselect" width="44.333332061767578" height="44"/>
+        <image name="Search_select" width="32.333332061767578" height="32"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="BackGround">
