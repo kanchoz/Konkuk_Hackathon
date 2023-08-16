@@ -10,7 +10,7 @@ import UIKit
 class AfterLoginViewController: UIViewController {
     
     @IBOutlet var nicknameLabel: UILabel!
-    
+
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var imageViews: [UIImageView]!
     var currentIndex: Int = 0

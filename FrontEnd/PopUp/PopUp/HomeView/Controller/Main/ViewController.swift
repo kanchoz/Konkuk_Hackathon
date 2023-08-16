@@ -7,7 +7,6 @@
 
 import UIKit
 import AVFoundation
-import Ala
 
 // MARK: - CV := CollectionView, TV := TableView
 
