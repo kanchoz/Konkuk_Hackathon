@@ -66,7 +66,7 @@
 
 
 <!-- USAGE EXAMPLES -->
-## Preview
+## Feature introduction
 
 ![image](https://github.com/dhun0103/algorithm/assets/112223836/bebf2ca0-b0ca-41b6-950a-3bb9e250e14b)
 
