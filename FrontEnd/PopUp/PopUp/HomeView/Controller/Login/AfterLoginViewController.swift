@@ -32,14 +32,14 @@ class AfterLoginViewController: UIViewController {
         let defaults = UserDefaults.standard
         let check = defaults.value(forKey: "isLoggedIn")
         if check as! Bool{
-            let name = "ㅇㅇㅇ"
+            let name = "칸쵸즈"
             nicknameLabel.text = "\(name)님,\n안녕하세요!"
             //이름 요청
         }
         //로그인이 되어 있지 않은 상태
         else{
             let sb  = UIStoryboard(name: "LoginView", bundle: nil)
-            let loginVC = sb.instantiateViewController(withIdentifier: "loginVC") as! LoginViewController
+            let loginVC = sb.instantiateViewController(withIdentifier: "Login2ViewController") as! Login2ViewController
             print(loginVC)
             loginVC.modalTransitionStyle = .coverVertical
             loginVC.modalPresentationStyle = .fullScreen

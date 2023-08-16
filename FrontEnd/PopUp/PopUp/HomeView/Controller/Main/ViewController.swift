@@ -47,24 +47,24 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
     var characterPopList:[PopupResponseStructure]?
     var liquorPopList:[PopupResponseStructure]?
     
-//    override func loadView() {
-//        super.loadView()
-//        let defaults = UserDefaults.standard
-//        if !(defaults.value(forKey: "isLoggedIn")! as! Bool){ // 로그인 되지 않은 회원의 경우 로그인 화면으로 이동시킴
-//            print("login status: false")
-//            print("move to login page")
-//
-//            let sb = UIStoryboard(name: "LoginView", bundle: nil)
-//            let loginVC = sb.instantiateViewController(withIdentifier: "afterLoginVC") as! AfterLoginViewController
-//            loginVC.modalTransitionStyle = .coverVertical
-//            loginVC.modalPresentationStyle = .fullScreen
-//
-//            self.present(loginVC, animated: false, completion: nil)
-//        }
-//        else{
-////            print(defaults.value(forKey: "UserId"))
-//        }
-//    }
+    override func loadView() {
+        super.loadView()
+        let defaults = UserDefaults.standard
+        if !(defaults.value(forKey: "isLoggedIn")! as! Bool){ // 로그인 되지 않은 회원의 경우 로그인 화면으로 이동시킴
+            print("login status: false")
+            print("move to login page")
+
+            let sb = UIStoryboard(name: "LoginView", bundle: nil)
+            let loginVC = sb.instantiateViewController(withIdentifier: "afterLoginVC") as! AfterLoginViewController
+            loginVC.modalTransitionStyle = .coverVertical
+            loginVC.modalPresentationStyle = .fullScreen
+
+            self.present(loginVC, animated: false, completion: nil)
+        }
+        else{
+//            print(defaults.value(forKey: "UserId"))
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -297,16 +297,11 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
     
     @IBAction func notificationBtnTapped(_ sender: Any) {
         
-//        let notificationVC = self.storyboard?.instantiateViewController(withIdentifier: "notificationVC") as! NotificationViewController
-//
-//        notificationVC.modalPresentationStyle = .fullScreen
-//        self.present(notificationVC, animated: true, completion: nil)
-        
-//        let logSB = UIStoryboard(name: "LoginView", bundle: nil)
-//        let logVC = logSB.instantiateViewController(withIdentifier: "Login2ViewController") as! Login2ViewController
-//        logVC.modalPresentationStyle = .overFullScreen
-//        self.present(logVC, animated: false)
-        
+        let notificationVC = self.storyboard?.instantiateViewController(withIdentifier: "notificationVC") as! NotificationViewController
+
+        notificationVC.modalPresentationStyle = .fullScreen
+        self.present(notificationVC, animated: true, completion: nil)
+    
         
 //        PopupManager.getAllPopup() { result in
 //            switch result {
@@ -336,10 +331,7 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
 //            }
 //        }
         
-        let nextSB = UIStoryboard(name: "PieceInfoViewController", bundle: nil)
-        let nextVC = storyboard!.instantiateViewController(withIdentifier: "PieceInfoViewController") as! PieceInfoViewController
-        nextVC.modalPresentationStyle = .fullScreen
-        present(nextVC, animated: false)
+
         
         }
         

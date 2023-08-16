@@ -69,7 +69,15 @@ class PieceDetailViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     @IBAction func shareBtnTapped(_ sender: UIButton) {
-        
+        let shareText: String = "방문조각"
+        let shareImage = UIImage(named: "Piece1") // 이미지 객체를 따로 저장
+
+        let activityViewController = UIActivityViewController(activityItems: [shareText, shareImage].compactMap { $0 }, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        activityViewController.excludedActivityTypes = [.postToTwitter, .postToWeibo, .postToVimeo, .postToFlickr, .postToFacebook, .postToTencentWeibo]
+
+        self.present(activityViewController, animated: true, completion: nil)
+
     }
     
     
