@@ -299,14 +299,19 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate, D
 //            }
 //        }
         
-        PopupManager.getMyAllSavedPopup { result in
-            switch result{
-            case.success(let message):
-                print("success")
-            case.failure(_):
-                print("error")
-            }
-        }
+//        PopupManager.getMyAllSavedPopup { result in
+//            switch result{
+//            case.success(let message):
+//                print("success")
+//            case.failure(_):
+//                print("error")
+//            }
+//        }
+        
+        let nextSB = UIStoryboard(name: "PieceInfoViewController", bundle: nil)
+        let nextVC = storyboard!.instantiateViewController(withIdentifier: "PieceInfoViewController") as! PieceInfoViewController
+        nextVC.modalPresentationStyle = .fullScreen
+        present(nextVC, animated: false)
         
         }
         
@@ -477,11 +482,7 @@ extension String {
     }
 }
 
-extension ViewController: UIViewControllerTransitioningDelegate {
-    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return CustomPresentationController(presentedViewController: presented, presenting: presenting)
-    }
-}
+
 
 extension ViewController: NextBtnDelegate{
     func nextButtonTappedd(id: Int) {

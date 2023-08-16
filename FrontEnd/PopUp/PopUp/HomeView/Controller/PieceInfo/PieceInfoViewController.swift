@@ -9,6 +9,10 @@ import UIKit
 
 class PieceInfoViewController: UIViewController, UICollectionViewDelegateFlowLayout {
     
+    var popups: PopupDetail?
+    
+    @IBOutlet var SNSLabel: UILabel!
+    @IBOutlet var detailLocationLabel: UILabel!
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var reviewLabel: UILabel!
     @IBOutlet var popupDetailInfoLabel: UILabel!
@@ -23,7 +27,7 @@ class PieceInfoViewController: UIViewController, UICollectionViewDelegateFlowLay
     @IBOutlet var reviewCnt: [UILabel]!
     
     
-    var id: Int = 0
+    var id: Int = 1
     var storeDetailStruct: StoreDetail?
     
     //리뷰 갯수
@@ -56,6 +60,32 @@ class PieceInfoViewController: UIViewController, UICollectionViewDelegateFlowLay
         collectionView.delegate = self
         
         setUp()
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        reload()
+    }
+    
+    func reload(){
+        PopupManager.getPopupDetail(id: id) { result in
+            switch result {
+            case .success(let messages):
+                self.popups = messages
+                DispatchQueue.main.async {
+                    print("weofjweofjewoijfewoijfoewfjio")
+                    print("\(self.id)MainImg")
+                    self.popupImage.image = UIImage(named: "\(self.id)MainImg")
+                    self.popupInfoLabel.text = self.popups?.name
+                    self.popupDetailInfoLabel.text = self.popups?.detailInfo
+                    self.categoryLabel.text = self.popups?.theme
+                    self.detailLocationLabel.text = self.popups?.location
+                    self.SNSLabel.text = self.popups?.sns
+                }
+            case.failure(let error):
+                print(error)
+            }
+        }
     }
 
     func setUp(){

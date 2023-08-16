@@ -58,6 +58,12 @@ class VerifyViewController: UIViewController {
     
     @IBAction func nextBtnTapped(_ sender: Any) {
         print("다음 버튼이 눌림")
+        let nextSB = UIStoryboard(name: "Main", bundle: nil)
+        let nextVC = storyboard!.instantiateViewController(identifier: "QRViewController") as! QRViewController
+        
+        nextVC.transitioningDelegate = self
+        nextVC.modalPresentationStyle = .custom
+        present(nextVC, animated: true)
     }
     
     @IBAction func backBtnTapped(_ sender: Any) {
@@ -81,3 +87,8 @@ extension VerifyViewController: UITextFieldDelegate{
     }
 }
 
+extension VerifyViewController: UIViewControllerTransitioningDelegate {
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        return CustomPresentationController(presentedViewController: presented, presenting: presenting)
+    }
+}
