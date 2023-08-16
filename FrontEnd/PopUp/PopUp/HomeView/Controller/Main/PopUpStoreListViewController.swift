@@ -45,6 +45,16 @@ extension PopUpStoreListViewController: UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let sb = UIStoryboard(name: "PieceInfoViewController", bundle: nil)
+        let nextVC = sb.instantiateViewController(withIdentifier: "PieceInfoViewController") as! PieceInfoViewController
+        nextVC.id = list[indexPath.row].id
+        nextVC.modalPresentationStyle = .fullScreen
+        present(nextVC, animated: true)
+        
+    }
     
     
 }

@@ -31,21 +31,21 @@ class PieceInfoViewController: UIViewController, UICollectionViewDelegateFlowLay
     var storeDetailStruct: StoreDetail?
     
     //리뷰 갯수
-    var reviewCount = 0
-    var reviews: [String] = ["볼 거리가 많아요", "이벤트가 있어요", "매장이 넓어요", "웨이팅이 길어요", "친절해요"]
-    var pCnt: [String] = ["250명", "25명", "2250명", "1250명", "5250명"]
-    
-    var smrCate: [String] = ["연예인", "연예인", "연예인", "연예인", "연예인"]
-    var smrName: [String] = ["여자아이들", "BTS", "세븐틴", "엔믹스", "블랙핑크"]
-    var smrImg: [String] = ["Piece1", "Piece2", "Piece3", "Piece1", "Piece2"]
-    var smrLoc: [String] = ["서울 송파구", "서울 송파구", "서울 송파구", "서울 송파구", "서울 송파구"]
+//    var reviewCount = 0
+//    var reviews: [String] = ["볼 거리가 많아요", "이벤트가 있어요", "매장이 넓어요", "웨이팅이 길어요", "친절해요"]
+//    var pCnt: [String] = ["250명", "25명", "2250명", "1250명", "5250명"]
+//
+//    var smrCate: [String] = ["연예인", "연예인", "연예인", "연예인", "연예인"]
+//    var smrName: [String] = ["여자아이들", "BTS", "세븐틴", "엔믹스", "블랙핑크"]
+//    var smrImg: [String] = ["Piece1", "Piece2", "Piece3", "Piece1", "Piece2"]
+//    var smrLoc: [String] = ["서울 송파구", "서울 송파구", "서울 송파구", "서울 송파구", "서울 송파구"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.addSubview(backBtn)
-        reviewCount = reviews.count
+//        reviewCount = reviews.count
         // UIButton 생성 및 설정
         backBtn.setTitle("", for: .normal)
         backBtn.setImage(UIImage(named: "backBtn"), for: .normal)
@@ -58,13 +58,13 @@ class PieceInfoViewController: UIViewController, UICollectionViewDelegateFlowLay
         
         collectionView.dataSource = self
         collectionView.delegate = self
-        
-        setUp()
+    
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         reload()
+//        minimizieReview()
     }
     
     func reload(){
@@ -81,6 +81,18 @@ class PieceInfoViewController: UIViewController, UICollectionViewDelegateFlowLay
                     self.categoryLabel.text = self.popups?.theme
                     self.detailLocationLabel.text = self.popups?.location
                     self.SNSLabel.text = self.popups?.sns
+                    
+                    var temp = 0
+                    for index in 0..<10{
+                        
+                        self.reviewCnt[index].text = "\(self.popups!.reviewCounts[index])명"
+                        if temp > 2 || self.popups!.reviewCounts[index] == 0{
+                            self.reviewViews[index].isHidden = true
+                        }else{
+                            temp += 1
+                        }
+                    }
+                
                 }
             case.failure(let error):
                 print(error)
@@ -89,35 +101,10 @@ class PieceInfoViewController: UIViewController, UICollectionViewDelegateFlowLay
     }
 
     func setUp(){
-        fillReiviewView()
         hideAllReview()
         showReview()
     }
-    
-    func fillReiviewView(){
-        for i in 0..<reviewCount{
-            if reviews[i] == "볼 거리가 많아요"{
-                reviewIcons[i].image = UIImage(named: "eyesIcon")
-            }
-            else if reviews[i] == "이벤트가 있어요"{
-                reviewIcons[i].image = UIImage(named: "eventIcon")
-            }
-            else if reviews[i] == "매장이 넓어요"{
-                reviewIcons[i].image = UIImage(named: "goodIcon")
-            }
-            else if reviews[i] == "웨이팅이 길어요"{
-                reviewIcons[i].image = UIImage(named: "waitingIcon")
-            }
-            else{
-                reviewIcons[i].image = UIImage(named: "kindIcon")
-            }
-            
-            reviewContents[i].text = reviews[i]
-            reviewCnt[i].text = pCnt[i]
 
-        }
-    }
-    
     //모든 리뷰를 보여주지 않음
     func hideAllReview(){
         for i in 0..<10{
@@ -127,16 +114,30 @@ class PieceInfoViewController: UIViewController, UICollectionViewDelegateFlowLay
     
     //처음에는 최대 3개의 리뷰를 보여줌
     func showReview(){
-        let temp:Int = min(reviewCount, 3)
-        for i in 0..<temp{
-            reviewViews[i].isHidden = false
+        var temp:Int = 0
+        for i in 0..<10{
+            if temp == 3 {break}
+//            if popups == nil {return}
+            
+            if popups!.reviewCounts[i] == 0{
+                reviewViews[i].isHidden = true
+            }
+            else{
+                reviewViews[i].isHidden = false
+                temp += 1
+            }
         }
     }
 
     //더보기 버튼 누르면 활성화. 모든 리뷰를 보여줌
     func maximizeReview(){
-        for i in 0..<reviewCount{
-            reviewViews[i].isHidden = false
+        for i in 0..<10{
+            if popups!.reviewCounts[i] == 0{
+                reviewViews[i].isHidden = true
+            }
+            else{
+                reviewViews[i].isHidden = false
+            }
         }
     }
     
@@ -185,6 +186,18 @@ extension PieceInfoViewController: UICollectionViewDelegate, UICollectionViewDat
         
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "PieceInfoViewController", bundle: nil)
+        
+        let nextVC = sb.instantiateViewController(withIdentifier: "PieceInfoViewController") as! PieceInfoViewController
+        
+        nextVC.id = StoreArr.arr1[indexPath.row].id
+        
+        nextVC.modalPresentationStyle = .fullScreen
+        present(nextVC, animated: true)
+    }
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellWidth = 100 // 셀 너비 계산 (좌우 간격 15씩)

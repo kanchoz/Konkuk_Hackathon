@@ -326,28 +326,24 @@
                                                         <color key="textColor" name="LightGray"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGo-dK-UCy">
-                                                        <rect key="frame" x="203.33333333333334" y="0.0" width="39.666666666666657" height="41"/>
-                                                        <color key="tintColor" name="White"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="chevron.forward" catalog="system"/>
-                                                        <connections>
-                                                            <action selector="detailBtnTapped:" destination="l15-KF-WP6" eventType="touchUpInside" id="xNe-vT-3fr"/>
-                                                        </connections>
-                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="BackGround"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="243" id="1nl-ZW-DQ1"/>
                                                     <constraint firstItem="Od1-4W-ao3" firstAttribute="leading" secondItem="prc-Ld-aLs" secondAttribute="leading" id="MXh-lg-oiy"/>
-                                                    <constraint firstAttribute="trailing" secondItem="MGo-dK-UCy" secondAttribute="trailing" id="Wha-Kn-1sX"/>
-                                                    <constraint firstAttribute="bottom" secondItem="MGo-dK-UCy" secondAttribute="bottom" id="cJZ-FO-TIQ"/>
                                                     <constraint firstItem="2lV-zi-X0i" firstAttribute="leading" secondItem="prc-Ld-aLs" secondAttribute="leading" id="dhF-Ws-ho6"/>
                                                     <constraint firstAttribute="bottom" secondItem="2lV-zi-X0i" secondAttribute="bottom" id="fLT-Yo-SxR"/>
                                                     <constraint firstItem="Od1-4W-ao3" firstAttribute="top" secondItem="prc-Ld-aLs" secondAttribute="top" id="jts-tI-d3G"/>
-                                                    <constraint firstItem="MGo-dK-UCy" firstAttribute="top" secondItem="prc-Ld-aLs" secondAttribute="top" id="nXD-pV-IhT"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrt-Hn-vxp">
+                                                <rect key="frame" x="0.0" y="0.0" width="337" height="41"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="detailBtnTapped:" destination="l15-KF-WP6" eventType="touchUpInside" id="psd-Fc-1Dp"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7S-2V-T3U">
                                                 <rect key="frame" x="337" y="0.0" width="24" height="24"/>
                                                 <constraints>
@@ -360,9 +356,13 @@
                                         </subviews>
                                         <color key="backgroundColor" name="BackGround"/>
                                         <constraints>
+                                            <constraint firstItem="yrt-Hn-vxp" firstAttribute="top" secondItem="NyA-dQ-1tJ" secondAttribute="top" id="8FK-NO-knT"/>
+                                            <constraint firstItem="L7S-2V-T3U" firstAttribute="leading" secondItem="yrt-Hn-vxp" secondAttribute="trailing" id="IH3-7H-nyx"/>
                                             <constraint firstAttribute="bottom" secondItem="prc-Ld-aLs" secondAttribute="bottom" id="Ixm-9x-0jN"/>
                                             <constraint firstItem="L7S-2V-T3U" firstAttribute="top" secondItem="NyA-dQ-1tJ" secondAttribute="top" id="O3t-qc-OIM"/>
                                             <constraint firstAttribute="height" constant="41" id="Oqr-dm-EEt"/>
+                                            <constraint firstItem="yrt-Hn-vxp" firstAttribute="leading" secondItem="NyA-dQ-1tJ" secondAttribute="leading" id="UnT-Yu-tu6"/>
+                                            <constraint firstAttribute="bottom" secondItem="yrt-Hn-vxp" secondAttribute="bottom" id="qj5-Xk-Xma"/>
                                             <constraint firstItem="prc-Ld-aLs" firstAttribute="leading" secondItem="NyA-dQ-1tJ" secondAttribute="leading" id="sjm-V8-uju"/>
                                             <constraint firstItem="prc-Ld-aLs" firstAttribute="top" secondItem="NyA-dQ-1tJ" secondAttribute="top" id="ua9-z1-zBU"/>
                                             <constraint firstAttribute="trailing" secondItem="L7S-2V-T3U" secondAttribute="trailing" id="vwi-bz-tv9"/>
@@ -1231,7 +1231,6 @@
         <image name="Piece1" width="545" height="726.33331298828125"/>
         <image name="Piece2" width="545" height="726.33331298828125"/>
         <image name="Search_select" width="32.333332061767578" height="32"/>
-        <image name="chevron.forward" catalog="system" width="97" height="128"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="BackGround">

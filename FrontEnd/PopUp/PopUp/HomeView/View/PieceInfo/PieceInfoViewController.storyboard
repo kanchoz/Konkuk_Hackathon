@@ -162,17 +162,17 @@
                                                                 <rect key="frame" x="0.0" y="49" width="363" height="41"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dig-3H-o93">
-                                                                        <rect key="frame" x="15" y="12" width="94.666666666666671" height="17"/>
+                                                                        <rect key="frame" x="15.000000000000007" y="12" width="122.66666666666669" height="17"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodIcon" translatesAutoresizingMaskIntoConstraints="NO" id="jB9-EP-qAj">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffeeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="jB9-EP-qAj">
                                                                                 <rect key="frame" x="0.0" y="1.6666666666666288" width="14" height="14"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="14" id="Rg6-6E-F0t"/>
                                                                                     <constraint firstAttribute="height" constant="14" id="fCL-aN-Z7w"/>
                                                                                 </constraints>
                                                                             </imageView>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="매장이 넓어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyn-1E-KAt">
-                                                                                <rect key="frame" x="18" y="0.0" width="76.666666666666671" height="17"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="취식 공간이 있어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyn-1E-KAt">
+                                                                                <rect key="frame" x="18.000000000000007" y="0.0" width="104.66666666666669" height="17"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="17" id="8bc-8X-4K8"/>
                                                                                 </constraints>
@@ -221,17 +221,17 @@
                                                                 <rect key="frame" x="0.0" y="98" width="363" height="41"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qKd-QU-fOO">
-                                                                        <rect key="frame" x="15" y="12" width="94.666666666666671" height="17"/>
+                                                                        <rect key="frame" x="15.000000000000007" y="12" width="106.66666666666669" height="17"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodIcon" translatesAutoresizingMaskIntoConstraints="NO" id="RPg-tk-KKD">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carIcon" translatesAutoresizingMaskIntoConstraints="NO" id="RPg-tk-KKD">
                                                                                 <rect key="frame" x="0.0" y="1.6666666666666288" width="14" height="14"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="14" id="RAQ-iu-pvZ"/>
                                                                                     <constraint firstAttribute="width" constant="14" id="igK-7h-JSx"/>
                                                                                 </constraints>
                                                                             </imageView>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="매장이 넓어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTL-Zq-VSn">
-                                                                                <rect key="frame" x="18" y="0.0" width="76.666666666666671" height="17"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주차하기 편해요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTL-Zq-VSn">
+                                                                                <rect key="frame" x="18" y="0.0" width="88.666666666666671" height="17"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="17" id="uQa-2X-wa5"/>
                                                                                 </constraints>
@@ -339,17 +339,17 @@
                                                                 <rect key="frame" x="0.0" y="196" width="363" height="41"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XgT-vX-Y91">
-                                                                        <rect key="frame" x="15" y="12" width="94.666666666666671" height="17"/>
+                                                                        <rect key="frame" x="15.000000000000007" y="12" width="106.66666666666669" height="17"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Har-eI-NkI">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="itemsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Har-eI-NkI">
                                                                                 <rect key="frame" x="0.0" y="1.6666666666666288" width="14" height="14"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="14" id="AXg-0H-aTX"/>
                                                                                     <constraint firstAttribute="width" constant="14" id="nlQ-hy-vhD"/>
                                                                                 </constraints>
                                                                             </imageView>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="매장이 넓어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqu-s6-J43">
-                                                                                <rect key="frame" x="18" y="0.0" width="76.666666666666671" height="17"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상품이 다양해요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqu-s6-J43">
+                                                                                <rect key="frame" x="18" y="0.0" width="88.666666666666671" height="17"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="17" id="i2u-zk-bpv"/>
                                                                                 </constraints>
@@ -398,17 +398,17 @@
                                                                 <rect key="frame" x="0.0" y="245" width="363" height="41"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0S-SF-54c">
-                                                                        <rect key="frame" x="15" y="12" width="94.666666666666671" height="17"/>
+                                                                        <rect key="frame" x="15" y="12" width="150.66666666666666" height="17"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodIcon" translatesAutoresizingMaskIntoConstraints="NO" id="0jn-iJ-bCS">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="presentIcon" translatesAutoresizingMaskIntoConstraints="NO" id="0jn-iJ-bCS">
                                                                                 <rect key="frame" x="0.0" y="1.6666666666666288" width="14" height="14"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="14" id="YnD-IK-gmL"/>
                                                                                     <constraint firstAttribute="height" constant="14" id="rxS-LR-wcf"/>
                                                                                 </constraints>
                                                                             </imageView>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="매장이 넓어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOK-eh-2hH">
-                                                                                <rect key="frame" x="18" y="0.0" width="76.666666666666671" height="17"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="무료 배포 굿즈가 있어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOK-eh-2hH">
+                                                                                <rect key="frame" x="18" y="0.0" width="132.66666666666666" height="17"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="17" id="MF8-VI-5vM"/>
                                                                                 </constraints>
@@ -457,17 +457,17 @@
                                                                 <rect key="frame" x="0.0" y="294" width="363" height="41"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKS-N0-Sr8">
-                                                                        <rect key="frame" x="15" y="12" width="94.666666666666671" height="17"/>
+                                                                        <rect key="frame" x="15.000000000000007" y="12" width="106.66666666666669" height="17"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Jiu-m6-daK">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eventIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Jiu-m6-daK">
                                                                                 <rect key="frame" x="0.0" y="1.6666666666666288" width="14" height="14"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="14" id="1mI-Px-si4"/>
                                                                                     <constraint firstAttribute="height" constant="14" id="PZr-oR-0nJ"/>
                                                                                 </constraints>
                                                                             </imageView>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="매장이 넓어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mct-Bs-ifx">
-                                                                                <rect key="frame" x="18" y="0.0" width="76.666666666666671" height="17"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이벤트가 있어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mct-Bs-ifx">
+                                                                                <rect key="frame" x="18" y="0.0" width="88.666666666666671" height="17"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="17" id="oOP-jV-HOC"/>
                                                                                 </constraints>
@@ -516,17 +516,17 @@
                                                                 <rect key="frame" x="0.0" y="343" width="363" height="41"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h59-GF-goo">
-                                                                        <rect key="frame" x="15" y="12" width="94.666666666666671" height="17"/>
+                                                                        <rect key="frame" x="15.000000000000007" y="12" width="106.66666666666669" height="17"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodIcon" translatesAutoresizingMaskIntoConstraints="NO" id="JMD-LM-Ugt">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waitingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="JMD-LM-Ugt">
                                                                                 <rect key="frame" x="0.0" y="1.6666666666667425" width="14" height="14"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="14" id="4yJ-lf-KMe"/>
                                                                                     <constraint firstAttribute="height" constant="14" id="J4v-bF-wWr"/>
                                                                                 </constraints>
                                                                             </imageView>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="매장이 넓어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geD-Q4-6p3">
-                                                                                <rect key="frame" x="18" y="0.0" width="76.666666666666671" height="17"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="웨이팅이 길어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geD-Q4-6p3">
+                                                                                <rect key="frame" x="18" y="0.0" width="88.666666666666671" height="17"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="17" id="GMN-kU-neP"/>
                                                                                 </constraints>
@@ -575,17 +575,17 @@
                                                                 <rect key="frame" x="0.0" y="392" width="363" height="41"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giP-ff-9ll">
-                                                                        <rect key="frame" x="15" y="12" width="94.666666666666671" height="17"/>
+                                                                        <rect key="frame" x="15" y="12" width="138.66666666666666" height="17"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodIcon" translatesAutoresizingMaskIntoConstraints="NO" id="5ap-QU-EQT">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doorIcon" translatesAutoresizingMaskIntoConstraints="NO" id="5ap-QU-EQT">
                                                                                 <rect key="frame" x="0.0" y="1.6666666666667425" width="14" height="14"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="14" id="CgV-tJ-DDE"/>
                                                                                     <constraint firstAttribute="width" constant="14" id="Zay-0S-ibD"/>
                                                                                 </constraints>
                                                                             </imageView>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="매장이 넓어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfk-Oe-2E0">
-                                                                                <rect key="frame" x="18" y="0.0" width="76.666666666666671" height="17"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="바로 들어갈 수 있어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfk-Oe-2E0">
+                                                                                <rect key="frame" x="18.000000000000007" y="0.0" width="120.66666666666669" height="17"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="17" id="nnX-w7-cRc"/>
                                                                                 </constraints>
@@ -634,17 +634,17 @@
                                                                 <rect key="frame" x="0.0" y="441" width="363" height="41"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4On-Qm-YTN">
-                                                                        <rect key="frame" x="15" y="12" width="94.666666666666671" height="17"/>
+                                                                        <rect key="frame" x="15" y="12" width="66.666666666666671" height="17"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodIcon" translatesAutoresizingMaskIntoConstraints="NO" id="qWl-07-Ydn">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kindIcon" translatesAutoresizingMaskIntoConstraints="NO" id="qWl-07-Ydn">
                                                                                 <rect key="frame" x="0.0" y="1.6666666666667425" width="14" height="14"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="14" id="Gqf-cD-ORI"/>
                                                                                     <constraint firstAttribute="width" constant="14" id="lqJ-D4-DeL"/>
                                                                                 </constraints>
                                                                             </imageView>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="매장이 넓어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WV0-IX-7p4">
-                                                                                <rect key="frame" x="18" y="0.0" width="76.666666666666671" height="17"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="친절해요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WV0-IX-7p4">
+                                                                                <rect key="frame" x="17.999999999999996" y="0.0" width="48.666666666666657" height="17"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="17" id="pdt-Kq-nzj"/>
                                                                                 </constraints>
@@ -996,9 +996,17 @@
         <image name="ReviewDown" width="16.333333969116211" height="16.333333969116211"/>
         <image name="backBtn" width="32" height="32"/>
         <image name="bookmark" width="8" height="12"/>
+        <image name="carIcon" width="14" height="14.333333015441895"/>
+        <image name="coffeeIcon" width="14" height="14.333333015441895"/>
+        <image name="doorIcon" width="14" height="14.333333015441895"/>
+        <image name="eventIcon" width="14" height="14.333333015441895"/>
         <image name="eyesIcon" width="14" height="14.333333015441895"/>
         <image name="goodIcon" width="14" height="14.333333015441895"/>
+        <image name="itemsIcon" width="14" height="14.333333015441895"/>
+        <image name="kindIcon" width="14" height="14.333333015441895"/>
         <image name="newjeansPopupImage" width="260" height="310.66665649414062"/>
+        <image name="presentIcon" width="14" height="14.333333015441895"/>
+        <image name="waitingIcon" width="14" height="14.333333015441895"/>
         <namedColor name="BackGround">
             <color red="0.071000002324581146" green="0.071000002324581146" blue="0.071000002324581146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
