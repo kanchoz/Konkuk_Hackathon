@@ -15,6 +15,10 @@ class DummyStore{
     Store(name: "뉴진스 바니랜드", sort: "Star", id: 9, location: "서울시 강남구", coordinate: CLLocationCoordinate2D(latitude: 37.546829, longitude: 127.043398)),
     Store(name: "포도도", sort: "Food", id: 31, location: "서울시 강서구", coordinate: CLLocationCoordinate2D(latitude: 37.547035, longitude: 127.041136)),
     ]
+    
+    static let HotStore = [
+        5, 6, 9, 31
+    ]
 }
 
 class DummyReview{
@@ -36,3 +40,4 @@ struct Store{
     let location: String
     let coordinate: CLLocationCoordinate2D
 }
+

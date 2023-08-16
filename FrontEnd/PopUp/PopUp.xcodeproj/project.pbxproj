@@ -41,6 +41,7 @@
 		31B39E672A8D268C00F6B25E /* StoreSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B39E662A8D268C00F6B25E /* StoreSimple.swift */; };
 		31B39E692A8D3F4700F6B25E /* PopUpStoreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B39E682A8D3F4700F6B25E /* PopUpStoreListViewController.swift */; };
 		31B39E6B2A8D3FE400F6B25E /* EntireStoreListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B39E6A2A8D3FE400F6B25E /* EntireStoreListTVCell.swift */; };
+		31B39E6D2A8D562C00F6B25E /* NextBtnDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B39E6C2A8D562C00F6B25E /* NextBtnDelegate.swift */; };
 		31DF1A332A87759000CD5A73 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF1A322A87759000CD5A73 /* RankingTableViewCell.swift */; };
 		31DF1A352A8784DA00CD5A73 /* DataSendDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF1A342A8784DA00CD5A73 /* DataSendDelegate.swift */; };
 		31DF1A372A87D98500CD5A73 /* DummyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF1A362A87D98500CD5A73 /* DummyStore.swift */; };
@@ -142,6 +143,7 @@
 		31B39E662A8D268C00F6B25E /* StoreSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSimple.swift; sourceTree = "<group>"; };
 		31B39E682A8D3F4700F6B25E /* PopUpStoreListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpStoreListViewController.swift; sourceTree = "<group>"; };
 		31B39E6A2A8D3FE400F6B25E /* EntireStoreListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntireStoreListTVCell.swift; sourceTree = "<group>"; };
+		31B39E6C2A8D562C00F6B25E /* NextBtnDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBtnDelegate.swift; sourceTree = "<group>"; };
 		31DF1A322A87759000CD5A73 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
 		31DF1A342A8784DA00CD5A73 /* DataSendDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataSendDelegate.swift; path = PopUp/HomeView/View/Search/DataSendDelegate.swift; sourceTree = SOURCE_ROOT; };
 		31DF1A362A87D98500CD5A73 /* DummyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DummyStore.swift; path = PopUp/HomeView/View/Search/DummyStore.swift; sourceTree = SOURCE_ROOT; };
@@ -403,6 +405,7 @@
 				318C441C2A8A79360036582D /* MyPage */,
 				31DF1A342A8784DA00CD5A73 /* DataSendDelegate.swift */,
 				31DF1A362A87D98500CD5A73 /* DummyStore.swift */,
+				31B39E6C2A8D562C00F6B25E /* NextBtnDelegate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -840,6 +843,7 @@
 				31EEB6B42A83351100ABA9CF /* PopUpStoreCVCell.swift in Sources */,
 				318C441B2A8A738B0036582D /* StoredPopUpViewController.swift in Sources */,
 				31113F8E2A8939D700A82CCD /* StoreInfoViewController.swift in Sources */,
+				31B39E6D2A8D562C00F6B25E /* NextBtnDelegate.swift in Sources */,
 				5B0D947F2A89178E00F361C8 /* PieceDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

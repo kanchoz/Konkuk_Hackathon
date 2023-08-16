@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "9HotStore.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "홈_이번주핫한팝업_뉴진스 (1).png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "홈_이번주핫한팝업_뉴진스 (2).png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
