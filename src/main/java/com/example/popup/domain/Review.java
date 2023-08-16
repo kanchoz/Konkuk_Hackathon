@@ -1,5 +1,6 @@
 package com.example.popup.domain;
 
+import com.example.popup.dto.ReqDto.ReviewReqDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -24,14 +25,10 @@ public class Review {
     @Column(nullable = false)
     private String content;
 
-    @Column(nullable = false)
-    private int reviewCnt;
-
 
     public Review(ReviewReqDto reviewReqDto) {
 
         this.image=reviewReqDto.getImage();
         this.content=reviewReqDto.getContent();
-        this.reviewCnt=reviewReqDto.getReviewCnt();
     }
 }

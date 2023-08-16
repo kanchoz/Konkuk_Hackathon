@@ -2,6 +2,7 @@ package com.example.popup.service;
 
 import com.example.popup.domain.Popup;
 import com.example.popup.domain.Review;
+import com.example.popup.dto.ReqDto.BookMarkReqDto;
 import com.example.popup.dto.ReqDto.PopupReqDto;
 import com.example.popup.dto.ResDto.GlobalResDto;
 import com.example.popup.dto.ResDto.PopupOneResDto;
@@ -44,5 +45,16 @@ public class PopupService {
         PopupOneResDto popupOneResDto = new PopupOneResDto(popup, reviews);
 
         return GlobalResDto.success(popupOneResDto,null);
+    }
+
+    public GlobalResDto<?> bookmarkPopup(Long popupId, BookMarkReqDto bookMarkReqDto) {
+
+        Popup popup = popupRepository.findById(popupId).orElseThrow(
+                () -> new CustomException(ErrorCode.Not_Found_Popup)
+        );
+
+        popup.updatePopup(bookMarkReqDto);
+
+        return GlobalResDto.success(null, "완료");
     }
 }

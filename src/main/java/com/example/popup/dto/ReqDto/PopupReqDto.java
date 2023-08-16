@@ -5,10 +5,12 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.validation.constraints.NotBlank;
+import java.util.List;
 
 @Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class PopupReqDto {
@@ -48,4 +50,8 @@ public class PopupReqDto {
 
     @NotBlank
     private String detailInfo;
+
+    @ElementCollection
+    @Column(name = "review_counts")
+    private List<Long> reviewCounts;
 }

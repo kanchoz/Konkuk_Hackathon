@@ -1,5 +1,6 @@
 package com.example.popup.domain;
 
+import com.example.popup.dto.ReqDto.BookMarkReqDto;
 import com.example.popup.dto.ReqDto.PopupReqDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,6 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Getter
 @Setter
@@ -18,7 +20,6 @@ public class Popup {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long popupId;
-
 
     @Column(nullable = false)
     private String image;
@@ -56,9 +57,12 @@ public class Popup {
     @Column(nullable = false)
     private String detailInfo;
 
+    @ElementCollection
+    @Column(name = "review_counts")
+    private List<Long> reviewCounts;
+
 
     public Popup(PopupReqDto popupReqDto) {
-
 
         this.image=popupReqDto.getImage();
         this.theme=popupReqDto.getTheme();
@@ -72,6 +76,11 @@ public class Popup {
         this.detailLocation=popupReqDto.getDetailLocation();
         this.sns=popupReqDto.getSns();
         this.detailInfo=popupReqDto.getDetailInfo();
+        this.reviewCounts=popupReqDto.getReviewCounts();
     }
 
+    public void updatePopup(BookMarkReqDto bookMarkReqDto){
+
+        this.isMarked=bookMarkReqDto.getIsMarked();
+    }
 }
