@@ -1,15 +1,20 @@
 spring:
   jpa:
     hibernate:
-      #      ddl-auto: create-drop
-      ddl-auto: update
+      ddl-auto: create-drop
+#      ddl-auto: update
   datasource:
     password: ENC(Yb6HItJDtAQEMqaqL+8lNdz4wJd+n2dp)
     username: ENC(EZuHZQJo2Veo/OxTrNlfrg==)
     url: ENC(f7QMbgvgg8SruqtjZT0REQQzvQLPj7Dqk8SkrFxppk3desQxTL/lod32HiovElzeNBMTuHnU6LLSl/UTf1Bn6peHqnAw78d6qQLY6rr8GxTOJqAndNWOqmZ8cK2E+Rfd+yLiZOLb8Ao=)
 
 
-
 jasypt:
   encryptor:
     bean: jasyptStringEncryptor
+
+
+logging:
+  level:
+    com:
+      example: debug

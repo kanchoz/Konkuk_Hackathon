@@ -1,5 +1,6 @@
 package com.example.popup.dto.ResDto;
 
+
 import com.example.popup.exception.ErrorCode;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
